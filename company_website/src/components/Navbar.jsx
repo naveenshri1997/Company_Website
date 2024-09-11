@@ -1,10 +1,7 @@
 import bgimage from '../assets/11.jpeg';
 const myStyle = {
     backgoundImage: `url(${bgimage})`,
-    width: "100%",
-    height: "100vh",
-    backgroundSize: "cover",
-    backgroundRepeat: "no-repeat",
+  
 };
 const Navbar = () => {
     return (
