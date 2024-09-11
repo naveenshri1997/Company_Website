@@ -1,35 +1,107 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 
+.londrina {
+    font-family: "Londrina Outline", sans-serif;
+}
+.theme_color_two {
+    color:#f0ff2b;
+}
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
 }
 a:hover {
   color: #535bf2;
 }
 
 body {
-  margin: 0;
-  min-width: 100%;
-  min-height: 100%;
-  min-height: 100%;
+    margin: 0;
+    min-width: 100%;
+    min-height: 100%;
+    min-height: 100%;
+    font-family: MontserratBold;
 }
 .homepage_header {
     position: relative;
     top: 0px;
     height: 100vh;
     width: 100%;
-    background-size:cover;
-
+    background-size: cover;
+/*    background: black;*/
+/*    opacity: .4;    */
 }
-.position_absolute{
-    position:absolute;
-        width:100%;
-        left:0px;
+.heading{
+    font-weight:500;
+    font-size:55px;
+    letter-spacing:2px;
+    text-align:center;
+}
+
+.header_title {
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    margin-top:20px;
+    text-align:center;
+}
+.content {
+    position: absolute;
+    width: 200pxs;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+.position_absolute {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    z-index: 2;
 }
 
 .navbar_custom{
     padding:20px 20px;
-    background-color:transparent;
+    background-color:transparent !important;
+    color:white;
+}
+.navbar .navbar-nav .nav-link {
+    color: white;
+    font-family: Montserrat;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size:16px;
+}
+.overlay {
+    position: static;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 60%);
+    z-index: 1;
+}
+    .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+/*    z-index: -1;*/
+}
+
+.navbar_cus_btn {
+    background: #f0ff2b;
+    border-radius: 10px;
+    color: black !important;
 }
