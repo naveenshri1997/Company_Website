@@ -1,0 +1,35 @@
+
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
+  min-height: 100%;
+}
+.homepage_header {
+    position: relative;
+    top: 0px;
+    height: 100vh;
+    width: 100%;
+    background-size:cover;
+
+}
+.position_absolute{
+    position:absolute;
+        width:100%;
+        left:0px;
+}
+
+.navbar_custom{
+    padding:20px 20px;
+    background-color:transparent;
+}
