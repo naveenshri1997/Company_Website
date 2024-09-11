@@ -6,7 +6,6 @@ const myStyle = {
 const Navbar = () => {
     return (
         <>
-            raga
             <nav class="navbar navbar-expand-lg bg-body-tertiary position_absolute navbar_custom" style={myStyle}>
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Navbar</a>
