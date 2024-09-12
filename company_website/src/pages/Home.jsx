@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import About from '../components/About';
+import Services from '../components/Services';
 import bgimage from '../assets/bg2.png';
 import video from '../assets/1.mp4';
 import { Typewriter } from 'react-simple-typewriter'
@@ -45,11 +46,12 @@ const handleDone = () => {
                             <video className='video-overlay' autoPlay loop muted>
                                 <source src={video} type='video/mp4' />
                             </video>
-                        </div>
-                     <About/>
+                        </div>                      
                     </div>
                 </div>
             </div>            
+            <Services />
+            <About />
         </>
     )
 }
