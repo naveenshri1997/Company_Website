@@ -1,12 +1,13 @@
 import bgimage from '../assets/11.jpeg';
-import {Link } from 'react-router-dom'
-const myStyle = {
-    backgoundImage: `url(${bgimage})`,  
-};
+import { Link } from 'react-router-dom'
+
 const Navbar = () => {
+  
     return (
         <>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary position_absolute navbar_custom" style={myStyle}>
+            
+            <nav class="navbar navbar-expand-lg position_absolute navbar_custom fixed-top" 
+               >
                 <div class="container">
                     <a class="navbar-brand theme_color_two londrina" style={{fontSize:'30px'}} href="#">LOGO HERE</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,12 +69,13 @@ const Navbar = () => {
                                 <Link class="nav-link active" aria-current="page" to='/'>Career</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link navbar_cus_btn theme_color_two" style={{marginLeft:'40px'}} to="/about">Contact Us</Link>
+                                <Link class="nav-link navbar_cus_btn theme_color_two" style={{ marginLeft: '40px' }} to="/about">Contact Us</Link>
                             </li>
                         </ul>
                       
                     </div>
                 </div>
+                
             </nav>
         </>
     )
