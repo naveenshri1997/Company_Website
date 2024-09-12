@@ -1,15 +1,23 @@
 import bgimage from '../assets/11.jpeg';
 import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
-  
+    const [scroll, setScroll] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            setScroll(window.scrollY > 100);
+        });
+    });
+
     return (
         <>
-            
-            <nav class="navbar navbar-expand-lg position_absolute navbar_custom fixed-top" 
-               >
+         
+            <nav className={`headerMain ${scroll ? "navbar navbar-expand-lg position_absolute navbar_custom " : "navbar navbar-expand-lg position_absolute "}`} 
+                 >
                 <div class="container">
-                    <a class="navbar-brand theme_color_two londrina" style={{fontSize:'30px'}} href="#">LOGO HERE</a>
+                    <a class="navbar-brand theme_color_two londrina" style={{ fontSize: '30px' }} href="#">LOGO HERE</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>

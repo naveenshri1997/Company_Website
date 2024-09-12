@@ -65,17 +65,33 @@ body {
 }
 
 .position_absolute {
-    position: fixed;
+   
     width: 100%;
     left: 0px;
-    z-index: 2;
-    background:black;
-}
-
-.navbar_custom {
+    z-index: 992;
     padding: 20px 20px;
     background-color: transparent;
     color: white;
+}
+
+.navbar_custom {
+    position: fixed;
+    background: black;
+    animation-duration: 0.7s;
+    animation-name: fadeInDown;
+    animation-timing-function: ease-out;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .navbar .navbar-nav .nav-link {
