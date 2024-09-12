@@ -122,13 +122,24 @@ body {
 /*    padding-top: 50px;
     padding-bottom: 50px;*/
 }
-
-    .home_page_service .card {
-        position: relative;
-        min-height: 150px;
-        overflow:hidden;
-        margin-bottom:20px;
-    }
+.home_page_service .home_service_one {
+padding: 50px;
+padding-top: 70px; 
+padding-bottom: 50px;
+}
+    .home_page_service .home_service_two {        
+    background-image: linear-gradient(135deg, #f9de4b 10%, #f9de4b 100%);
+    padding-top:50px;
+    padding-bottom: 50px; 
+    padding-left:20px;
+}
+    
+.home_page_service .card {
+    position: relative;
+    min-height: 150px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
         .home_page_service .card::after {
             content: '';
             position: absolute;
@@ -170,14 +181,17 @@ body {
 
     .home_page_service .service_heading {
         font-size: 21px;
-        font-weight: 600;
+        font-weight: 700;
         font-family: "Londrina Outline", sans-serif;
         color: #ff0404;
+        letter-spacing:3px;
     }
         .home_page_service .service_heading span {
             font-family: 'Montserrat';
-            color:black;
+            color: black;
+            letter-spacing: 0px;
         }
 .home_page_service ul li {
     font-family: 'Montserrat';
+    font-weight:500
 }

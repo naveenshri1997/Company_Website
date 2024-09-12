@@ -15,7 +15,7 @@ const Services = () => {
             <div className="row justify-content-center">
                 <div className="col-lg-12 ">
                     <div className="row">
-                        <div className="col-lg-7" style={{ paddingTop: '70px', paddingBottom: '50px'}}>
+                        <div className="col-lg-7 home_service_one" >
                             <div className="row">
                                 <div className="col-lg-4">
                                     <div className="card">
@@ -95,7 +95,7 @@ const Services = () => {
                                 
                             </div>                            
                         </div>
-                        <div className="col-lg-5" style={{ backgroundImage:'linear-gradient(135deg, #f9de4b 10%, #f9de4b 100%)', paddingTop:'50px',paddingBottom:'50px'}}>
+                        <div className="col-lg-5 home_service_two">
                             <span className="londrina heading theme_color_two" style={{ textAlign: 'left', background: 'black', padding: '0px 10px' }}>Techologies</span>
                             <p className="service_title">We have expertise in various cutting-edge technologies.</p>
 
