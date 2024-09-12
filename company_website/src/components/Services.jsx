@@ -13,9 +13,9 @@ const Services = () => {
     return (
         <div className="container-fluid home_page_service">
             <div className="row justify-content-center">
-                <div className="col-lg-11 ">
+                <div className="col-lg-12 ">
                     <div className="row">
-                        <div className="col-lg-7">
+                        <div className="col-lg-7" style={{ paddingTop: '70px', paddingBottom: '50px'}}>
                             <div className="row">
                                 <div className="col-lg-4">
                                     <div className="card">
@@ -95,7 +95,7 @@ const Services = () => {
                                 
                             </div>                            
                         </div>
-                        <div className="col-lg-5">
+                        <div className="col-lg-5" style={{ background: '#f0ff2b', paddingTop:'50px',paddingBottom:'50px'}}>
                             <span className="londrina heading theme_color_two" style={{ textAlign: 'left', background: 'black', padding: '0px 10px' }}>Techologies</span>
                             <p className="service_title">We have expertise in various cutting-edge technologies.</p>
 
@@ -108,6 +108,18 @@ const Services = () => {
                                         <li>PHP</li>
                                         <li>.Net</li>
                                         <li>Node.JS</li>
+                                    </ul>
+
+                                    <h3 className="service_heading">Frontend <span>Technologies</span></h3>
+                                    <ul>
+                                        <li>React Native</li>
+                                        <li>Angular</li>
+                                        <li>Vue.JS</li>
+                                        <li>React.JS</li>
+                                        <li>iOS</li>
+                                        <li>Android</li>
+                                        <li>Flutter</li>
+                                        <li>Xamarin</li>
                                     </ul>
                                 </div>
 
@@ -122,18 +134,7 @@ const Services = () => {
                                         <li>MERN</li>
                                     </ul>
 
-                                    <h3 className="service_heading">Frontend <span>Technologies</span></h3>
-
-                                    <ul>
-                                    <li>React Native</li>
-                                    <li>Angular</li>
-                                    <li>Vue.JS</li>
-                                    <li>React.JS</li>
-                                    <li>iOS</li>
-                                    <li>Android</li>
-                                    <li>Flutter</li>
-                                    <li>Xamarin</li>
-                                    </ul>
+                                    
                                 </div>
                             </div>
                         </div>

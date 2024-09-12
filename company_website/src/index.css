@@ -9,7 +9,9 @@
 .theme_color_two {
     color: #f0ff2b;
 }
-
+.bg-grey {
+    background: #f2f2f2 !important;
+}
 a {
     font-weight: 500;
     color: #646cff;
@@ -117,8 +119,8 @@ body {
 }
 
 .home_page_service {
-    padding-top: 50px;
-    padding-bottom: 50px;
+/*    padding-top: 50px;
+    padding-bottom: 50px;*/
 }
 
     .home_page_service .card {
