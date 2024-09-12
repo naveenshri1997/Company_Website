@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 const About = () => {
     return (
         <div className="container-fluid home_page_about">
@@ -9,9 +11,21 @@ const About = () => {
                             <span className="londrina heading theme_color_two"
                                 style={{ textAlign: 'left', background: 'black', padding: '0px 10px' }}>About Us</span>
                             <p className="about_title">Welcome to REIWA Technology Systems Pvt Ltd</p>                         
+
+                            <p className="about_title" style={{lineHeight:'30px',marginBottom:'50px'}}>
+                                At Qualwebs, we distinguish ourselves through a combination of expertise, innovation, and commitment to quality.
+                                Qualwebs harnesses cutting-edge technologies including blockchain, web3, machine learning, and artificial
+                                intelligence to provide innovative solutions for our clients. Backed by an experienced team of IT Engineers
+                                and a robust framework, Qualwebs assists cutting-edge technologies including blockchain, web3, machine learning, and artificial
+                                intelligence to provide innovative solutions for our clients. Backed by an experienced team of IT Engineers
+                                and a robust framework, Qualwebs assists businesses in developing bespoke software and mobile applications
+                                that drive seamless digital transformation.
+                            </p>
+
+                            <Link className='navbar_cus_main_btn  theme_color_two' to='/about'>Learn More</Link>
                         </div>
                         <div className="col-lg-5 home_about_one" >
-
+                            
                         </div>
                     </div>
                 </div>
