@@ -95,7 +95,7 @@ const Services = () => {
                                 
                             </div>                            
                         </div>
-                        <div className="col-lg-5" style={{ background: '#f0ff2b', paddingTop:'50px',paddingBottom:'50px'}}>
+                        <div className="col-lg-5" style={{ backgroundImage:'linear-gradient(135deg, #f9de4b 10%, #f9de4b 100%)', paddingTop:'50px',paddingBottom:'50px'}}>
                             <span className="londrina heading theme_color_two" style={{ textAlign: 'left', background: 'black', padding: '0px 10px' }}>Techologies</span>
                             <p className="service_title">We have expertise in various cutting-edge technologies.</p>
 
