@@ -50,8 +50,8 @@ const handleDone = () => {
                     </div>
                 </div>
             </div>            
-            <Services />
             <About />
+            <Services />
         </>
     )
 }

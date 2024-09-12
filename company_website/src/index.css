@@ -195,3 +195,23 @@ padding-bottom: 50px;
     font-family: 'Montserrat';
     font-weight:500
 }
+
+
+    .home_page_about .home_about_one {
+        padding: 50px;
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .home_page_about .home_about_two {
+        background-image: linear-gradient(135deg, #f9de4b 10%, #f9de4b 100%);
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+    }
+
+.home_page_about .about_title {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
