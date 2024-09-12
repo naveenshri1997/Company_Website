@@ -1,4 +1,6 @@
+
 import { Link } from 'react-router-dom'
+import about from '../assets/about.png'
 
 const About = () => {
     return (
@@ -25,7 +27,7 @@ const About = () => {
                             <Link className='navbar_cus_main_btn  theme_color_two' to='/about'>Learn More</Link>
                         </div>
                         <div className="col-lg-5 home_about_one" >
-                            
+                            <img src={about} className="img-fluid" />
                         </div>
                     </div>
                 </div>
