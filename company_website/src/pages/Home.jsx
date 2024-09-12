@@ -1,5 +1,6 @@
 import Navbar from '../components/Navbar';
 import About from '../components/About';
+import Footer from '../components/Footer';
 import Services from '../components/Services';
 import bgimage from '../assets/bg2.png';
 import video from '../assets/1.mp4';
@@ -52,6 +53,7 @@ const handleDone = () => {
             </div>            
             <About />
             <Services />
+            <Footer />
         </>
     )
 }
