@@ -341,7 +341,8 @@ padding-bottom: 50px;
     background: rgb(249, 222, 75) !important;
 }
 .steps{
-    padding:100px 0px;
+    padding-top:100px;
+    padding-bottom:100px;
 }
     .steps .card {
         font-family: 'Montserrat';

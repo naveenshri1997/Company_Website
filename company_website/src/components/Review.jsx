@@ -88,16 +88,19 @@ const Review = () => {
     } = usePrevNextButtons(emblaApi, onNavButtonClick)
     return (
         <>  
-            <div className="row" style={{ backgroundColor:'#083576',padding:'100px 0px 0px 50px'}}>
-                <div className="col-lg-12">
-                    <h3 className="londrina heading " style={{ textAlign: 'left',fontWeight:'bolder ', background: '#f9de4b ', padding: '0px 10px', display:'inline-block' }}>
-                        Here from our clinets.
-                    </h3>
+            <div className="container-fluid">
+                <div className="row" style={{ backgroundColor: '#083576', padding: '100px 0px 0px 50px' }}>
+                    <div className="col-lg-12">
+                        <h3 className="londrina heading " style={{ textAlign: 'left', fontWeight: 'bolder ', background: '#f9de4b ', padding: '0px 10px', display: 'inline-block' }}>
+                            Here from our clinets.
+                        </h3>
+                    </div>
                 </div>
             </div>
             
+            
             <section className="embla container-fluid custom_slider_embla">
-                <div className="row justify-content-center">
+                <div className="row justify-content-center" style={{ margin: '0px' }}>
                     
                     <div className="col-lg-8">
                         <div className="embla__viewport" ref={emblaRef}>
