@@ -7,7 +7,7 @@ import bgimage from '../assets/bg2.png';
 import video from '../assets/1.mp4';
 import { Typewriter } from 'react-simple-typewriter'
 import EmblaCarousel from '../components/slider/EmblaCarousel'
-
+import Steps from '../components/Steps';
 
 import '../assets/slider_css/slider.css'
 
@@ -59,6 +59,8 @@ const handleDone = () => {
             </div>            
             <About />
             <Services />
+            <Steps />
+
             <Review />
             <Footer />
         </>

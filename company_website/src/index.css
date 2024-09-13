@@ -339,3 +339,32 @@ padding-bottom: 50px;
 .embla__dot--selected {
     background: rgb(249, 222, 75) !important;
 }
+.steps{
+    padding:100px 0px;
+}
+    .steps .card {
+        font-family: 'Montserrat';
+        padding:20px;
+        border:none;
+        border-radius:7px;
+        min-height:240px;
+    }
+
+    .steps .card .card_heading {
+        font-size:24px;
+    }
+.steps .card .card_para{
+    font-size:17px;
+}
+        .steps .card1 {
+            background: #c9dfff;
+        }
+    .steps .card2 {
+        background: #ffef96ba;
+    }
+    .steps .card3 {
+        background: #ffa093;
+    }
+    .steps .card4 {
+        background: #81fac2;
+    }
