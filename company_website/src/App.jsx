@@ -8,7 +8,7 @@ import {Routes,Route } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Home from './pages/Home'
-import About from './pages/About'
+import Aboutpage from './pages/Aboutpage'
 import './App.css'
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
           
           <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='/about' element={<About /> } />
+              <Route path='/about' element={<Aboutpage /> } />
           </Routes>
     </>
   )

@@ -65,13 +65,14 @@ body {
 }
 
 .position_absolute {
-   
     width: 100%;
     left: 0px;
     z-index: 992;
     padding: 20px 20px;
     background-color: transparent;
     color: white;
+    top: 0px;
+    position: fixed;
 }
 
 .navbar_custom {
@@ -397,4 +398,13 @@ padding-bottom: 50px;
 .technologies ul li{
     display:block;
     width:100%;
+}
+.breadcrum{
+    position:relative;
+    background:red;
+    padding-top:140px;
+    padding-bottom:50px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    font-size:25px;
 }
