@@ -11,7 +11,7 @@ const Footer = () => {
             <div className="footer container-fluid" style={styleone}>
                 <div className="row justify-content-center" style={{ position: 'relative' }}>
                     <div className="col-lg-11 ">
-                        <div className="row" style={{ borderBottom: '1px solid #616161a8' }}>
+                        <div className="row" style={{ borderBottom: '1px solid #f9de4b', paddingBottom: '20px', }}>
                             <h3>QUICK CONTACTS</h3>
                             <div className="col-lg-4">
                                 <div className="row footer_box">
