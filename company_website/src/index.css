@@ -276,3 +276,30 @@ padding-bottom: 50px;
         font-family: 'Montserrat';
         color: white
     }
+    .footer .footer_part_two{
+        padding-top:40px;
+    }
+        .footer .footer_part_two .footer_para {
+            color: #ffffffd9;
+            font-family: 'Montserrat';
+            line-height: 32px;
+        }
+
+
+    .footer .para_heading {
+        font-size: 21px;
+        font-weight: 700;
+        font-family: "Londrina Outline", sans-serif;
+        color: #f9de4b;
+        letter-spacing: 3px;
+    }
+    .footer ul{
+        padding-left:0px;
+        padding-top:18px;
+    }
+    .footer ul li {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        list-style:none;
+        margin-bottom:15px;
+    }
