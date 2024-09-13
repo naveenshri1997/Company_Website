@@ -52,7 +52,7 @@ const Footer = () => {
                             </div>
                             <div class="col-lg-4">
                                 
-                                <h3 class="para_heading">Services <span>Technologies</span></h3>
+                                <h3 class="para_heading">Our Services</h3>
                                 <ul>
                                     <li>React Native</li>
                                     <li>Angular</li>
