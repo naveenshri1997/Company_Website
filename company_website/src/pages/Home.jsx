@@ -8,14 +8,9 @@ import video from '../assets/1.mp4';
 import { Typewriter } from 'react-simple-typewriter'
 import EmblaCarousel from '../components/slider/EmblaCarousel'
 
-//import '../css/base.css'
-//import '../css/sandbox.css'
-//import '../css/embla.css'
 
 import '../assets/slider_css/slider.css'
-const OPTIONS = { loop: true }
-const SLIDE_COUNT = 5
-const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+
 const Home = () => {   
 
 const handleDone = () => {
@@ -64,7 +59,7 @@ const handleDone = () => {
             </div>            
             <About />
             <Services />
-            <Review slides={SLIDES} options={OPTIONS} />
+            <Review />
             <Footer />
         </>
     )

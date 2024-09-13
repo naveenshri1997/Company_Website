@@ -304,15 +304,25 @@ padding-bottom: 50px;
         margin-bottom:15px;
     }
 
-.embla {
-    overflow: hidden;
+.custom_slider_embla {
+    padding: 50px 0px;
+    background: black;
+    max-width: 100%;
+    color: white;
+    font-family: 'Montserrat';
+}
+.embla__slide__number {
+    font-size: 22px;
+}
+.custom_slider_embla .embla__dot {
+    background: white;
+    border-radius: 10px;
+    width: 51px;
+    height: 10px;
+    margin: 0px 6px;
 }
 
-.embla__container {
-    display: flex;
-}
-
-.embla__slide {
-    flex: 0 0 100%;
-    min-width: 0;
+.embla__viewport{
+        padding:20px 0px;
+/*    overflow:auto;*/
 }

@@ -11,7 +11,7 @@ const About = () => {
                        
                         <div className="col-lg-7 home_about_two">
                             <span className="londrina heading theme_color_two"
-                                style={{ textAlign: 'left', background: 'black', padding: '0px 10px' }}>About Us</span>
+                                style={{ fontWeight: 'bolder ', textAlign: 'left', background: 'black', padding: '0px 10px' }}>About Us</span>
                             <p className="about_title">Welcome to REIWA Technology Systems Pvt Ltd</p>                         
 
                             <p className="about_title" style={{lineHeight:'30px',marginBottom:'50px'}}>
@@ -24,7 +24,7 @@ const About = () => {
                                 that drive seamless digital transformation.
                             </p>
 
-                            <Link className='navbar_cus_main_btn  theme_color_two' to='/about'>Learn More</Link>
+                            <Link className='navbar_cus_main_btn  theme_color_two' to='/about' style={{ fontWeight: 'bolder ' } }>Learn More</Link>
                         </div>
                         <div className="col-lg-5 home_about_one" >
                             <img src={about} className="img-fluid" />

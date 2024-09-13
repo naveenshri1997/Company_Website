@@ -96,7 +96,7 @@ const Services = () => {
                             </div>                            
                         </div>
                         <div className="col-lg-5 home_service_two">
-                            <span className="londrina heading theme_color_two" style={{ textAlign: 'left', background: 'black', padding: '0px 10px' }}>Techologies</span>
+                            <span className="londrina heading theme_color_two" style={{ fontWeight: 'bolder ', textAlign: 'left', background: 'black', padding: '0px 10px' }}>Techologies</span>
                             <p className="service_title">We have expertise in various cutting-edge technologies.</p>
 
                             <div className="row">
