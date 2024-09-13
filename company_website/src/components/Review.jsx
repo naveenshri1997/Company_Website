@@ -60,8 +60,6 @@ const Review = () => {
         },
     ]
     const slides = SLIDE_COUNT;
-    console.log(slides);
-    //const { slides, options } = props
     const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()])
 
     const onNavButtonClick = useCallback((emblaApi) => {

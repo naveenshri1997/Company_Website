@@ -31,11 +31,11 @@ const handleDone = () => {
                                 <span  style={{ color: 'white', fontWeight: 'bold' }}>
                                 {/* Style will be inherited from the parent element */}
                                 <Typewriter
-                                        words={[' Web Development', ' Sleep', ' Code', ' Repeat!']}
+                                        words={[' Website Development Soultion', ' Ecommerce Solutions', ' Mobile Application Developmet']}
                                     loop={5}
                                     cursor
                                     cursorStyle='_'
-                                    typeSpeed={200}
+                                    typeSpeed={150}
                                     deleteSpeed={250}
                                     delaySpeed={1000}
                                     onLoopDone={handleDone}                
