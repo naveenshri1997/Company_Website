@@ -80,6 +80,7 @@ body {
     animation-duration: 0.7s;
     animation-name: fadeInDown;
     animation-timing-function: ease-out;
+    box-shadow: 3px 3px 18px 1px #3333339c;
 }
 
 @keyframes fadeInDown {
