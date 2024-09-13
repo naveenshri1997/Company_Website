@@ -303,3 +303,16 @@ padding-bottom: 50px;
         list-style:none;
         margin-bottom:15px;
     }
+
+.embla {
+    overflow: hidden;
+}
+
+.embla__container {
+    display: flex;
+}
+
+.embla__slide {
+    flex: 0 0 100%;
+    min-width: 0;
+}
