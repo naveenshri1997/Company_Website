@@ -59,9 +59,8 @@ const handleDone = () => {
             </div>            
             <About />
             <Services />
-            <Steps />
-
             <Review />
+            <Steps />
             <Footer />
         </>
     )
