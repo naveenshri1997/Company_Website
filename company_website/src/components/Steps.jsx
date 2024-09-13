@@ -7,7 +7,7 @@ const Steps = () => {
                         <span className="londrina heading theme_color_two" style={{ fontWeight: 'bolder ', background: 'white', padding: '0px 10px' }}>
                         Steps for your Success</span>
 
-                        <div className="row">
+                        <div className="row " style={{marginTop:'50px'}}>
                             <div className="col-lg-3">
                                 <div className="card card1">
                                     <h3 className="card_heading">Think out of the box</h3>
