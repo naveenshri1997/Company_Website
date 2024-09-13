@@ -305,14 +305,24 @@ padding-bottom: 50px;
     }
 
 .custom_slider_embla {
-    padding: 50px 0px;
-    background: black;
+    padding: 100px 0px;
+    background: #083576;
     max-width: 100%;
     color: white;
     font-family: 'Montserrat';
 }
 .embla__slide__number {
     font-size: 22px;
+}
+.embla_title {
+    margin-top: 10px;
+    font-size: 23px;
+    font-weight: 700;
+    border-bottom: 2px solid rgb(249, 222, 75);
+    display: inline-block;
+}
+.embla_designation {
+    font-size: 18px;
 }
 .custom_slider_embla .embla__dot {
     background: white;
@@ -324,5 +334,8 @@ padding-bottom: 50px;
 
 .embla__viewport{
         padding:20px 0px;
-/*    overflow:auto;*/
+}
+
+.embla__dot--selected {
+    background: rgb(249, 222, 75) !important;
 }

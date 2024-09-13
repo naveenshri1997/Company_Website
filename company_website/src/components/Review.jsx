@@ -20,19 +20,25 @@ const Review = () => {
             our e- commerce platform at DailyCoco.Their team's expertise in web development, SEO, and online 
             marketing has helped us to establish a strong online presence and grow our business.Their proactive
             approach and ability to deliver results on time and within budget 
-            have been commendable.I highly recommend Qualwebs for their commitment to driving success for their clients.`
+            have been commendable.I highly recommend Qualwebs for their commitment to driving success for their clients.`,
+            'author': 'Homesh',
+            'designation':'Kalpana Arts'
         },  
         {
             'id': 2,
             'data': `I highly recommend Qualwebs for their expertise and dedication in delivering digital solutions. Their 
             innovative approach and commitment to delivering on time and within budget have been instrumental in driving 
-            the success of our partnership.`
+            the success of our partnership.`,
+            'author': 'Dr. Subash Mishra',
+            'designation': 'Kriti Hospital'
         },
         {
             'id': 3,
             'data': `We highly recommend Qualwebs for their exceptional attention to detail, expertise, and commitment 
             to delivering results in developing our website at the Centre for Healing
-            Racism. They have been an invaluable partner.`
+            Racism. They have been an invaluable partner.`,
+            'author': 'Homesh',
+            'designation': 'Kalpana Arts'
         },
         {
             'id': 4,
@@ -41,12 +47,16 @@ const Review = () => {
             SEO, and online marketing has helped us to establish a strong online presence and grow our
             business. Their proactive approach and ability to deliver results on time and within budget 
             have been commendable. I highly recommend Qualwebs for their commitment
-            to driving success for their clients.`
+            to driving success for their clients.`,
+            'author': 'Homesh',
+            'designation': 'Kalpana Arts'
         },
         {
             'id': 5,
             'data': `Qualwebs is an excellent technology partner. Their team's expertise and dedication have been
-            crucial in developing our college management platform at eCampus. I highly recommend them.`
+            crucial in developing our college management platform at eCampus. I highly recommend them.`,
+            'author': 'Homesh',
+            'designation': 'Kalpana Arts'
         },
     ]
     const slides = SLIDE_COUNT;
@@ -78,7 +88,7 @@ const Review = () => {
     } = usePrevNextButtons(emblaApi, onNavButtonClick)
     return (
         <>  
-            <div className="row" style={{backgroundColor:'black',padding:'50px 0px 0px 50px'}}>
+            <div className="row" style={{ backgroundColor:'#083576',padding:'100px 0px 0px 50px'}}>
                 <div className="col-lg-12">
                     <h3 className="londrina heading " style={{ textAlign: 'left',fontWeight:'bolder ', background: '#f9de4b ', padding: '0px 10px', display:'inline-block' }}>
                         Here from our clinets.
@@ -95,6 +105,8 @@ const Review = () => {
                                 {slides.map((id) => (
                                     <div className="embla__slide" key={id}>
                                         <div className="embla__slide__number">{id.data}</div>
+                                        <div className="embla_title">{id.author}</div>
+                                        <div className="embla_designation">{id.designation}</div>
                                     </div>
                                 ))}
                             </div>
