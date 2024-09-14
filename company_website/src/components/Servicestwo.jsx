@@ -15,11 +15,11 @@ const Servicestwo = () => {
                     <div className="col-lg-11 text-center">
                         <div className="row">
                             <div className="col-md-12 home_service_one" >
-                                <h1 className="londrina heading theme_color_two"
+                                <h1 data-aos="fade-up" data-aos-duration="1600" className="londrina heading theme_color_two"
                                     style={{ fontWeight: 'bolder ', color: 'black', padding: '0px 10px' }}>Our <span
                                         style={{ color: '#f84525' }}>Services</span></h1>
                                 <div className="row" style={{marginTop:'50px'} }>
-                                    <div className="col-md-4">
+                                    <div data-aos="fade-up" data-aos-duration="1600" className="col-md-4">
                                         <div className="card card_back">
                                             <div className="card_content">
                                                 <img className="img-fluid cus-img" src={Webdevelopment} width="250px" />
@@ -30,7 +30,7 @@ const Servicestwo = () => {
                                         </div>
                                     </div>
 
-                                    <div className="col-md-4">
+                                    <div data-aos="fade-up" data-aos-duration="1600"  className="col-md-4">
                                         <div className="card card_back">
                                             <div className="card_content">
                                                 <img className="img-fluid cus-img" src={uiuxdesign} width="250px" />
@@ -41,7 +41,7 @@ const Servicestwo = () => {
                                         </div>
                                     </div>
 
-                                    <div className="col-md-4">
+                                    <div data-aos="fade-up" data-aos-duration="1600"  className="col-md-4">
                                         <div className="card card_back">
                                             <div className="card_content">
                                                 <img className="img-fluid cus-img" src={mobileappdevelopment} width="250px" />
@@ -52,7 +52,7 @@ const Servicestwo = () => {
                                         </div>
                                     </div>
 
-                                    <div className="col-md-4">
+                                    <div data-aos="fade-up" data-aos-duration="1600"  className="col-md-4">
                                         <div className="card card_back">
                                             <div className="card_content">
                                                 <img className="img-fluid cus-img" src={softwaredevelopment} width="250px" />
@@ -63,7 +63,7 @@ const Servicestwo = () => {
                                         </div>
                                     </div>
 
-                                    <div className="col-md-4">
+                                    <div data-aos="fade-up" data-aos-duration="1600"  className="col-md-4">
                                         <div className="card card_back">
                                             <div className="card_content">
                                                 <img className="img-fluid cus-img" src={digitaltransformation} width="250px" />
@@ -74,7 +74,7 @@ const Servicestwo = () => {
                                         </div>
                                     </div>
 
-                                    <div className="col-md-4">
+                                    <div data-aos="fade-up" data-aos-duration="1600"  className="col-md-4">
                                         <div className="card card_back">
                                             <div className="card_content">
                                                 <img className="img-fluid cus-img" src={devOps} width="250px" />
@@ -87,7 +87,7 @@ const Servicestwo = () => {
 
                                    
 
-                                    <div className="col-md-4">
+                                    <div data-aos="fade-up" data-aos-duration="1600"  className="col-md-4">
                                         <div className="card card_back">
                                             <div className="card_content">
                                                 <img className="img-fluid cus-img" src={softwaretesting} width="250px" />
@@ -98,7 +98,7 @@ const Servicestwo = () => {
                                         </div>
                                     </div>
                                     
-                                    <div className="col-md-4">
+                                    <div data-aos="fade-up" data-aos-duration="1600"  className="col-md-4">
                                         <div className="card card_back">
                                             <div className="card_content">
                                                 <img className="img-fluid cus-img" src={dataengineering} width="250px" />

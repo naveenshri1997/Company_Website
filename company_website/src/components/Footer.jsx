@@ -13,7 +13,7 @@ const Footer = () => {
                     <div className="col-lg-11 ">
                         <div className="row" style={{ borderBottom: '1px solid #f9de4b', paddingBottom: '20px', }}>
                             <h3>QUICK CONTACTS</h3>
-                            <div className="col-lg-4">
+                            <div data-aos="fade-left" data-aos-duration="1600"  className="col-lg-4">
                                 <div className="row footer_box">
                                     <div className=" col-md-auto mt-2">
                                         <img className="img-fluid footer_small_img" src={location} width="50px" />
@@ -22,7 +22,7 @@ const Footer = () => {
 
                                 </div>
                             </div>
-                            <div className="col-lg-4">
+                            <div data-aos="fade-up" data-aos-duration="1600"  className="col-lg-4">
                                 <div className="row footer_box">
                                     <div className=" col-md-auto mt-2">
                                         <img className="img-fluid footer_small_img" src={phone} width="50px" />
@@ -31,7 +31,7 @@ const Footer = () => {
 
                                 </div>
                             </div>
-                            <div className="col-lg-4">
+                            <div data-aos="fade-right" data-aos-duration="1600"  className="col-lg-4">
                                 <div className="row footer_box">
                                     <div className=" col-md-auto mt-2">
                                         <img className="img-fluid footer_small_img" src={email} width="50px" />

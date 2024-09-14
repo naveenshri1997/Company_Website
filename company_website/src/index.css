@@ -31,8 +31,11 @@ body {
     min-height: 100%;
     min-height: 100%;
     font-family: MontserratBold;
-}
 
+}
+    body[data-aos-duration='4000'] [data-aos], [data-aos][data-aos][data-aos-duration='4000'] {
+        transition-duration: 4000ms;
+    }
 .homepage_header {
     position: relative;
     top: 0px;
@@ -376,6 +379,7 @@ body {
         border: none;
         border-radius: 7px;
         min-height: 240px;
+        background: #f4f4f4;
     }
 
         .steps .card .card_heading {
@@ -386,7 +390,7 @@ body {
             font-size: 17px;
         }
 
-    .steps .card1 {
+/*    .steps .card1 {
         background: #c9dfff;
     }
 
@@ -400,7 +404,8 @@ body {
 
     .steps .card4 {
         background: #81fac2;
-    }
+    }*/
+
 
 .breadcrum {
     position: relative;

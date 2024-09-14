@@ -14,12 +14,19 @@ import Steps from '../components/Steps';
 
 import '../assets/slider_css/slider.css'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import React, { useState, useEffect } from "react";
+
 const Home = () => {   
 
 const handleDone = () => {
     console.log(`Done after 5 loops!`)
 }
-
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+    }, []);
     return (
         <>
             <div className="container-fluid homepage_header">
@@ -46,7 +53,7 @@ const handleDone = () => {
                             </span>
                             </h1>
 
-                            <h2 className="header_title">
+                            <h2 data-aos="fade-up" data-aos-duration="1600"  className="header_title">
                                 Work with the best team delivering excellence in
                                 Mobile App and Web Development.
                                 We revolutionize your Business Digitally!</h2>
@@ -60,7 +67,7 @@ const handleDone = () => {
                     </div>
                 </div>
             </div>            
-            <About />
+            <About /> 
             {/*<Services /> */}
             <Servicestwo />
             <Techologies />

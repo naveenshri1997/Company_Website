@@ -91,7 +91,7 @@ const Review = () => {
                     <div className="col-lg-12 text-center">
                         
                      
-                        <h1 className="londrina heading theme_color_two"
+                        <h1 data-aos="fade-up" data-aos-duration="1600"  className="londrina heading theme_color_two"
                             style={{ fontWeight: 'bolder ', color: 'black', padding: '0px 10px' }}>Here from <span
                                 style={{ color: '#f84525' }}>our clinets.</span></h1>
                     </div>
