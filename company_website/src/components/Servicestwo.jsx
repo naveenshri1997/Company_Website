@@ -15,8 +15,9 @@ const Servicestwo = () => {
                     <div className="col-lg-11 text-center">
                         <div className="row">
                             <div className="col-md-12 home_service_one" >
-                                <span className="londrina heading theme_color_two" style={{ fontWeight: 'bolder ', textAlign: 'left', background: 'black', padding: '0px 10px' }}>Our Services</span>
-
+                                <h1 className="londrina heading theme_color_two"
+                                    style={{ fontWeight: 'bolder ', color: 'black', padding: '0px 10px' }}>Our <span
+                                        style={{ color: '#f84525' }}>Services</span></h1>
                                 <div className="row" style={{marginTop:'50px'} }>
                                     <div className="col-md-4">
                                         <div className="card card_back">

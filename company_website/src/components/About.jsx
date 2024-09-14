@@ -10,8 +10,9 @@ const About = () => {
                     <div className="row">
                        
                         <div className="col-lg-7 home_about_two">
-                            <span className="londrina heading theme_color_two"
-                                style={{ fontWeight: 'bolder ', textAlign: 'left', background: 'black', padding: '0px 10px' }}>About Us</span>
+                            <h1 className="londrina heading theme_color_two"
+                                style={{ fontWeight: 'bolder ', textAlign: 'left',color:'black', padding: '0px 10px' }}>About <span
+                                    style={{ color: '#f84525' }}>Us</span></h1>
                             <p className="about_title">Welcome to REIWA Technology Systems Pvt Ltd</p>                         
 
                             <p className="about_title" style={{lineHeight:'30px',marginBottom:'50px'}}>

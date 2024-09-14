@@ -30,11 +30,10 @@ const Technologies = () => {
         <>
             <div className="container-fluid technologies">
                 <div className="row justify-content-center">
-                    <div className="col-lg-10">
-                        <span className="londrina heading theme_color_two" style={{
-                            fontWeight: 'bolder ',
-                            textAlign: 'left', background: 'black', padding: '0px 10px'
-                        }}>Technologies we use</span>
+                    <div className="col-lg-10">                       
+                        <h1 className="londrina heading theme_color_two"
+                            style={{ fontWeight: 'bolder ', color: 'black', padding: '0px 10px' }}>Technologies <span
+                                style={{ color: '#f84525' }}>we use</span></h1>
 
                         <div className="row justify-content-center">
                             <div className="col-md-2">

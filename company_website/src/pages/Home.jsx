@@ -29,7 +29,7 @@ const handleDone = () => {
                         <Navbar />  
 
                         <div className="content">                        
-                            <h1 className="londrina heading theme_color_two" style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}>
+                            <h1 className="londrina heading " style={{ color:'white',paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}>
                                  We Provide 
                                 <span  style={{ color: 'white', fontWeight: 'bold' }}>
                                 {/* Style will be inherited from the parent element */}

@@ -5,10 +5,11 @@ const Steps = () => {
                 <div className="row justify-content-center" >
                     <div className="col-lg-11 text-center">
                         
-                        <span className="londrina heading theme_color_two" style={{
-                            fontWeight: 'bolder ',
-                            textAlign: 'left', background: 'black', padding: '0px 10px'
-                        }}>Steps for your Success</span>
+                       
+                        <h1 className="londrina heading theme_color_two"
+                            style={{ fontWeight: 'bolder ', color: 'black', padding: '0px 10px' }}>Steps for <span
+                                style={{ color: '#f84525' }}>your Success</span></h1>
+
                         <div className="row " style={{marginTop:'50px'}}>
                             <div className="col-lg-3">
                                 <div className="card card1">

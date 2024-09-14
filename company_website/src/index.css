@@ -5,11 +5,10 @@
 .londrina {
     font-family: Montserrat;
     background:none !important;
-    color:black !important
 }
 
 .theme_color_two {
-    color: #f9de4b;
+    color: #f84525;
 }
 
 .bg-grey {
@@ -81,7 +80,7 @@ body {
 
 .navbar_custom {
     position: fixed;
-    background: black;
+    background: white;
     animation-duration: 0.7s;
     animation-name: fadeInDown;
     animation-timing-function: ease-out;
@@ -100,14 +99,16 @@ body {
     }
 }
 
-.navbar .navbar-nav .nav-link {
-    color: white;
+.navbar a {
     font-family: Montserrat;
     font-weight: 500;
     letter-spacing: 1px;
     font-size: 16px;
+    color:white !important;
 }
-
+.navbar_custom a{
+    color:black !important;
+}
 .overlay {
     position: static;
     width: 100%;
@@ -136,20 +137,20 @@ body {
 }
 
 .navbar_cus_btn {
-    background: #f9de4b;
-    border-radius: 10px;
-    color: black !important;
+    background: #f84525;
+    border-radius: 0px;
+    padding:10px 10px;
+    display:inline-block
 }
 
 .navbar_cus_main_btn {
-    background: #000000;
-    border-radius: 10px;
-    color: #ffc107 !important;
-    font-family: "Londrina Outline", sans-serif;
+    background: #f84525;
+    color: #ffffff !important;
+    font-family: 'Montserrat';
     font-size: 25px;
-    padding: 10px 20px;
+    padding: 8px 15px;
     margin-top: 30px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 
@@ -244,7 +245,6 @@ body {
 }
 
 .home_page_about .home_about_two {
-    background-image: linear-gradient(135deg, #f9de4b 10%, #f9de4b 100%);
     padding: 50px;
     padding-top: 70px;
     padding-bottom: 50px;
@@ -342,6 +342,7 @@ body {
     font-weight: 700;
     border-bottom: 2px solid rgb(249, 222, 75);
     display: inline-block;
+    color: #f84525;
 }
 
 .embla_designation {
@@ -500,12 +501,15 @@ body {
 
     .home_page_service_2 .service_title {
         color: white;
-        font-weight: 600;
-        font-size: 22px;
+        font-weight: 700;
+        font-size: 21px;
         text-align: left;
         margin-top: 20px;
+        transition: color .7s;
     }
-
+    .home_page_service_2 .card_content:hover .service_title {
+        color:red
+    }
     .home_page_service_2 .service_subtitle {
         color: white;
         font-size: 16px;
@@ -526,7 +530,7 @@ body {
     padding-bottom: 50px;
     text-align: center;
     font-family: 'Montserrat';
-    background: rgb(31, 34, 49);
+/*    background: rgb(31, 34, 49);*/
 }
 
     .technologies .card {

@@ -14,7 +14,7 @@ const Navbar = () => {
     return (
         <>
          
-            <nav className={`headerMain ${scroll ? "navbar navbar-expand-lg position_absolute navbar_custom " : "navbar navbar-expand-lg position_absolute "}`} 
+            <nav className={`headerMain ${scroll ? "navbar navbar-expand-lg position_absolute navbar_custom " : "navbar navbar-expand-lg position_absolute  "}`} 
                  >
                 <div class="container">
                     <a class="navbar-brand theme_color_two londrina" style={{ fontSize: '30px' }} href="#">LOGO HERE</a>
@@ -77,7 +77,7 @@ const Navbar = () => {
                                 <Link class="nav-link active" aria-current="page" to='/'>Career</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link navbar_cus_btn theme_color_two" style={{ marginLeft: '40px' }} to="/about">Contact Us</Link>
+                                <Link class="nav-link navbar_cus_btn" style={{ marginLeft: '40px',padding:'10px 20px' }} to="/about">Contact Us</Link>
                             </li>
                         </ul>
                       
