@@ -2,7 +2,9 @@ import Navbar from '../components/Navbar';
 import About from '../components/About';
 import Review from '../components/Review';
 import Footer from '../components/Footer';
-import Services from '../components/Services';
+//import Services from '../components/Services';
+import Servicestwo from '../components/Servicestwo';
+
 import bgimage from '../assets/bg2.png';
 import video from '../assets/1.mp4';
 import { Typewriter } from 'react-simple-typewriter'
@@ -58,7 +60,8 @@ const handleDone = () => {
                 </div>
             </div>            
             <About />
-            <Services />
+            {/*<Services /> */}
+            <Servicestwo />
             <Review />
             <Steps />
             <Footer />

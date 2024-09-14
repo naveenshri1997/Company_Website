@@ -8,7 +8,6 @@ import qa from '../assets/services/qa.png'
 import uiux from '../assets/services/uiux.png'
 import wordpress from '../assets/services/wordpress.png'
 
-
 const Services = () => {
     return (
         <div className="container-fluid home_page_service">
