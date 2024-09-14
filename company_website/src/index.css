@@ -3,7 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 
 .londrina {
-    font-family: "Londrina Outline", sans-serif;
+    font-family: Montserrat;
+    background:none !important;
+    color:black !important
 }
 
 .theme_color_two {
