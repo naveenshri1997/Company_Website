@@ -9,9 +9,11 @@
 .theme_color_two {
     color: #f9de4b;
 }
+
 .bg-grey {
     background: #f2f2f2 !important;
 }
+
 a {
     font-weight: 500;
     color: #646cff;
@@ -136,6 +138,7 @@ body {
     border-radius: 10px;
     color: black !important;
 }
+
 .navbar_cus_main_btn {
     background: #000000;
     border-radius: 10px;
@@ -152,31 +155,34 @@ body {
     /*    padding-top: 50px;
     padding-bottom: 50px;*/
 }
-.home_page_service .home_service_one {
-padding: 50px;
-padding-top: 70px; 
-padding-bottom: 50px;
-}
-    .home_page_service .home_service_two {        
-    background-image: linear-gradient(135deg, #f9de4b 10%, #f9de4b 100%);
-    padding-top:50px;
-    padding-bottom: 50px; 
-    padding-left:20px;
-}
-    
-.home_page_service .card {
-    position: relative;
-    min-height: 150px;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
+
+    .home_page_service .home_service_one {
+        padding: 50px;
+        padding-top: 70px;
+        padding-bottom: 50px;
+    }
+
+    .home_page_service .home_service_two {
+        background-image: linear-gradient(135deg, #f9de4b 10%, #f9de4b 100%);
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+    }
+
+    .home_page_service .card {
+        position: relative;
+        min-height: 150px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+
         .home_page_service .card::after {
             content: '';
             position: absolute;
             top: 0;
             right: 0;
             width: 0%;
-            height: 100%;   
+            height: 100%;
             background: #ffc107b0;
             z-index: 0;
             transition: width ease-in-out .5s;
@@ -200,35 +206,36 @@ padding-bottom: 50px;
             top: 50%;
             transform: translate(-50%,-50%);
             text-align: center;
-            z-index:1;
-        }      
+            z-index: 1;
+        }
 
-            .home_page_service .service_title {
-                font-size: 16px;
-                font-weight: 500;
-                font-family: 'Montserrat';
-            }
+    .home_page_service .service_title {
+        font-size: 16px;
+        font-weight: 500;
+        font-family: 'Montserrat';
+    }
 
     .home_page_service .service_heading {
         font-size: 21px;
         font-weight: 700;
         font-family: "Londrina Outline", sans-serif;
         color: #ff0404;
-        letter-spacing:3px;
+        letter-spacing: 3px;
     }
+
         .home_page_service .service_heading span {
             font-family: 'Montserrat';
             color: black;
             letter-spacing: 0px;
         }
-.home_page_service ul li {
-    font-family: 'Montserrat';
-    font-weight:500
-}
+
+    .home_page_service ul li {
+        font-family: 'Montserrat';
+        font-weight: 500
+    }
 
 
 .home_page_about .home_about_one {
-
     padding-top: 50px;
     padding-bottom: 50px;
     padding-left: 20px;
@@ -246,14 +253,16 @@ padding-bottom: 50px;
     font-weight: 500;
     font-family: 'Montserrat';
 }
+
 .footer {
     background: black;
     padding: 50px;
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
-    position:relative;
+    position: relative;
 }
+
     .footer:before {
         content: '';
         position: absolute;
@@ -262,25 +271,30 @@ padding-bottom: 50px;
         width: 100%;
         height: 100%;
         background: black;
-        opacity:0.8
+        opacity: 0.8
     }
-    .footer .footer_box{
-        padding:10px;
-        border-radius:10px;
+
+    .footer .footer_box {
+        padding: 10px;
+        border-radius: 10px;
     }
+
     .footer .footer_small_img {
         background: white;
         padding: 10px;
         border-radius: 5px;
     }
+
     .footer .footer_text {
         margin-top: 22px;
         font-family: 'Montserrat';
         color: white
     }
-    .footer .footer_part_two{
-        padding-top:40px;
+
+    .footer .footer_part_two {
+        padding-top: 40px;
     }
+
         .footer .footer_part_two .footer_para {
             color: #ffffffd9;
             font-family: 'Montserrat';
@@ -295,16 +309,18 @@ padding-bottom: 50px;
         color: #f9de4b;
         letter-spacing: 3px;
     }
-    .footer ul{
-        padding-left:0px;
-        padding-top:18px;
+
+    .footer ul {
+        padding-left: 0px;
+        padding-top: 18px;
     }
-    .footer ul li {
-        font-family: 'Montserrat';
-        font-weight: 500;
-        list-style:none;
-        margin-bottom:15px;
-    }
+
+        .footer ul li {
+            font-family: 'Montserrat';
+            font-weight: 500;
+            list-style: none;
+            margin-bottom: 15px;
+        }
 
 .custom_slider_embla {
     padding: 100px 0px;
@@ -313,9 +329,11 @@ padding-bottom: 50px;
     color: white;
     font-family: 'Montserrat';
 }
+
 .embla__slide__number {
     font-size: 22px;
 }
+
 .embla_title {
     margin-top: 10px;
     font-size: 23px;
@@ -323,9 +341,11 @@ padding-bottom: 50px;
     border-bottom: 2px solid rgb(249, 222, 75);
     display: inline-block;
 }
+
 .embla_designation {
     font-size: 18px;
 }
+
 .custom_slider_embla .embla__dot {
     background: white;
     border-radius: 10px;
@@ -334,71 +354,51 @@ padding-bottom: 50px;
     margin: 0px 6px;
 }
 
-.embla__viewport{
-        padding:20px 0px;
+.embla__viewport {
+    padding: 20px 0px;
 }
 
 .embla__dot--selected {
     background: rgb(249, 222, 75) !important;
 }
-.steps{
-    padding-top:100px;
-    padding-bottom:100px;
+
+.steps {
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
+
     .steps .card {
         font-family: 'Montserrat';
-        padding:20px;
-        border:none;
-        border-radius:7px;
-        min-height:240px;
+        padding: 20px;
+        border: none;
+        border-radius: 7px;
+        min-height: 240px;
     }
 
-    .steps .card .card_heading {
-        font-size:24px;
-    }
-.steps .card .card_para{
-    font-size:17px;
-}
-        .steps .card1 {
-            background: #c9dfff;
+        .steps .card .card_heading {
+            font-size: 24px;
         }
+
+        .steps .card .card_para {
+            font-size: 17px;
+        }
+
+    .steps .card1 {
+        background: #c9dfff;
+    }
+
     .steps .card2 {
         background: #ffef96ba;
     }
+
     .steps .card3 {
         background: #ffa093;
     }
+
     .steps .card4 {
         background: #81fac2;
     }
 
-.technologies {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    font-family: 'Montserrat';
-}
-    .technologies .card {
-        position: relative;
-        min-height: 150px;
-        overflow: hidden;
-        margin-bottom: 20px;
-    }
-
-    .technologies .card .card_content{
-        padding:20px;
-        margin:10px;
-    }
-.technologies .nav .nav-link{
-    color:black;
-    font-weight:bolder;
-    margin:15px 0px;
-}
-
-.technologies ul li{
-    display:block;
-    width:100%;
-}
 .breadcrum {
     position: relative;
     background: red;
@@ -409,6 +409,7 @@ padding-bottom: 50px;
     font-size: 25px;
     font-family: 'Montserrat' !important;
 }
+
     .breadcrum::after {
         content: '';
         position: absolute;
@@ -420,40 +421,45 @@ padding-bottom: 50px;
         opacity: 0.8
     }
 
-.about_us_page_sec{
-    padding-top:50px;
-    padding-bottom:50px;
+.about_us_page_sec {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
     .about_us_page_sec .title {
         font-family: 'Montserrat';
-        font-weight:600;
-        font-size:23px;
+        font-weight: 600;
+        font-size: 23px;
     }
+
     .about_us_page_sec .subtitle {
         font-family: 'Montserrat';
         font-weight: 400;
         font-size: 17px;
     }
-    .corevalues {
-        padding-top:50px;
-        padding-bottom:50px;
-    }
-.corevalues .card {
-    font-family: 'Montserrat';
-    padding:20px;
-    margin-bottom:20px;
-    text-align:left;
+
+.corevalues {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
-.corevalues .card h3{
-    font-weight:600;
-    margin-top:10px;
+    .corevalues .card {
+        font-family: 'Montserrat';
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+        .corevalues .card h3 {
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+.home_page_service_2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
-.home_page_service_2{
-    padding-top:50px;
-    padding-bottom:50px;
-}
+
     .home_page_service_2 .card_back {
         background: #07074d;
         position: relative;
@@ -463,7 +469,7 @@ padding-bottom: 50px;
         height: 500px;
         margin-left: 20px;
         margin-right: 20px;
-        margin-bottom:50px;
+        margin-bottom: 50px;
     }
 
     .home_page_service_2 .card_content {
@@ -489,22 +495,49 @@ padding-bottom: 50px;
             transform: rotateY(-18deg);
             transition: transform .8s;
         }
-    .home_page_service_2 .service_title{
-        color:white;
-        font-weight:600;
-        font-size:22px;
-        text-align:left;
-            margin-top:20px;
+
+    .home_page_service_2 .service_title {
+        color: white;
+        font-weight: 600;
+        font-size: 22px;
+        text-align: left;
+        margin-top: 20px;
     }
+
     .home_page_service_2 .service_subtitle {
         color: white;
         font-size: 16px;
         text-align: left
     }
+
     .home_page_service_2 .card_content img {
         transform: scale(1);
         transition: transform .7s;
     }
+
     .home_page_service_2 .card_content:hover img {
         transform: scale(1.1);
     }
+
+.technologies {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: 'Montserrat';
+    background: rgb(31, 34, 49);
+}
+
+    .technologies .card {
+        transform: scale(1);
+        transition: transform .3s;
+        background: rgb(31, 34, 49);
+        border: none;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+        .technologies .card:hover {
+            transform: scale(1.3);
+        }
+
+    

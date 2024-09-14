@@ -88,10 +88,12 @@ const Review = () => {
         <>  
             <div className="container-fluid">
                 <div className="row" style={{ backgroundColor: '#083576', padding: '100px 0px 0px 50px' }}>
-                    <div className="col-lg-12">
-                        <h3 className="londrina heading " style={{ textAlign: 'left', fontWeight: 'bolder ', background: '#f9de4b ', padding: '0px 10px', display: 'inline-block' }}>
-                            Here from our clinets.
-                        </h3>
+                    <div className="col-lg-12 text-center">
+                        
+                        <span className="londrina heading theme_color_two" style={{
+                            fontWeight: 'bolder ',
+                            textAlign: 'left', background: 'black', padding: '0px 10px'
+                        }}> Here from our clinets.</span>
                     </div>
                 </div>
             </div>

@@ -106,9 +106,7 @@ const Servicestwo = () => {
                                                     programming languages</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    
-
+                                    </div>                                    
                                 </div>
                             </div>
                         </div>

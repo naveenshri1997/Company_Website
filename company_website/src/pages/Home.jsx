@@ -4,6 +4,7 @@ import Review from '../components/Review';
 import Footer from '../components/Footer';
 //import Services from '../components/Services';
 import Servicestwo from '../components/Servicestwo';
+import Techologies from '../components/Techologies';
 
 import bgimage from '../assets/bg2.png';
 import video from '../assets/1.mp4';
@@ -62,8 +63,10 @@ const handleDone = () => {
             <About />
             {/*<Services /> */}
             <Servicestwo />
-            <Review />
+            <Techologies />
             <Steps />
+            <Review />
+
             <Footer />
         </>
     )
