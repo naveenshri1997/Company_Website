@@ -599,9 +599,9 @@ body {
         font-weight: 500;
     }
 
-.jobs .job-card a{
-    float:right;    
-    padding:10px 30px;
-    background:#f84525;
-    color:white;
-}
+    .jobs .job-card a {
+        float: right;
+        padding: 10px 30px;
+        background: #f84525;
+        color: white;
+    }
