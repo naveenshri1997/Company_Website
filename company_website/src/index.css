@@ -102,7 +102,15 @@ body {
     animation-timing-function: ease-out;
     box-shadow: 3px 3px 18px 1px #3333339c;
 }
+.mobile_logo {
+    font-size: 30px;
+    font-weight: 700;
+}
+.mobile_logo_sub {
 
+    font-size: 30px;
+    font-weight:500;
+}
 @keyframes fadeInDown {
     0% {
         opacity: 0;
@@ -119,7 +127,6 @@ body {
     font-family: Montserrat;
     font-weight: 500;
     letter-spacing: 1px;
-    font-size: 16px;
     color:white !important;
 }
 .navbar_custom a{
@@ -675,3 +682,12 @@ body {
         background: #f84525;
         color: white;
     }
+
+@media only screen and (max-width: 601px) {
+   .mobile_heading{
+       font-size:26px;
+   }
+    .mobile_logo {
+        font-size:19px;
+    }
+}

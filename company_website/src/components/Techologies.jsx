@@ -31,7 +31,7 @@ const Technologies = () => {
             <div className="container-fluid technologies">
                 <div className="row justify-content-center">
                     <div className="col-lg-10">                       
-                        <h1 data-aos="fade-up" data-aos-duration="1600" className="londrina heading theme_color_two"
+                        <h1 data-aos="fade-up" data-aos-duration="1600" className="mobile_heading londrina heading theme_color_two"
                             style={{ fontWeight: 'bolder ', color: 'black', padding: '0px 10px' }}>Technologies <span
                                 style={{ color: '#f84525' }}>we use</span></h1>
 

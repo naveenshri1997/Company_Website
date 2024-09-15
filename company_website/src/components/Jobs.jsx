@@ -11,7 +11,7 @@ const Jobs = () => {
                 {/*</ul>*/}
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
-                        <h1 data-aos="fade-up" data-aos-duration="1600" className="londrina heading theme_color_two"
+                        <h1 data-aos="fade-up" data-aos-duration="1600" className="mobile_heading londrina heading theme_color_two"
                             style={{ fontWeight: 'bolder ', color: 'black', padding: '0px 10px' }}>Current Jobs<span
                                 style={{ color: '#f84525' }}> Openings.</span></h1>
                         <div className="card job-card" style={{marginTop:"50px"}}>
