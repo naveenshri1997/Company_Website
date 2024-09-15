@@ -67,7 +67,13 @@ const handleDone = () => {
                     </div>
                 </div>
             </div>            
+            <About />
+            <Servicestwo />
+            <Techologies />
+            <Steps />
+            <Review />
 
+            <Footer />
         </>
     )
 }
