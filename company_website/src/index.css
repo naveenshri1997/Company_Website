@@ -456,6 +456,7 @@ body {
     background-size: cover;
     font-size: 25px;
     font-family: 'Montserrat' !important;
+    overflow-x:clip;
 }
 
     .breadcrum::after {
@@ -469,11 +470,23 @@ body {
         opacity: 0.8
     }
 
+    .breadcrum::before {
+        content: '';
+        position: absolute;
+        left: -8%;
+        bottom: -9%;
+        width: 112%;
+        height: 102px;
+        background: #f84525;
+        transform: rotateZ(3deg);
+        z-index: 0;
+    }    
 .about_us_page_sec {
-    padding-top: 50px;
+    padding-top: 120px;
     padding-bottom: 50px;
     position:relative;
     overflow-x:clip;
+    z-index:-1;
 }
     .about_us_page_sec::after {
         content: '';
@@ -633,7 +646,7 @@ body {
 }
 .jobs{
     padding-top:50px;
-    padding-bottom:150px;
+    padding-bottom:170px;
 }
 
 .jobs .job-card{

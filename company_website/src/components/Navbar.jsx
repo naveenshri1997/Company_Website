@@ -1,4 +1,5 @@
 import bgimage from '../assets/11.jpeg';
+import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
 
@@ -17,7 +18,7 @@ const Navbar = () => {
             <nav className={`headerMain ${scroll ? "navbar navbar-expand-lg position_absolute navbar_custom " : "navbar navbar-expand-lg position_absolute  "}`} 
                  >
                 <div class="container">
-                    <a class="navbar-brand theme_color_two londrina" style={{ fontSize: '30px' }} href="#">LOGO HERE</a>
+                    <a class="navbar-brand theme_color_two londrina" style={{ fontSize: '30px', fontWeight: '700' }} href="#"><img src={logo} className="img-fluid" width="50px" /> White<span style={{ color: '#f84525' }}>Web </span><span style={{ fontSize: '30px',fontWeight:'500' }} >Tech</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
