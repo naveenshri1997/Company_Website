@@ -86,7 +86,7 @@ const Review = () => {
     } = usePrevNextButtons(emblaApi, onNavButtonClick)
     return (
         <>  
-            <div className="container-fluid">
+            <div className="container-fluid custom_review" >
                 <div className="row" style={{ backgroundColor: '#083576', padding: '100px 0px 0px 50px' }}>
                     <div className="col-lg-12 text-center">
                         
