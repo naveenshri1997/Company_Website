@@ -437,13 +437,14 @@ body {
     .about_us_page_sec .title {
         font-family: 'Montserrat';
         font-weight: 600;
-        font-size: 23px;
+        font-size: 22px;
+        margin-bottom: 15px;
     }
 
     .about_us_page_sec .subtitle {
         font-family: 'Montserrat';
         font-weight: 400;
-        font-size: 17px;
+        font-size: 16px;
     }
 
 .corevalues {
@@ -456,6 +457,7 @@ body {
         padding: 20px;
         margin-bottom: 20px;
         text-align: left;
+        height:250px;
     }
 
         .corevalues .card h3 {
@@ -551,4 +553,24 @@ body {
             transform: scale(1.3);
         }
 
-    
+.mission .mission_box {
+    padding: 80px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+    .mission .mission_box .card{
+          padding:40px 30px;
+          border:none;
+    }
+
+    .mission .mission_box .title {
+        font-family: 'Montserrat';
+        font-size: 23px;
+    }
+
+.mission .subtitle {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    font-weight:500;
+}

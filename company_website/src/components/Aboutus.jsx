@@ -6,10 +6,10 @@ const Aboutus = () => {
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="col-lg-5">
                                 <img src={aboutus} className="img-fluid" />
                             </div>
-                            <div className="col-lg-6">
+                            <div className="col-lg-7">
                                 <h3 className="title">Qualwebs is a software development company that specializes in creating impactful solutions
                                     through the use of technology, including design, development, and maintenance services.</h3>
                                 <div className="row">

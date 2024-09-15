@@ -10,13 +10,14 @@ const Corevalues = () => {
         <>
             <div className="container-fluid corevalues">
                 <div className="row justify-content-center">
-                    <div className="col-lg-10 text-center">
-                        <h1 class="londrina heading " style={{fontWeight: "bolder",
-                            fontSize: '48px', color: 'white', background: "rgb(249, 222, 75)", display:'inline-block',marginBottom:'50px'
-                        }}>Our Core Values</h1> 
+                    <div className="col-lg-10 text-center">                       
 
-                        <div className="row">
-                            <div className="col-lg-4">
+                        <h1 data-aos="fade-up" data-aos-duration="1600" className="londrina heading theme_color_two"
+                            style={{ fontWeight: 'bolder ', color: 'black', padding: '0px 10px' }}>Our Core<span
+                                style={{ color: '#f84525' }}>Values.</span></h1>
+
+                        <div className="row" style={{marginTop:'50px'} }>
+                            <div data-aos="fade-left" data-aos-duration="1600" className="col-lg-4">
                                 <div className="card">
                                     <img src={accountability } className="img-fluid" width="70px" />
                                     <h3>Accountability</h3>
@@ -24,7 +25,7 @@ const Corevalues = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-4">
+                            <div data-aos="fade-up" data-aos-duration="1600" className="col-lg-4">
                                 <div className="card">
                                     <img src={equity} className="img-fluid" width="70px" />
                                     <h3>Equity</h3>
@@ -32,7 +33,7 @@ const Corevalues = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-4">
+                            <div data-aos="fade-right" data-aos-duration="1600" className="col-lg-4">
                                 <div className="card">
                                     <img src={innovation} className="img-fluid" width="70px" />
                                     <h3>Innovation</h3>
@@ -40,14 +41,14 @@ const Corevalues = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-4">
+                            <div data-aos="fade-right" data-aos-duration="1600"className="col-lg-4">
                                 <div className="card">
                                     <img src={integrity} className="img-fluid" width="70px" />
                                     <h3>Integrity</h3>
                                     <p>We do the right thing with honesty.</p>
                                 </div>
                             </div>
-                            <div className="col-lg-4">
+                            <div data-aos="fade-up" data-aos-duration="1600" className="col-lg-4">
                                 <div className="card">
                                     <img src={peoplefocused} className="img-fluid" width="70px" />
                                     <h3>People focused</h3>
@@ -55,7 +56,7 @@ const Corevalues = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-4">
+                            <div data-aos="fade-left" data-aos-duration="1600" className="col-lg-4">
                                 <div className="card">
                                     <img src={communication} className="img-fluid" width="70px" />
                                     <h3>Communication</h3>
