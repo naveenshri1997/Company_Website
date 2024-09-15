@@ -23,64 +23,13 @@ const Aboutus = () => {
                                             product with the same level of care and attention that we give our own products.
                                         </p>
                                     </div>
-                                    {/*<div className="col-lg-6">*/}
-                                    {/*    <p className="subtitle">*/}
-                                    {/*        Qualwebs services are designed to help companies scale up their development*/}
-                                    {/*        capabilities while improving productivity, optimizing*/}
-                                    {/*        costs, and maintaining quality.*/}
-                                    {/*    </p>*/}
-
-                                    {/*    <a class="display-block text-primary" href="/services/software-development">*/}
-                                    {/*        <p class="border-primary">Software Development Services</p></a>*/}
-
-                                    {/*    <a class="display-block text-primary" href="/services/ui-ux-design">*/}
-                                    {/*        <p class="border-primary">Product Strategy, UX / UI Services</p></a>*/}
-
-                                    {/*    <a class="display-block text-primary" href="/services/digital-transformation">*/}
-                                    {/*        <p class="border-primary">Digital Transformation Services</p></a>*/}
-
-                                    {/*    <a class="display-block text-primary" href="/services/data-engineering">*/}
-                                    {/*        <p class="border-primary">Data Engineering Services</p></a>*/}
-                                    {/*</div>*/}
+                                  
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>            
-            {/* <div class="container-fluid">
-                    <div className="row">
-                        <div class="col-12 content vision-content">
-                            <div class="row">
-                                <div class="col-md-7">
-                                    <div class="col-12 card card-float aos-init aos-animate" data-aos="fade-up">
-                                        <h4 class="title-sec dark fw-bold"><span class="text-primary">Our Vision</span><b>.</b></h4>
-                                        <p class="mb-0">Be the ultimate choice for focused clients &amp;
-                                            quality-driven technology enthusiasts around the globe!</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div class="col-12 content mission-content mb-0">
-                            <div class="row justify-content-end">
-                                <div class="col-md-7">
-                                    <div class="col-12 card card-float aos-init aos-animate" data-aos="fade-up">
-                                        <h4 class="title-sec dark">
-                                            <span class="text-primary fw-bold">Mission</span><b>.</b>
-                                        </h4>
-                                        <p class="mb-0">At Qualwebs, our mission is dedicated to delivering innovative, effective, and efficient IT
-                                            solutions/services to entrepreneurs &amp; enterprises around the globe with integrity and
-                                            accountability using potential innovatively. We strive to be: Diversified workplace |
-                                            Optimistic &amp; Solution driven Mindset Global Reach | Healthy Workplace |
-                                            Quality Guaranteed</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>               
-            </div> */}
+            </div>                       
         </>
     )
 }

@@ -17,7 +17,7 @@ const About = () => {
                                     style={{ color: '#f84525' }}>Us</span></h1>
                             <p data-aos="fade-right" data-aos-duration="1200"  className="about_title">Welcome to REIWA Technology Systems Pvt Ltd</p>                         
 
-                            <p data-aos="fade-up" data-aos-duration="1200" className="about_title" style={{lineHeight:'30px',marginBottom:'50px'}}>
+                            <p data-aos="fade-up" data-aos-duration="1200" className="about_title">
                                 At Qualwebs, we distinguish ourselves through a combination of expertise, innovation, and commitment to quality.
                                 Qualwebs harnesses cutting-edge technologies including blockchain, web3, machine learning, and artificial
                                 intelligence to provide innovative solutions for our clients. Backed by an experienced team of IT Engineers

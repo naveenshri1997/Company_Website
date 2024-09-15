@@ -36,27 +36,27 @@ const Technologies = () => {
                                 style={{ color: '#f84525' }}>we use</span></h1>
 
                         <div className="row justify-content-center">
-                            <div data-aos="fade-left" data-aos-duration="1600" className="col-md-2">
+                            <div data-aos="fade-left" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={angular} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-left" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-left" data-aos-duration="1600"  className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={aws} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-up" data-aos-duration="1600" className="col-md-2">
+                            <div data-aos="fade-up" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={azure} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-right" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-right" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={c} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-right" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-right" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={css} className="img-fluid" />
                                 </div>
@@ -64,27 +64,27 @@ const Technologies = () => {
                         </div>
 
                         <div className="row justify-content-center">
-                            <div data-aos="fade-left" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-left" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={firebase} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-left" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-left" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={flutter} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-up" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-up" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={googlecloud} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-right" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-right" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={html} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-right" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-right" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={jquery} className="img-fluid" />
                                 </div>
@@ -92,27 +92,27 @@ const Technologies = () => {
                         </div>
 
                         <div className="row justify-content-center">
-                            <div data-aos="fade-left" data-aos-duration="1600" className="col-md-2">
+                            <div data-aos="fade-left" data-aos-duration="1600" className="col-md-2  col-4">
                                 <div className="card">
                                     <img src={laravel} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-left" data-aos-duration="1600" className="col-md-2">
+                            <div data-aos="fade-left" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={magento} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-up" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-up" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={mysql} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-right" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-right" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={node} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-right" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-right" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={php} className="img-fluid" />
                                 </div>
@@ -120,27 +120,27 @@ const Technologies = () => {
                         </div>
 
                         <div className="row justify-content-center">
-                            <div data-aos="fade-left" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-left" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={react} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-left" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-left" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={salesforce} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-up" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-up" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={sass} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-right" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-right" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={service_now} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-right" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-right" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={shopify} className="img-fluid" />
                                 </div>
@@ -148,22 +148,22 @@ const Technologies = () => {
                         </div>
 
                         <div className="row justify-content-center">
-                            <div data-aos="fade-left" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-left" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={swift} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-left" data-aos-duration="1600"  className="col-md-2">
+                            <div data-aos="fade-left" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={symphony} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-right" data-aos-duration="1600" className="col-md-2">
+                            <div data-aos="fade-right" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={vue} className="img-fluid" />
                                 </div>
                             </div>
-                            <div data-aos="fade-right" data-aos-duration="1600" className="col-md-2">
+                            <div data-aos="fade-right" data-aos-duration="1600" className="col-md-2 col-4">
                                 <div className="card">
                                     <img src={wordpress} className="img-fluid" />
                                 </div>

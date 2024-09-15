@@ -281,6 +281,8 @@ body {
     font-size: 16px;
     font-weight: 500;
     font-family: 'Montserrat';
+    line-height: 30px;
+    margin-bottom:50px;
 }
 
 .footer {
@@ -693,5 +695,60 @@ body {
    }
     .mobile_logo {
         font-size:19px;
+    }
+
+    .header_title {
+        color: white;
+        font-family: 'Montserrat';
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .home_page_about .home_about_two {
+        padding-top: 40px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align:justify;
+    }
+
+    .home_page_about .home_about_one {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+    }
+    .home_page_about .about_title {
+        font-size: 15px;
+        font-weight: 500;
+        font-family: 'Montserrat';
+        line-height: 25px;
+        margin-bottom: 34px;
+    }
+    .home_page_service_2 {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+        .home_page_service_2 .card_back {
+          
+            height: 430px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 50px;
+        }
+
+        .home_page_service_2 .card_content img{
+            width:185px;
+        }
+    .technologies {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        font-family: 'Montserrat';
+    }
+    .steps {
+        padding-top: 10px;
+        padding-bottom: 50px;
     }
 }
