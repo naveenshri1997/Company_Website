@@ -13,7 +13,7 @@ const Jobs = () => {
                     <div className="col-lg-10">
                         <h1 data-aos="fade-up" data-aos-duration="1600" className="londrina heading theme_color_two"
                             style={{ fontWeight: 'bolder ', color: 'black', padding: '0px 10px' }}>Current Jobs<span
-                                style={{ color: '#f84525' }}>Openings.</span></h1>
+                                style={{ color: '#f84525' }}> Openings.</span></h1>
                         <div className="card job-card" style={{marginTop:"50px"}}>
                             <div className="row">
                                 <div className="col-lg-8">
