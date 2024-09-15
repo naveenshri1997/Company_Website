@@ -10,6 +10,7 @@ import viteLogo from '/vite.svg'
 import Home from './pages/Home'
 import Aboutpage from './pages/Aboutpage'
 import './App.css'
+import Careerpage from './pages/Careerpage';
 
 function App() {
 
@@ -18,7 +19,8 @@ function App() {
           
           <Routes>
               <Route path='/' element={<Home />} />
-              <Route path='/about' element={<Aboutpage /> } />
+              <Route path='/about' element={<Aboutpage />} />
+              <Route path='/career' element={<Careerpage />} />
           </Routes>
     </>
   )
