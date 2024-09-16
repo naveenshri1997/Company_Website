@@ -888,7 +888,7 @@ body {
         top: -8%;
         left: -2%;
         width: 112%;
-        height: 128px;
+        height: 138px;
         background: #000;
         transform: rotate(3deg);
         z-index: 0;
@@ -908,7 +908,7 @@ body {
         left: -8%;
         bottom: -13%;
         width: 112%;
-        height: 166px;
+        height: 169px;
         background: rgb(223, 236, 255);
         transform: rotateZ(3deg);
         z-index: 0;
