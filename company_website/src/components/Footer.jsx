@@ -50,7 +50,7 @@ const Footer = () => {
                         </div>
                         <div class="row footer_part_two">
                             <div class="col-lg-5 col-sm-12">
-                                <a class="mobile_logo navbar-brand theme_color_two londrina" href="#"><img src={logo}
+                                <a class="mobile_logo navbar-brand" href="#"><img src={logo}
                                     className="img-fluid" width="50px" /> White<span style={{ color: '#f84525' }}>Web </span><span className="mobile_logo_sub">Tech</span></a>                              
                                 <p class="footer_para">We have advanced skills & resources to create large-scale solutions as
                                     well as guide startups from idea to profit. We offer customized software
