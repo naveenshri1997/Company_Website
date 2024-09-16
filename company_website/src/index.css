@@ -374,7 +374,17 @@ body {
     font-size: 23px;
     color:#f84525;
 }
-
+.social_icon{
+    padding:0px;
+}
+.social_icon li{
+    list-style:none;
+    float:left;
+    margin-right:20px;
+}
+    .social_icon li img {
+        width:30px;
+    }
 .custom_slider_embla {
     padding: 100px 0px;
     padding-bottom: 170px;

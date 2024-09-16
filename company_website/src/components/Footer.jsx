@@ -4,6 +4,11 @@ import email from '../assets/footer/email.png'
 import map from '../assets/map.png'
 import logo from '../assets/logo.png';
 
+import whatsapp from '../assets/whatsapp.png'
+import linkedin from '../assets/linkedin.png'
+import insta from '../assets/instagram.png'
+import facebook from '../assets/facebook.png'
+
 const Footer = () => {
     const styleone = {
         backgroundImage: `url('${map}')`,
@@ -52,6 +57,15 @@ const Footer = () => {
                                     development in Indore. Fovty Solutions, a prominent provides Web Development,
                                     online marketing, cloud marketing, AI, online streaming, etc. Fovty Solutions in
                                     Indore has merged to serve the education and healthcare industries.</p>
+
+                                <ul className="social_icon">
+                                    <li><a><img src={linkedin} className="img-fluid" width="" /></a></li>     
+                                    <li><a><img src={whatsapp} className="img-fluid" width="" /></a></li>     
+                               
+                                    <li><a><img src={insta} className="img-fluid" width="" /></a></li>     
+                                    <li><a><img src={facebook} className="img-fluid" width="" /></a></li>     
+
+                               </ul>
                             </div>
                             <div class="col-lg-4 col-sm-6">
                                 
