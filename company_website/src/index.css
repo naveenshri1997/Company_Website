@@ -711,7 +711,10 @@ body {
         background: #f84525;
         color: white;
     }
-
+.dropdown-item {
+    font-size: 21px;
+    font-family: Montserrat;
+}
 @media only screen and (max-width: 601px) {
    .mobile_heading{
        font-size:26px;
@@ -858,7 +861,10 @@ body {
         padding-bottom: 200px;
         max-width: 100%;
     }
-
+    .navbar-nav{
+        background:white;
+    }
+        
     }
 
 @media only screen and (max-width: 1037px) {
@@ -907,5 +913,32 @@ body {
         min-height: 222px;
         background: #f4f4f4;
         margin-bottom: 25px;
+    }
+    .navbar-nav .nav-link {
+        font-family: Montserrat;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: black !important;
+        font-size: 16px;
+    }
+    .position_absolute {
+        width: 100%;
+        left: 0px;
+        z-index: 992;
+        padding: 20px 0px;
+/*        background-color: transparent;*/
+        color: white;
+        top: 0px;
+        position: fixed;
+    }
+    .dropdown-menu {
+        border: none;
+        background: #f0f0f0;
+        border-radius: 0px;
+    }
+    .dropdown-item {
+        font-size: 21px;
+        font-family: Montserrat;
+        font-size: 16px;
     }
 }
