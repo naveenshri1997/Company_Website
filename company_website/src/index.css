@@ -127,15 +127,15 @@ body {
     }
 }
 
-.navbar a {
+.navbar-nav .nav-link {
     font-family: Montserrat;
     font-weight: 500;
     letter-spacing: 1px;
-    color:white !important;
-    font-size:17px;
+    color: white !important;
+    font-size: 17px;
 }
-.navbar_custom a{
-    color:black !important;
+.navbar_custom .navbar-nav .nav-link {
+    color: black !important;
 }
 .overlay {
     position: static;
@@ -698,7 +698,10 @@ body {
     .mobile_logo {
         font-size:19px;
     }
-
+    .mobile_logo_sub {
+        font-size: 19px;
+        font-weight: 500;
+    }
     .header_title {
         color: white;
         font-family: 'Montserrat';
@@ -733,11 +736,10 @@ body {
         padding-bottom: 20px;
     }
         .home_page_service_2 .card_back {
-          
             height: 430px;
             margin-left: 5px;
             margin-right: 5px;
-            margin-bottom: 50px;
+            margin-bottom: 35px;
         }
 
         .home_page_service_2 .card_content img{
@@ -773,14 +775,33 @@ body {
         transform: rotateZ(3deg);
         z-index: 0;
     }
-  
+    .navbar_cus_main_btn {
+        background: #f84525;
+        color: #ffffff !important;
+        font-family: 'Montserrat';
+        font-size: 17px;
+        padding: 6px 11px;
+        margin-top: 30px;
+        letter-spacing: 1px;
+    }
 }
 
 @media only screen and (max-width: 1037px) {
-    .navbar a {
+    .navbar-nav .nav-link {
         font-family: Montserrat;
         font-weight: 500;
         letter-spacing: 1px;
         font-size: 15px;
+        padding-left:3px !important;
+
+    }
+}
+
+@media only screen and (max-width: 996px) {
+     .navbar-nav .nav-link {
+        font-family: Montserrat;
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 11px;
     }
 }
