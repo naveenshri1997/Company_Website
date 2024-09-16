@@ -87,7 +87,7 @@ const Review = () => {
     return (
         <>  
             <div className="container-fluid custom_review" >
-                <div className="row" style={{ backgroundColor: '#083576', padding: '100px 0px 0px 50px' }}>
+                <div className="row">
                     <div className="col-lg-12 text-center">
                         
                      
@@ -102,7 +102,7 @@ const Review = () => {
             <section className="embla container-fluid custom_slider_embla">
                 <div className="row justify-content-center" style={{ margin: '0px' }}>
                     
-                    <div className="col-lg-8">
+                    <div className="col-lg-8 col-sm-10 col-xs-10">
                         <div className="embla__viewport" ref={emblaRef}>
                             <div className="embla__container">
                                 {slides.map((id) => (
