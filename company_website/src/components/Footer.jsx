@@ -2,6 +2,8 @@ import phone from '../assets/footer/phone.png'
 import location from '../assets/footer/location.png'
 import email from '../assets/footer/email.png'
 import map from '../assets/map.png'
+import logo from '../assets/logo.png';
+
 const Footer = () => {
     const styleone = {
         backgroundImage: `url('${map}')`,
@@ -12,7 +14,7 @@ const Footer = () => {
                 <div className="row justify-content-center" style={{ position: 'relative' }}>
                     <div className="col-lg-11 ">
                         <div className="row" style={{ borderBottom: '1px solid #f9de4b', paddingBottom: '20px', }}>
-                            <h3>QUICK CONTACTS</h3>
+                            <h1 class="footer_title">QUICK CONTACTS</h1>
                             <div data-aos="fade-left" data-aos-duration="1600"  className="col-lg-4">
                                 <div className="row footer_box">
                                     <div className=" col-md-auto mt-2">
@@ -42,15 +44,16 @@ const Footer = () => {
                             </div>
                         </div>
                         <div class="row footer_part_two">
-                            <div class="col-lg-4">
-                                <a class="navbar-brand theme_color_two londrina" style={{ fontSize: '30px' }} href="#">LOGO HERE</a>
+                            <div class="col-lg-5 col-sm-12">
+                                <a class="mobile_logo navbar-brand theme_color_two londrina" href="#"><img src={logo}
+                                    className="img-fluid" width="50px" /> White<span style={{ color: '#f84525' }}>Web </span><span className="mobile_logo_sub">Tech</span></a>                              
                                 <p class="footer_para">We have advanced skills & resources to create large-scale solutions as
                                     well as guide startups from idea to profit. We offer customized software
                                     development in Indore. Fovty Solutions, a prominent provides Web Development,
                                     online marketing, cloud marketing, AI, online streaming, etc. Fovty Solutions in
                                     Indore has merged to serve the education and healthcare industries.</p>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-sm-6">
                                 
                                 <h3 class="para_heading">Our Services</h3>
                                 <ul>
@@ -64,7 +67,7 @@ const Footer = () => {
                                     <li>Xamarin</li>
                                 </ul>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-3 col-sm-6">
                                 <h3 class="para_heading">Useful Links</h3>
                                 <ul>
                                     <li>Home</li>

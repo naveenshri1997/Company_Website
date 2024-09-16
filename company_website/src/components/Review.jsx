@@ -18,9 +18,7 @@ const Review = () => {
             'id': 1,
             'data': `I am pleased to share my testimonial for Qualwebs, who have been instrumental in developing
             our e- commerce platform at DailyCoco.Their team's expertise in web development, SEO, and online 
-            marketing has helped us to establish a strong online presence and grow our business.Their proactive
-            approach and ability to deliver results on time and within budget 
-            have been commendable.I highly recommend Qualwebs for their commitment to driving success for their clients.`,
+            marketing has helped us have been commendable.`,
             'author': 'Homesh',
             'designation':'Kalpana Arts'
         },  
@@ -44,10 +42,8 @@ const Review = () => {
             'id': 4,
             'data': `I am pleased to share my testimonial for Qualwebs, who have been instrumental in
             developing our r e-commerce platform at DailyCoco. Their team's expertise in web development,
-            SEO, and online marketing has helped us to establish a strong online presence and grow our
-            business. Their proactive approach and ability to deliver results on time and within budget 
-            have been commendable. I highly recommend Qualwebs for their commitment
-            to driving success for their clients.`,
+            SEO, and online marketing has helped us to establish  online presence and grow our
+            business. `,
             'author': 'Homesh',
             'designation': 'Kalpana Arts'
         },
@@ -102,7 +98,7 @@ const Review = () => {
             <section className="embla container-fluid custom_slider_embla">
                 <div className="row justify-content-center" style={{ margin: '0px' }}>
                     
-                    <div className="col-lg-8 col-sm-10 col-xs-10">
+                    <div className="col-lg-8 embla_custom_padding">
                         <div className="embla__viewport" ref={emblaRef}>
                             <div className="embla__container">
                                 {slides.map((id) => (

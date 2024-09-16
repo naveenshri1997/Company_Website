@@ -310,6 +310,7 @@ body {
     .footer .footer_box {
         padding: 10px;
         border-radius: 10px;
+        text-align: left;
     }
 
     .footer .footer_small_img {
@@ -365,10 +366,18 @@ body {
         background: black;
         transform: rotateZ(3deg);
         z-index: 0;
-    }    
+    }
+.footer_title {
+    font-family: 'Montserrat';
+    text-align: left;
+    padding-bottom: 15px;
+    font-size: 23px;
+    color:#f84525;
+}
+
 .custom_slider_embla {
     padding: 100px 0px;
-    padding-bottom:170px;
+    padding-bottom: 170px;
     background: #083576;
     max-width: 100%;
     color: white;
@@ -405,7 +414,7 @@ body {
 }
 
 .embla__dot--selected {
-    background: rgb(249, 222, 75) !important;
+    background: #f84525 !important;
 }
 .custom_review {
     position: relative;
@@ -781,6 +790,34 @@ body {
         transform: rotateZ(3deg);
         z-index: 0;
     }
+    .footer .footer_box {
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+    }
+    .footer .footer_part_two .footer_para {
+        color: #ffffffd9;
+        font-family: 'Montserrat';
+        line-height: 27px;
+    }
+    .footer ul li {
+        font-family: 'Montserrat';
+        font-weight: 500;
+        list-style: none;
+        margin-bottom: 2px;
+    }
+    .footer ul {
+        padding-left: 0px;
+        padding-top: 8px;
+    }
+    .footer_title {
+        font-family: 'Montserrat';
+        text-align: center;
+        padding-bottom: 15px;
+        font-size: 23px;
+        color: #f84525;
+    }
+
     .navbar_cus_main_btn {
         background: #f84525;
         color: #ffffff !important;
@@ -796,8 +833,23 @@ body {
         padding: 80px 0px 0px 0px;
         background: rgb(8, 53, 118);
     }
+    .embla_custom_padding {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .embla__slide__number {
+        font-size: 18px;
+        text-align: center;
+        height: auto;
+    }
+    .custom_slider_embla {
+        font-size: 22px;
+        padding: 50px 0px;
+        padding-bottom: 200px;
+        max-width: 100%;
+    }
 
-}
+    }
 
 @media only screen and (max-width: 1037px) {
     .navbar-nav .nav-link {
