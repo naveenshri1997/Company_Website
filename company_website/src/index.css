@@ -864,7 +864,14 @@ body {
     .navbar-nav{
         background:white;
     }
-        
+    .navbar_cus_btn {
+        background: none;
+        border-radius: 0px;
+        padding: 10px 10px;
+        display: inline-block;
+        margin-left:0px !important;
+    }
+
     }
 
 @media only screen and (max-width: 1037px) {
@@ -895,6 +902,17 @@ body {
         min-height: 308px;
         background: #f4f4f4;
         margin-bottom: 25px;
+    }
+    .about_us_page_sec::after {
+        content: '';
+        position: absolute;
+        left: -8%;
+        bottom: -13%;
+        width: 112%;
+        height: 166px;
+        background: rgb(223, 236, 255);
+        transform: rotateZ(3deg);
+        z-index: 0;
     }
 }
 
@@ -940,5 +958,12 @@ body {
         font-size: 21px;
         font-family: Montserrat;
         font-size: 16px;
+    }
+    .about_us_page_sec .title {
+        font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 22px;
+        margin-bottom: 15px;
+        margin-top: 20px;
     }
 }
