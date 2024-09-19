@@ -18,15 +18,13 @@ const About = () => {
                             <p data-aos="fade-right" data-aos-duration="1200"  className="about_title">Welcome to WhiteWeb Tech Company</p>                         
 
                             <p data-aos="fade-up" data-aos-duration="1200" className="about_title">
-                               We are a dynamic IT company offering specialized web and app development 
-                                services designed to bring your business vision to life. With expertise in modern
-                                technologies and a passion for innovation, we create custom websites and mobile
-                                applications that are not only visually appealing but also optimized for
-                                performance and user experience. Our team works closely with clients to 
-                                understand their unique needs, ensuring every project aligns with their business 
-                                objectives. Whether you're looking to enhance your online presence, streamline 
-                                operations, or engage customers, we deliver solutions that drive growth
-                                and long-term success in the digital landscape.
+                               we are dedicated to helping your business succeed in today’s digital landscape through our 
+                                expert web and app development services. Our commitment to quality, innovation, and customer
+                                satisfaction drives us to deliver solutions that exceed expectations. By partnering with us
+                                , you gain a team that is passionate about turning your ideas into impactful digital experiences. 
+                                We believe in long-term collaboration and support, ensuring your digital assets continue to 
+                                evolve with your business needs. Let us help you reach new heights with tailored, results-driven
+                                solutions that foster growth and keep you ahead in the competitive market
                             </p>
 
                             <Link className='navbar_cus_main_btn  theme_color_two' to='/about' style={{ fontWeight: 'bolder ' } }>Learn More</Link>
