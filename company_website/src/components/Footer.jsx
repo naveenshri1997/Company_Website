@@ -8,6 +8,7 @@ import whatsapp from '../assets/whatsapp.png'
 import linkedin from '../assets/linkedin.png'
 import insta from '../assets/instagram.png'
 import facebook from '../assets/facebook.png'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
     const styleone = {
@@ -84,11 +85,14 @@ const Footer = () => {
                             <div class="col-lg-3 col-sm-6">
                                 <h3 class="para_heading">Useful Links</h3>
                                 <ul>
-                                    <li>Home</li>
-                                    <li>About Us</li>
-                                    <li>Our Services</li>
-                                    <li>Contact Us</li>
-                                    <li>Carrier</li>                                    
+                                    <li>
+                                        <Link to='/'>Home</Link>                                       
+                                    </li>
+                                    <li><Link to="/about">About Us</Link></li>                                    
+                                    <li>
+                                        <Link to="/about">Contact Us</Link>                            
+                                        </li>
+                                    <li> <Link to='/career'>Career</Link></li>                                    
                                 </ul>
                             </div>
                         </div>
