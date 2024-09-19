@@ -966,7 +966,7 @@ body {
         margin-top: 20px;
     }
 }
-@media only screen and (min-width: 995px) {
+@media only screen and (min-width: 1132px) {
     .navbar-nav .nav-link{
         margin-left:15px;
     }
