@@ -14,6 +14,12 @@ const Footer = () => {
     const styleone = {
         backgroundImage: `url('${map}')`,
     }
+     const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth' // Optional for smooth scrolling
+    });
+  };
     return (
         <>
             <div className="footer container-fluid" style={styleone}>
@@ -94,6 +100,7 @@ const Footer = () => {
                                         </li>
                                     <li> <Link to='/career'>Career</Link></li>                                    
                                 </ul>
+                                <button onClick={scrollToTop}>Scroll to Top</button>
                             </div>
                         </div>
 
