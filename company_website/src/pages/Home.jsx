@@ -41,7 +41,7 @@ const handleDone = () => {
                                 <span  style={{ color: 'white', fontWeight: 'bold' }}>
                                 {/* Style will be inherited from the parent element */}
                                 <Typewriter
-                                        words={[' Website Development Soultion', ' Ecommerce Solutions', ' Mobile Application Developmet']}
+                                        words={[' Website Development Solution', ' Ecommerce Solution', ' Mobile Application Developmet']}
                                     loop={5}
                                     cursor
                                     cursorStyle='_'
@@ -54,9 +54,8 @@ const handleDone = () => {
                             </h1>
 
                             <h2 data-aos="fade-up" data-aos-duration="1600"  className="header_title">
-                                Work with the best team delivering excellence in
-                                Mobile App and Web Development.
-                                We revolutionize your Business Digitally!</h2>
+                                We are a dynamic IT company specializing in innovative web and app development 
+                                solutions, delivering tailored digital experiences that help businesses thrive and grow.</h2>
                         </div>
                         <div className="overlay">
                             <div className="overlay1"></div>
