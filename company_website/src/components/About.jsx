@@ -15,7 +15,7 @@ const About = () => {
                             <h1 data-aos="fade-right" data-aos-duration="1200" className="mobile_heading londrina heading theme_color_two"
                                 style={{ fontWeight: 'bolder ', textAlign: 'left',color:'black', padding: '0px 10px' }}>About <span
                                     style={{ color: '#f84525' }}>Us</span></h1>
-                            <p data-aos="fade-right" data-aos-duration="1200"  className="about_title">Welcome to WhiteWeb Tech</p>                         
+                            <p data-aos="fade-right" data-aos-duration="1200"  className="about_title">Welcome to WhiteWeb Tech Company</p>                         
 
                             <p data-aos="fade-up" data-aos-duration="1200" className="about_title">
                                We are a dynamic IT company offering specialized web and app development 
