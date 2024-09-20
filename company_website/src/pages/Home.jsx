@@ -72,7 +72,6 @@ const handleDone = () => {
             <Techologies />
             <Steps />
             <Review />
-
             <Footer />
         </>
     )

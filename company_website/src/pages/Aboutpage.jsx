@@ -16,9 +16,13 @@ const Aboutpage = () => {
         AOS.init();
         AOS.refresh();
     }, []);
+    const data = {
+        pagetitle:"Home",
+        pagename:"About Us"
+    }
     return (
         <>
-        <BreadCruums pagename="About Us"/>
+            <BreadCruums data={data} />
         <Navbar/>
             <Aboutus />
             <Mission />

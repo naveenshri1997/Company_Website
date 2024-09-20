@@ -20,10 +20,14 @@ const Careerpage = () => {
     //        experience:'1 to 3'
     //    }
     //]
-    //const jobs = ['naveen','ajay'];
+    const jobs = ['naveen', 'ajay'];
+    const data = {
+        pagetitle: "Home",
+        pagename: "Career"
+    }
     return (
         <>
-            <BreadCruums pagename="Career"/>
+            <BreadCruums data={data}/>
             <Navbar />
             <Jobs />
             <Footer />

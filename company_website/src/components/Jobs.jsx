@@ -22,7 +22,7 @@ const Jobs = () => {
                                     <h4 className="desc">Experience 1 to 3</h4>
                                 </div>
                                 <span className="col-lg-4 float-right" style={{marginTop:'15px'}}> 
-                                    <Link class="nav-link" to='/'>Apply Now</Link>
+                                    <Link class="nav-link" to='/formpage'>Apply Now</Link>
                                 </span>
                             </div>
                         </div>

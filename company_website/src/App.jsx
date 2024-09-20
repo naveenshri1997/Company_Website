@@ -11,6 +11,10 @@ import Home from './pages/Home'
 import Aboutpage from './pages/Aboutpage'
 import './App.css'
 import Careerpage from './pages/Careerpage';
+import Webdevelopment from './pages/Webdevelopment';
+import Mobiledevelopment from './pages/Mobiledevelopment';
+import Contactpage from './pages/Contactpage';
+import Formpage from './pages/Formpage';
 
 function App() {
 
@@ -20,7 +24,14 @@ function App() {
           <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/about' element={<Aboutpage />} />
-              <Route path='/career' element={<Careerpage />} />
+              <Route path='/career' element={<Careerpage />} />    
+              <Route path='/webdev' element={<Webdevelopment />} />    
+              <Route path='/mobiledev' element={<Mobiledevelopment />} />    
+              <Route path='/contactpage' element={<Contactpage />} />    
+              <Route path='/formpage' element={<Formpage />} />                  
+              
+
+              
           </Routes>
     </>
   )

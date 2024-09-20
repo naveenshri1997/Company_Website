@@ -2,7 +2,6 @@ import bgimage from '../assets/11.jpeg';
 import logo from '../assets/logo.png';
 import { Link } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
-
 const Navbar = () => {
     const [scroll, setScroll] = useState(false);
 
@@ -35,10 +34,9 @@ const Navbar = () => {
                                     Our Services
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><hr class="dropdown-divider" /></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    <Link class="dropdown-item" to="/webdev">Web Development</Link>
+                                    <Link class="dropdown-item" to="/mobiledev">Mobile Development</Link>
+
                                 </ul>
                             </li>
                            
@@ -57,7 +55,7 @@ const Navbar = () => {
                                 <Link class="nav-link active" aria-current="page" to='/career'>Career</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link navbar_cus_btn" style={{ marginLeft: '40px',padding:'10px 20px' }} to="/about">Contact Us</Link>
+                                <Link class="nav-link navbar_cus_btn" style={{ marginLeft: '40px', padding: '10px 20px' }} to="/contactpage">Contact Us</Link>
                             </li>
                         </ul>
                       
