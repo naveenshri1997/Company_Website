@@ -3,7 +3,7 @@ import location from '../assets/footer/location.png'
 import email from '../assets/footer/email.png'
 import map from '../assets/map.png'
 import logo from '../assets/logo.png';
-
+import scroll from '../assets/scroll.png';
 import whatsapp from '../assets/whatsapp.png'
 import linkedin from '../assets/linkedin.png'
 import insta from '../assets/instagram.png'
@@ -100,7 +100,9 @@ const Footer = () => {
                                         </li>
                                     <li> <Link to='/career'>Career</Link></li>                                    
                                 </ul>
-                                <button onClick={scrollToTop}>Scroll to Top</button>
+                                <div className="scroll_top_btn " onClick={scrollToTop}>
+                                    <img src={scroll} className="img-fluid" width="50px" />
+                                </div>
                             </div>
                         </div>
 
