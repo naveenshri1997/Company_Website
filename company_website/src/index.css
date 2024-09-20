@@ -1036,3 +1036,8 @@ body {
         margin-top: 20px;
     }
 }
+@media only screen and (min-width: 1122px) {
+    .navbar-nav .nav-link{
+        margin-left:15px;
+    }
+}

@@ -10,17 +10,17 @@ const Aboutus = () => {
                                 <img src={aboutus} className="img-fluid" />
                             </div>
                             <div className="col-lg-7">
-                                <h1 className="title" style={{fontSize:'35px'}}>Qualwebs Technology</h1>
+                                <h1 className="title" style={{fontSize:'35px'}}>Welcome to WhiteWeb Tech Company</h1>
                                 <div className="row">
                                     <div className="col-lg-12">
                                         <p className="subtitle">
-                                            Qualzee Consultancy Private Limited serves the technology sector with the name Qualwebs,
-                                            positioning itself as a leading software development company, that manages the entire
-                                            lifecycle of full-app development, specializing in web apps. We cover all aspects
-                                            of a successful product launch and maintenance, including ideation, prototyping
-                                            and design, project management, development, QA testing, and support. Our approach
-                                            is based on Agile principles, and we are dedicated to providing every customer's
-                                            product with the same level of care and attention that we give our own products.
+                                            we are dedicated to helping your business succeed in today’s digital landscape through our expert 
+                                            web and app development services. Our commitment to quality, innovation, and customer satisfaction 
+                                            drives us to deliver solutions that exceed expectations. By partnering with us , you gain a 
+                                            team that is passionate about turning your ideas into impactful digital experiences. We
+                                            believe in long-term collaboration and support, ensuring your digital assets continue
+                                            to evolve with your business needs. Let us help you reach new heights with tailored, 
+                                            results-driven solutions that foster growth and keep you ahead in the competitive market
                                         </p>
                                     </div>
                                   
