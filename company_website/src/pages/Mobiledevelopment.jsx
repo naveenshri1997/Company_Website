@@ -3,6 +3,7 @@ import BreadCruums from '../components/BreadCruums';
 
 import Footer from '../components/Footer';
 
+import mobile from '../assets/single_service/mobile.png'
 const Mobiledevelopment = () => {
     const data = {
         pagetitle: "Services",
@@ -18,7 +19,7 @@ const Mobiledevelopment = () => {
                     <div className="col-lg-10">
                         <div className="row">
                             <div className="col-lg-5">
-                                {/*<img src={} className="img-fluid" />*/}
+                                <img src={mobile} className="img-fluid" />
                             </div>
                             <div className="col-lg-7">
                                 <h1 className="title" style={{ fontSize: '35px' }}>Mobile Development Services</h1>

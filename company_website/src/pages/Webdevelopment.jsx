@@ -2,6 +2,7 @@ import Navbar from '../components/Navbar';
 import BreadCruums from '../components/BreadCruums';
 
 import Footer from '../components/Footer';
+import web from '../assets/single_service/web.png'
 
 const Webdevelopment = () => {
     const data = {
@@ -17,7 +18,7 @@ const Webdevelopment = () => {
                     <div className="col-lg-10">
                         <div className="row">
                             <div className="col-lg-5">
-                                {/*<img src={} className="img-fluid" />*/}
+                                <img src={web} className="img-fluid" />
                             </div>
                             <div className="col-lg-7">
                                 <h1 className="title" style={{ fontSize: '35px' }}>Web Development Services</h1>
