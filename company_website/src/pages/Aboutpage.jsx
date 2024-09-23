@@ -5,7 +5,7 @@ import Mission from '../components/Mission';
 import Corevalues from '../components/Corevalues';
 import Review from '../components/Review';
 import Footer from '../components/Footer'
-
+import Contactbanner from '../assets/contactbanner.jpg'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
@@ -18,7 +18,8 @@ const Aboutpage = () => {
     }, []);
     const data = {
         pagetitle:"Home",
-        pagename:"About Us"
+        pagename:"About Us",
+         image:`${Contactbanner}`
     }
     return (
         <>
