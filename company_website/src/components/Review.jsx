@@ -84,7 +84,7 @@ const Review = () => {
         <>  
             <div className="container-fluid custom_review" >
                 <div className="row">
-                    <div className="col-lg-6 text-center">
+                    <div className="col-lg-12 text-center">
                         
                      
                         <h1 data-aos="fade-up" data-aos-duration="1600" className="mobile_heading londrina heading theme_color_two"
@@ -96,9 +96,9 @@ const Review = () => {
             
             
             <section className="embla container-fluid custom_slider_embla">
-                <div className="row" style={{ margin: '0px' }}>
+                <div className="row justify-content-center" style={{ margin: '0px' }}>
                     
-                    <div className="col-lg-6 embla_custom_padding">
+                    <div className="col-lg-8 embla_custom_padding">
                         <div className="embla__viewport" ref={emblaRef}>
                             <div className="embla__container">
                                 {slides.map((id) => (
@@ -130,9 +130,7 @@ const Review = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6">
-                        <img src="https://silverarrow.in/wp-content/uploads/2020/05/Section1-Image1.png" className="img-fluid" />
-                    </div>
+                   
                 </div>
                
             </section>
