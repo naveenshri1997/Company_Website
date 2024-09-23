@@ -19,29 +19,29 @@ const Servicestwo = () => {
                                     style={{ fontWeight: 'bolder ', color: 'black', padding: '0px 10px' }}>Our <span
                                         style={{ color: '#f84525' }}>Services</span></h1>
                                 <div className="row" style={{ marginTop: '50px' }}>
-                                    
+
                                     <div data-aos="fade-up" data-aos-duration="1600" className="col-md-4 col-sm-6">
-                                       <Link to='/webdev'>
-                                        <div className="card card_back">
-                                            <div className="card_content">
-                                                <img className="img-fluid cus-img" src={Webdevelopment} width="250px" />
-                                                <h4 className="service_title">WEB DEVELOPMENT</h4>
-                                                <p className="service_subtitle">With expertise in using blockchain, AI, IoT, and other web3 tools, frameworks, APIs, and
-                                                    programming languages</p>
+                                        <Link to='/webdev'>
+                                            <div className="card card_back">
+                                                <div className="card_content">
+                                                    <img className="img-fluid cus-img" src={Webdevelopment} width="250px" />
+                                                    <h4 className="service_title">WEB DEVELOPMENT</h4>
+                                                    <p className="service_subtitle">With expertise in using blockchain, AI, IoT, and other web3 tools, frameworks, APIs, and
+                                                        programming languages</p>
+                                                </div>
                                             </div>
-                                            </div>
-                                    </Link>
+                                        </Link>
                                     </div>
 
                                     <div data-aos="fade-up" data-aos-duration="1600" className="col-md-4 col-sm-6">
                                         <Link to='/uiux'>
-                                        <div className="card card_back">
-                                            <div className="card_content">
-                                                <img className="img-fluid cus-img" src={uiuxdesign} width="250px" />
-                                                <h4 className="service_title">UI UX DESIGN</h4>
-                                                <p className="service_subtitle">With expertise in using blockchain, AI, IoT, and other web3 tools, frameworks, APIs, and
-                                                    programming languages</p>
-                                            </div>
+                                            <div className="card card_back">
+                                                <div className="card_content">
+                                                    <img className="img-fluid cus-img" src={uiuxdesign} width="250px" />
+                                                    <h4 className="service_title">UI UX DESIGN</h4>
+                                                    <p className="service_subtitle">With expertise in using blockchain, AI, IoT, and other web3 tools, frameworks, APIs, and
+                                                        programming languages</p>
+                                                </div>
                                             </div>
                                         </Link>
                                     </div>
@@ -49,13 +49,13 @@ const Servicestwo = () => {
                                     <div data-aos="fade-up" data-aos-duration="1600" className="col-md-4 col-sm-6">
                                         <Link to='/mobiledev'>
 
-                                        <div className="card card_back">
-                                            <div className="card_content">
-                                                <img className="img-fluid cus-img" src={mobileappdevelopment} width="250px" />
-                                                <h4 className="service_title">MOBILE DEVELOPMENT</h4>
-                                                <p className="service_subtitle">With expertise in using blockchain, AI, IoT, and other web3 tools, frameworks, APIs, and
-                                                    programming languages</p>
-                                            </div>
+                                            <div className="card card_back">
+                                                <div className="card_content">
+                                                    <img className="img-fluid cus-img" src={mobileappdevelopment} width="250px" />
+                                                    <h4 className="service_title">MOBILE DEVELOPMENT</h4>
+                                                    <p className="service_subtitle">With expertise in using blockchain, AI, IoT, and other web3 tools, frameworks, APIs, and
+                                                        programming languages</p>
+                                                </div>
                                             </div>
                                         </Link>
                                     </div>
@@ -93,7 +93,7 @@ const Servicestwo = () => {
                                         </div>
                                     </div>
 
-                                   
+
 
                                     <div data-aos="fade-up" data-aos-duration="1600" className="col-md-4 col-sm-6">
                                         <div className="card card_back">
@@ -105,7 +105,7 @@ const Servicestwo = () => {
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <div data-aos="fade-up" data-aos-duration="1600" className="col-md-4 col-sm-6">
                                         <div className="card card_back">
                                             <div className="card_content">
@@ -115,7 +115,7 @@ const Servicestwo = () => {
                                                     programming languages</p>
                                             </div>
                                         </div>
-                                    </div>                                    
+                                    </div>
                                 </div>
                             </div>
                         </div>
