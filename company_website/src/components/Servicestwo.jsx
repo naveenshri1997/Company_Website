@@ -6,7 +6,7 @@ import softwaretesting from '../assets/services2/software-testing-and-qa.svg'
 import digitaltransformation from '../assets/services2/digital-transformation.svg'
 import devOps from '../assets/services2/devOps-eng.svg'
 import dataengineering from '../assets/services2/data-engineering.svg'
-
+import { Link } from 'react-router-dom'
 const Servicestwo = () => {
     return (
         <>
@@ -21,7 +21,7 @@ const Servicestwo = () => {
                                 <div className="row" style={{ marginTop: '50px' }}>
                                     
                                     <div data-aos="fade-up" data-aos-duration="1600" className="col-md-4 col-sm-6">
-                                       <link to='/webdev'>
+                                       <Link to='/webdev'>
                                         <div className="card card_back">
                                             <div className="card_content">
                                                 <img className="img-fluid cus-img" src={Webdevelopment} width="250px" />
@@ -30,11 +30,11 @@ const Servicestwo = () => {
                                                     programming languages</p>
                                             </div>
                                             </div>
-                                    </link>
+                                    </Link>
                                     </div>
 
                                     <div data-aos="fade-up" data-aos-duration="1600" className="col-md-4 col-sm-6">
-                                        <link to='/uiux'>
+                                        <Link to='/uiux'>
                                         <div className="card card_back">
                                             <div className="card_content">
                                                 <img className="img-fluid cus-img" src={uiuxdesign} width="250px" />
@@ -43,11 +43,11 @@ const Servicestwo = () => {
                                                     programming languages</p>
                                             </div>
                                             </div>
-                                        </link>
+                                        </Link>
                                     </div>
 
                                     <div data-aos="fade-up" data-aos-duration="1600" className="col-md-4 col-sm-6">
-                                        <link to='/mobiledev'>
+                                        <Link to='/mobiledev'>
 
                                         <div className="card card_back">
                                             <div className="card_content">
@@ -57,7 +57,7 @@ const Servicestwo = () => {
                                                     programming languages</p>
                                             </div>
                                             </div>
-                                        </link>
+                                        </Link>
                                     </div>
 
                                     <div data-aos="fade-up" data-aos-duration="1600" className="col-md-4 col-sm-6">
