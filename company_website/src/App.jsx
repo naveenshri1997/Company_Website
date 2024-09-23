@@ -13,6 +13,7 @@ import './App.css'
 import Careerpage from './pages/Careerpage';
 import Webdevelopment from './pages/Webdevelopment';
 import Mobiledevelopment from './pages/Mobiledevelopment';
+import Uiuxdevelopment from './pages/Uiuxdevelopment';
 import Contactpage from './pages/Contactpage';
 import Formpage from './pages/Formpage';
 
@@ -29,6 +30,7 @@ function App() {
               <Route path='/mobiledev' element={<Mobiledevelopment />} />    
               <Route path='/contactpage' element={<Contactpage />} />    
               <Route path='/formpage' element={<Formpage />} />                  
+              <Route path='/uiux' element={<Uiuxdevelopment />} />                  
               
 
               

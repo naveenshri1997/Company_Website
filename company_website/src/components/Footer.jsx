@@ -78,14 +78,9 @@ const Footer = () => {
                                 
                                 <h3 class="para_heading">Our Services</h3>
                                 <ul>
-                                    <li>React Native</li>
-                                    <li>Angular</li>
-                                    <li>Vue.JS</li>
-                                    <li>React.JS</li>
-                                    <li>iOS</li>
-                                    <li>Android</li>
-                                    <li>Flutter</li>
-                                    <li>Xamarin</li>
+                                    <li><Link class="dropdown-item" to="/webdev">Web Development</Link></li>
+                                    <li><Link class="dropdown-item" to="/mobiledev">Mobile Development</Link></li>
+                                    <li><Link class="dropdown-item" to="/uiux">UI/UX Development</Link></li>                                     
                                 </ul>
                             </div>
                             <div class="col-lg-3 col-sm-6">
@@ -96,7 +91,7 @@ const Footer = () => {
                                     </li>
                                     <li><Link to="/about">About Us</Link></li>                                    
                                     <li>
-                                        <Link to="/about">Contact Us</Link>                            
+                                        <Link to="/contactpage">Contact Us</Link>                            
                                         </li>
                                     <li> <Link to='/career'>Career</Link></li>                                    
                                 </ul>
