@@ -16,12 +16,12 @@ const About = () => {
                                 style={{ fontWeight: 'bolder ', textAlign: 'left',color:'black', padding: '0px 10px' }}>Transforming <span
                                     style={{ color: '#f84525' }}>With Innovations</span></h1>
                             <p data-aos="fade-right" data-aos-duration="1200"  className="about_title">We help you bring your business on Digital 
-                                Platform using low code platform Outsystems</p>                         
+                                Platform using New Generation Web Technologies</p>                         
 
                             <p data-aos="fade-up" data-aos-duration="1200" className="about_title">
                              Innovation, Service, Certification, Production, Training, Development are the most exclusive 
                                 words nowadays and combining all of them with the years of experience of serving and building,
-                                we Silver Arrow stands. Our one and only goal is to support our Partners by providing the best of
+                                we White Web Tech stands. Our one and only goal is to support our Partners by providing the best of
                                 services to you because we believe “The World Is You”
                             </p>
 
