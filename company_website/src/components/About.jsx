@@ -21,7 +21,7 @@ const About = () => {
                             <p data-aos="fade-up" data-aos-duration="1200" className="about_title">
                              Innovation, Service, Certification, Production, Training, Development are the most exclusive 
                                 words nowadays and combining all of them with the years of experience of serving and building,
-                                we White Web Tech stands. Our one and only goal is to support our Partners by providing the best of
+                                we <strong>WhiteWeb Tech </strong> stands. Our one and only goal is to support our Partners by providing the best of
                                 services to you because we believe “The World Is You”
                             </p>
 
