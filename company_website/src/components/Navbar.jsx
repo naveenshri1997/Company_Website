@@ -45,7 +45,7 @@ const Navbar = () => {
                                 <Link class="nav-link active" aria-current="page" to='/career'>Career</Link>
                             </li>
                             <li class="nav-item">
-                                <Link class="nav-link navbar_cus_btn" style={{ marginLeft: '40px', padding: '10px 20px' }} to="/contactpage">Contact Us</Link>
+                                <Link class="nav-link" to="/contactpage">Contact Us</Link>
                             </li>
                         </ul>
                       
