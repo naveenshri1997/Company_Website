@@ -2,7 +2,7 @@ import bread from '../assets/breadcrums.jpg'
 const BreadCruums = ({ data }) => {
     return (
         <>            
-            <div className="container-fluid breadcrum" style={ 'bread'? backgroundImage:`url('${bread}')` : 
+            <div className="container-fluid breadcrum" style={ data.image? backgroundImage:`url('${bread}')` : 
             backgroundImage:`url('${data.image}')`
             }>
                 <div className="row justify-content-center" style={{ position: 'relative', zIndex: '1' }}>
