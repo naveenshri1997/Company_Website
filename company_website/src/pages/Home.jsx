@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar';
 import About from '../components/About';
 import Review from '../components/Review';
 import Footer from '../components/Footer';
-//import Services from '../components/Services';
+import Services from '../components/Services';
 import Servicestwo from '../components/Servicestwo';
 import Techologies from '../components/Techologies';
 
@@ -67,6 +67,7 @@ const handleDone = () => {
                 </div>
             </div>            
             <About />
+            <Services />            
             <Servicestwo />
             <Techologies />
             <Steps />
