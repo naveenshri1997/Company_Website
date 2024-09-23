@@ -25,7 +25,7 @@ const About = () => {
                                 services to you because we believe “The World Is You”
                             </p>
 
-                            <Link className='navbar_cus_main_btn  theme_color_two' to='/about' style={{ fontWeight: 'bolder ' } }>Learn More</Link>
+{/*                             <Link className='navbar_cus_main_btn  theme_color_two' to='/about' style={{ fontWeight: 'bolder ' } }>Learn More</Link> */}
                         </div>
                         <div className="col-lg-5 home_about_one" >
                             <img data-aos="fade-up" data-aos-duration="1200" src={about} className="img-fluid" />
