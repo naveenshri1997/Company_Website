@@ -8,7 +8,8 @@ const BreadCruums = ({ data }) => {
                         <h1 class="heading" style={{ textAlign: 'left', fontWeight: "bolder", fontSize: '48px', color: 'white' }}>{data.pagename}</h1> 
                         <p class=" heading"
                             style={{ color: 'white', textAlign: 'left', fontWeight: 'bolder', background: 'none', padding: ' 0px 10px', fontSize: '20px' }}>{data.pagetitle} / {data.pagename}</p>
-                        </div>
+                        <img src={data.image}/>  
+                    </div>
                 </div>
             </div>
         </>
