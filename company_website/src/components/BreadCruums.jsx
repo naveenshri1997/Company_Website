@@ -2,8 +2,7 @@ import bread from '../assets/breadcrums.jpg'
 const BreadCruums = ({ data }) => {
     return (
         <>            
-            <div className="container-fluid breadcrum" style={{ data.image? backgroundImage:`url('${data.image}')`:
-            backgroundImage:`url('${bread}')`
+            <div className="container-fluid breadcrum" style={{ backgroundImage: data.image? `url('${data.image}')`: `url('${bread}')`
             }}>
                 <div className="row justify-content-center" style={{ position: 'relative', zIndex: '1' }}>
                     <div className="col-lg-10">
