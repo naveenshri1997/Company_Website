@@ -57,8 +57,8 @@ const Footer = () => {
                         </div>
                         <div class="row footer_part_two">
                             <div class="col-lg-5 col-sm-12">
-                                <a class="mobile_logo navbar-brand  londrina" href="#"><img src={logo}
-                                    className="img-fluid" width="50px" /> White<span style={{ color: '#f84525' }}>Web </span><span className="mobile_logo_sub">Tech</span></a>                              
+                                <Link class="mobile_logo navbar-brand  londrina" to="/"><img src={logo}
+                                    className="img-fluid" width="50px" /> White<span style={{ color: '#f84525' }}>Web </span><span className="mobile_logo_sub">Tech</span></Link>                              
                                 <p class="footer_para">At White Web Tech, we're committed to driving innovation and providing cutting-edge IT solutions
                                     tailored to meet the needs of our clients. Our team of experts delivers excellence in software development, web design,
                                     digital transformation, and IT consulting, ensuring that your business stays ahead in the digital age. We believe in empowering
