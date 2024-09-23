@@ -84,7 +84,7 @@ const Review = () => {
         <>  
             <div className="container-fluid custom_review" >
                 <div className="row">
-                    <div className="col-lg-12 text-center">
+                    <div className="col-lg-6 text-center">
                         
                      
                         <h1 data-aos="fade-up" data-aos-duration="1600" className="mobile_heading londrina heading theme_color_two"
