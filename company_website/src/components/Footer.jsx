@@ -59,20 +59,13 @@ const Footer = () => {
                             <div class="col-lg-5 col-sm-12">
                                 <a class="mobile_logo navbar-brand  londrina" href="#"><img src={logo}
                                     className="img-fluid" width="50px" /> White<span style={{ color: '#f84525' }}>Web </span><span className="mobile_logo_sub">Tech</span></a>                              
-                                <p class="footer_para">We have advanced skills & resources to create large-scale solutions as
-                                    well as guide startups from idea to profit. We offer customized software
-                                    development in Indore. Fovty Solutions, a prominent provides Web Development,
-                                    online marketing, cloud marketing, AI, online streaming, etc. Fovty Solutions in
-                                    Indore has merged to serve the education and healthcare industries.</p>
-
-                                <ul className="social_icon">
-                                    <li><a><img src={linkedin} className="img-fluid" width="" /></a></li>     
-                                    <li><a><img src={whatsapp} className="img-fluid" width="" /></a></li>     
-                               
-                                    <li><a><img src={insta} className="img-fluid" width="" /></a></li>     
-                                    <li><a><img src={facebook} className="img-fluid" width="" /></a></li>     
-
-                               </ul>
+                                <p class="footer_para">At White Web Tech, we're committed to driving innovation and providing cutting-edge IT solutions
+                                    tailored to meet the needs of our clients. Our team of experts delivers excellence in software development, web design,
+                                    digital transformation, and IT consulting, ensuring that your business stays ahead in the digital age. We believe in empowering
+                                    businesses with technology, offering reliable and scalable solutions that foster growth and efficiency. Partner with White Web
+                                    Tech today, and let us help you navigate the future of IT with confidence and success. Together,
+                                    we'll shape the digital landscape for tomorrow.</p>
+                                
                             </div>
                             <div class="col-lg-4 col-sm-6">
                                 
@@ -94,6 +87,14 @@ const Footer = () => {
                                         <Link to="/contactpage">Contact Us</Link>                            
                                         </li>
                                     <li> <Link to='/career'>Career</Link></li>                                    
+                                </ul>
+                                <ul className="social_icon">
+                                    <li><Link to='https://www.linkedin.com/company/whiteweb-tech/'><img src={linkedin} className="img-fluid" width="" /></Link></li>
+                                    <li><a><img src={whatsapp} className="img-fluid" width="" /></a></li>
+
+                                    <li><a><img src={insta} className="img-fluid" width="" /></a></li>
+                                    <li><a><img src={facebook} className="img-fluid" width="" /></a></li>
+
                                 </ul>
                                 <div className="scroll_top_btn " onClick={scrollToTop}>
                                     <img src={scroll} className="img-fluid" width="50px" />
