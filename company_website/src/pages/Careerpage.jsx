@@ -5,7 +5,7 @@ import Jobs from '../components/Jobs';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
-import Careerbanner from '../assets/careerbanner.jpg'
+import Careerbanner from '../assets/careerbanner1.jpg'
 
 const Careerpage = () => {
 
