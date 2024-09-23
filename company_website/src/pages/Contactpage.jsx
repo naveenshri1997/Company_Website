@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar';
 import BreadCruums from '../components/BreadCruums';
 
 import Footer from '../components/Footer'
-import contact from '../assets/contactbanner1.jpg'
+import contact from '../assets/contactbanner.jpg'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
