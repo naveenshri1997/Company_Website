@@ -15,7 +15,8 @@ const Contactpage = () => {
     }, []);
     const data = {
         pagetitle: "Home",
-        pagename: "Contact Us"
+        pagename: "Contact Us",
+        image:`${contact}`
     }
     return (
         <>
