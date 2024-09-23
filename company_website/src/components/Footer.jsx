@@ -101,6 +101,9 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className="footer_part_three text-center">
+                            <p>&copy; <Link to="https://whitewebtech.com">WhiteWeb Tech </Link>  2024 All rights reserved.</p>
+                        </div>
 
                     </div>
                 </div>

@@ -294,6 +294,7 @@ body {
     background-repeat: no-repeat;
     position: relative;
     overflow-x:clip;
+    padding-bottom:0px;
 }
 
     .footer:before {
@@ -327,6 +328,7 @@ body {
 
     .footer .footer_part_two {
         padding-top: 40px;
+        padding-bottom: 14px;
     }
 
         .footer .footer_part_two .footer_para {
@@ -335,14 +337,22 @@ body {
             line-height: 22px;
         }
 
-
-    .footer .para_heading {
-        font-size: 21px;
-        font-weight: 700;
-        font-family: Montserrat;
-        color: #f84525;
-        letter-spacing: 3px;
+    .footer .footer_part_three {
+        font-family: 'Montserrat';
+        padding: 20px;
+        font-size: 17px;
+        border-top: 1px solid #ffffff47;
     }
+        .footer .footer_part_three p {
+            margin-bottom: 0px;
+        }
+        .footer .para_heading {
+    font-size: 21px;
+    font-weight: 700;
+    font-family: Montserrat;
+    color: #f84525;
+    letter-spacing: 3px;
+}
 
     .footer ul {
         padding-left: 0px;
@@ -906,7 +916,16 @@ body {
         font-size: 23px;
         color: #f84525;
     }
+    .footer .footer_part_three {
+        font-family: 'Montserrat';
+        padding: 20px;
+        font-size: 15px;
+        border-top: 1px solid #ffffff47;
+    }
 
+        .footer .footer_part_three p {
+            margin-bottom: 0px;
+        }
     .navbar_cus_main_btn {
         background: #f84525;
         color: #ffffff !important;
