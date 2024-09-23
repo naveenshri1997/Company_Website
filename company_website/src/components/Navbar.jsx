@@ -17,7 +17,7 @@ const Navbar = () => {
             <nav className={`headerMain ${scroll ? "navbar navbar-expand-lg navbar-expand-md position_absolute navbar_custom " : "navbar navbar-expand-lg navbar-expand-md position_absolute  "}`} 
                  >
                 <div class="container-fluid">                   
-                    <a class="mobile_logo navbar-brand londrina" href="#"><img src={logo} className="img-fluid" width="50px" /> White<span style={{ color: '#f84525' }}>Web </span><span className="mobile_logo_sub">Tech</span></a>
+                    <Link class="mobile_logo navbar-brand londrina" to="/"><img src={logo} className="img-fluid" width="50px" /> White<span style={{ color: '#f84525' }}>Web </span><span className="mobile_logo_sub">Tech</span></Link>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
