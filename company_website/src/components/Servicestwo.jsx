@@ -116,6 +116,16 @@ const Servicestwo = () => {
                                             </div>
                                         </div>
                                     </div>
+                                    <div data-aos="fade-up" data-aos-duration="1600" className="col-md-4 col-sm-6">
+                                        <div className="card card_back">
+                                            <div className="card_content">
+                                                <img className="img-fluid cus-img" src={softwaredevelopment} width="250px" />
+                                                <h4 className="service_title">SOFTWARE DEVELOPMENT</h4>
+                                                <p className="service_subtitle">With expertise in using blockchain, AI, IoT, and other web3 tools, frameworks, APIs, and
+                                                    programming languages</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
