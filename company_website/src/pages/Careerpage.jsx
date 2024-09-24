@@ -5,6 +5,7 @@ import Jobs from '../components/Jobs';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
+import Careerbanner from '../assets/careerbanner.jpg'
 
 const Careerpage = () => {
 
@@ -23,7 +24,8 @@ const Careerpage = () => {
     const jobs = ['naveen', 'ajay'];
     const data = {
         pagetitle: "Home",
-        pagename: "Career"
+        pagename: "Career",
+        image:`${Careerbanner}`
     }
     return (
         <>

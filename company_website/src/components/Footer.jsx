@@ -50,7 +50,7 @@ const Footer = () => {
                                     <div className=" col-md-auto mt-2">
                                         <img className="img-fluid footer_small_img" src={email} width="50px" />
                                     </div>
-                                    <div className=" col-md-auto footer_text"><p>sunweb@gmail.com</p></div>
+                                    <div className=" col-md-auto footer_text"><p>info@whitewebtech.com</p></div>
 
                                 </div>
                             </div>

@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar';
 import BreadCruums from '../components/BreadCruums';
 
 import Footer from '../components/Footer'
-import contact from '../assets/contact_us.png'
+import contact from '../assets/contactbanner.jpg'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -28,7 +28,8 @@ const Contactpage = () => {
 
     const data = {
         pagetitle: "Home",
-        pagename: "Contact Us"
+        pagename: "Contact Us",
+        image:`${contact}`
     }
     //const submitQuery = async (e) => {
     //    e.preventDefault();
