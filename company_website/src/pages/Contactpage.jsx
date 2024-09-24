@@ -52,7 +52,7 @@ const Contactpage = () => {
     const handleChange = (e) => {
         const { name, value } = e.target
 
-        setData((prev) => {
+        setcontactData((prev) => {
             return {
                 ...prev,
                 [name]: value
