@@ -40,8 +40,8 @@ const Careerpage = () => {
         <>
             <BreadCruums data={data}/>
             <Navbar />        
-            {jobs}
-{/*             {jobs.map((job) => {
+{/*             {jobs} */}
+            {jobs.map((job) => {
                                 return (
                                     <div>
                                         <h1>{name}</h1>
@@ -50,7 +50,7 @@ const Careerpage = () => {
                                               
                                     </div>    
                                 )
-                            })}             */}
+                            })}            
             <Footer />
         </>
     )
