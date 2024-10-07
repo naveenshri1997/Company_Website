@@ -14,6 +14,8 @@ const Careerpage = () => {
         const res = fetch('https://whitewebtech.onrender.com/api/Jobs/GetAll', {
             method: 'GET',
         }).then((res) => res.json()).then((data) => {
+    console.log('data',data);                    
+    console.log('data.data',data.data);        
             setjobs(data.data);
         })
     },[])
