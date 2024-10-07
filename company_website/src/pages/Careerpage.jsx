@@ -40,6 +40,7 @@ const Careerpage = () => {
         <>
             <BreadCruums data={data}/>
             <Navbar />
+            {jobs}
             {jobs.map((job) => {
                                 return (
                                     <>
