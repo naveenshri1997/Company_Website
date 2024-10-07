@@ -1,7 +1,7 @@
 import Navbar from '../components/Navbar';
 import BreadCruums from '../components/BreadCruums';
 import Footer from '../components/Footer';
-import Jobs from '../components/Jobs';
+// import Jobs from '../components/Jobs';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
