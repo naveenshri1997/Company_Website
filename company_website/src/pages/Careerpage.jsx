@@ -41,12 +41,13 @@ const Careerpage = () => {
     return (
         <>
             <BreadCruums data={data}/>
-            <Navbar />            
+            <Navbar />        
+            {jobs}
             {jobs.map((job) => {
                                 return (
-                                    <>
+                                    <div>
                                     <Jobs job={job}/>
-                                    </>    
+                                    </div>    
                                 )
                             })}            
             <Footer />
