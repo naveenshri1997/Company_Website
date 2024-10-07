@@ -13,9 +13,7 @@ const Careerpage = () => {
     useEffect(() => {
         const res = fetch('https://whitewebtech.onrender.com/api/Jobs/GetAll', {
             method: 'GET',
-        }).then((res) => res.json()).then((data) => {
-    console.log('data',data);                    
-    console.log('data.data',data.data);        
+        }).then((res) => res.json()).then((data) => {          
             setjobs(data);
         })
     },[])
@@ -42,7 +40,7 @@ const Careerpage = () => {
         <>
             <BreadCruums data={data}/>
             <Navbar />        
-{/*             {jobs} */}
+            {jobs}
             {jobs.map((job) => {
                                 return (
                                     <div>
