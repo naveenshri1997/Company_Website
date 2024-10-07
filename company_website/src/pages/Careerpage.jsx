@@ -8,7 +8,16 @@ import React, { useState, useEffect } from "react";
 import Careerbanner from '../assets/careerbanner.jpg'
 
 const Careerpage = () => {
-
+    
+    const [jobs, setjobs] = useState([]);
+    useEffect(() => {
+        const res = fetch('https://whitewebtech.onrender.com/api/Jobs/GetAll', {
+            method: 'GET',
+        }).then((res) => res.json()).then((data) => {
+            setjobs(data.data);
+        })
+    },[])
+    
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -31,7 +40,13 @@ const Careerpage = () => {
         <>
             <BreadCruums data={data}/>
             <Navbar />
-            <Jobs />
+            {job.map((job) => {
+                                return (
+                                    <>
+                                    <Jobs job={job}/>
+                                    </>    
+                                )
+                            })}            
             <Footer />
         </>
     )
