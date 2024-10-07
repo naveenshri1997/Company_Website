@@ -44,9 +44,9 @@ const Careerpage = () => {
             {jobs.map((job) => {
                                 return (
                                     <div>
-                                        <h1>{name}</h1>
-                                        <h2>title</h2>
-                                        <h2>description</h2>
+                                        <h1>{job.name}</h1>
+                                        <h2>{job.title}</h2>
+                                        <h2>{job.description}</h2>
                                               
                                     </div>    
                                 )
