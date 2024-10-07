@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import React from "react";
-const Jobs = (job) => {   
+const Jobs = ({job}) => {   
     return (
         <>
             <div className="container-fluid jobs">               
