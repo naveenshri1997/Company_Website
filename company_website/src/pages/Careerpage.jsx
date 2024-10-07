@@ -17,7 +17,7 @@ const Careerpage = () => {
             setjobs(data.data);
         })
     },[])
-    
+    console.log(jobs);
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -39,8 +39,7 @@ const Careerpage = () => {
     return (
         <>
             <BreadCruums data={data}/>
-            <Navbar />
-            {jobs}
+            <Navbar />            
             {jobs.map((job) => {
                                 return (
                                     <>
