@@ -31,7 +31,7 @@ const Careerpage = () => {
         <>
             <BreadCruums data={data}/>
             <Navbar />
-            //<Jobs />
+            <Jobs />
             <Footer />
         </>
     )
