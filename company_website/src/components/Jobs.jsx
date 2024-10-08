@@ -42,18 +42,7 @@ const Jobs = () => {
                             })
                         }
 
-                        <div className="card job-card" style={{marginTop:"50px"}}>
-                            <div className="row">
-                                <div className="col-lg-8">
-                                    <h4 className="title">{job.name}</h4>
-                                    <h4 className="subtitle">{job.title}</h4>
-                                    <h4 className="desc">{job.description}</h4>
-                                </div>
-                                <span className="col-lg-4 float-right" style={{marginTop:'15px'}}> 
-                                    <Link class="nav-link" to='/formpage'>Apply Now</Link>
-                                </span>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>
