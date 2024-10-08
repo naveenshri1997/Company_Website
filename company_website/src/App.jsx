@@ -16,6 +16,7 @@ import Mobiledevelopment from './pages/Mobiledevelopment';
 import Uiuxdevelopment from './pages/Uiuxdevelopment';
 import Contactpage from './pages/Contactpage';
 import Formpage from './pages/Formpage';
+import Jobdetails from './pages/Jobdetails';
 
 function App() {
 
@@ -25,13 +26,13 @@ function App() {
           <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/about' element={<Aboutpage />} />
-              <Route path='/career' element={<Careerpage />} />    
+              <Route exact path='/career' element={<Careerpage />} />    
+              <Route path='/career/:id' element={<Jobdetails />} />
               <Route path='/webdev' element={<Webdevelopment />} />    
               <Route path='/mobiledev' element={<Mobiledevelopment />} />    
               <Route path='/contactpage' element={<Contactpage />} />    
               <Route path='/formpage' element={<Formpage />} />                  
-              <Route path='/uiux' element={<Uiuxdevelopment />} />                  
-              
+              <Route path='/uiux' element={<Uiuxdevelopment />} />                                
 
               
           </Routes>

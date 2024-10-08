@@ -14,14 +14,7 @@ const Careerpage = () => {
         AOS.refresh();
     }, []);
 
-    //jobs = [
-    //    {
-    //        title: 'Frontend',
-    //        position: 'Junior Developer',
-    //        experience:'1 to 3'
-    //    }
-    //]
-   //const jobs = ['naveen', 'ajay'];
+
     const data = {
         pagetitle: "Home",
         pagename: "Career",
