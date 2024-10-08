@@ -8,18 +8,31 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
 const Contactpage = () => {
-    //const [name, setName] = useState('');
-    //const [email, setEmail] = useState('');
-    //const [mobile, setMobile] = useState('');
-    //const [query, setQuery] = useState('');
-    //const [error, setError] = useState(false);
-    const [contactdata, setcontactData] = useState({
-        name: '',
-        email: '',
-        mobile: '',
-        query: '',        
-    });
+
+    const [firstName, setfirstName] = useState('');
+    const [lastName, setlastName] = useState('');
+    const [email, setemail] = useState('');
+    const [mobile, setmobile] = useState('');
+    const [query, setquery] = useState('');
     const [error, setError] = useState(false);
+
+    const submitQuery = async (e) => {
+        e.preventDefault();
+        //if (!firstName || !lastName || !email || !mobile || !query) {
+        //    setError(true);
+        //    return false
+        //}
+        const resposne = await fetch('https://whitewebtech.onrender.com/api/NewQuery', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                firstName,lastName,email,mobile,query
+            })
+        })
+        await resposne.json();
+    }
 
     useEffect(() => {
         AOS.init();
@@ -29,68 +42,56 @@ const Contactpage = () => {
     const data = {
         pagetitle: "Home",
         pagename: "Contact Us",
-        image:`${contact}`
+        image: `${contact}`
     }
+
+    //const [contactdata, setcontactData] = useState({
+    //    firstName: '',
+    //    lastName: '',
+    //    email: '',
+    //    mobile: '',
+    //    query: '',
+    //});
+
+    //const handleChange = (e) => {
+    //    const { name, value } = e.target
+
+    //    setcontactData((prev) => {
+    //        return {
+    //            ...prev,
+    //            [name]: value
+    //        }
+    //    })}
+
     //const submitQuery = async (e) => {
     //    e.preventDefault();
-    //    if (!name || !email || !mobile || !query) {
-    //        setError(true);
-    //        return false
-    //    }
-    //    const resposne = await fetch('api', {
-    //        method: 'POST',
-    //        headers: {
-    //            'Content-Type': 'application/json',
-    //        },
-    //        body: JSON.stringify({
-    //            name,email,mobile,query
+    //    e.stopPropagation();
+    //    const api = "";
+    //    try {
+    //        if (!contactdata.firstName || !contactdata.lastName || !contactdata.name || !contactdata.email || !contactdata.mobile || !contactdata.query) {
+    //            setError(true);
+    //            return false
+    //        }
+    //        const resposne = await fetch(`${api}`, {
+    //            method: 'POST',
+    //            headers: {
+    //                'Content-Type': 'application/json',
+    //            },
+    //            body: JSON.stringify({
+    //                firstName: contactdata.firstName,
+    //                lastName: contactdata.lastName,
+    //                email: contactdata.email,
+    //                mobile: contactdata.mobile,
+    //                query: contactdata.query
+    //            })
     //        })
-    //    })
-    //    await res.json();
+    //        await res.json();
+
+    //    }
+    //    catch (error) {
+    //        console.log(error);
+    //    }
     //}
-
-    const handleChange = (e) => {
-        const { name, value } = e.target
-
-        setcontactData((prev) => {
-            return {
-                ...prev,
-                [name]: value
-            }
-        }
-
-        )
-    }
-
-    const submitQuery = async (e) => {
-        e.preventDefault();
-        e.stopPropagation(); 
-        const api = "";
-        try {
-            if (!contactdata.name || !contactdata.email || !contactdata.mobile || !contactdata.query) {
-                setError(true);
-                return false
-            }
-            const resposne = await fetch(`${api}`, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        name: contactdata.name,
-                        email: contactdata.email,
-                        mobile: contactdata.mobile,
-                        query: contactdata.query
-                    })
-                })
-            await res.json();
-
-        }
-        catch (error){
-            console.log(error);
-        }
-       
-    }
 
     return (
         <>
@@ -102,37 +103,42 @@ const Contactpage = () => {
                         <h1 data-aos="fade-up" data-aos-duration="1600" className="mobile_heading londrina heading theme_color_two"
                             style={{ fontWeight: 'bolder ', color: 'black', padding: '0px 10px' }}>Ask Your<span
                                 style={{ color: '#f84525' }}> Query.</span></h1>
-                       
+
                         <div className="row">
-                            <div className="col-md-4" style={{marginTop:'40px'} }>
+                            <div className="col-md-4" style={{ marginTop: '40px' }}>
                                 <img src={contact} className="img-fluid" />
                             </div>
-                            <div className="col-md-8">
-                                <form method='POST' onSubmit={submitQuery} >
-                                    <input type="text" className="form-control cus_form" placeholder="Full Name"
-                                        onChange={handleChange} value={contactdata.name} />
-                                    {error && !contactdata.name && <span className='error'>Please fil this Field *</span>}
+                            <div className="col-md-8">                               
+                                <form method='POST' >
+                                    <input type="text" className="form-control cus_form" placeholder="Full FirstName"
+                                        onChange={(e) => setfirstName(e.target.value)} value={firstName} />
+                                    {error && !firstName && <span className='error'>Please fil this Field *</span>}
 
-                               
+                                    <input type="text" className="form-control cus_form" placeholder="Full LastName"
+                                        onChange={(e) => setlastName(e.target.value)} value={lastName} />
+                                    {error && !lastName && <span className='error'>Please fil this Field *</span>}
+
                                     <input type="text" className="form-control cus_form" placeholder="Email"
-                                        onChange={handleChange} value={contactdata.email} />
-                                    {error && !contactdata.email && <span className='error'>Please fill the Field</span> }
-                               
+                                        onChange={(e) => setemail(e.target.value)} value={email} />
+                                    {error && !email && <span className='error'>Please fill the Field</span>}
+
                                     <input type="text" className="form-control cus_form" placeholder="Mobile Number"
-                                        onChange={handleChange} value={contactdata.mobile} />
-                                    {error && !contactdata.mobile && <span className='error'>Please fill the Field</span> }
+                                        onChange={(e) => setmobile(e.target.value)} value={mobile} />
+                                    {error && !mobile && <span className='error'>Please fill the Field</span>}
 
                                     <textarea type="text" className="form-control cus_form" placeholder="Query"
-                                        onChange={handleChange} value={contactdata.query} />
-                                    {error && !contactdata.query && <span className='error'>Please fill the Field</span> }
+                                        onChange={(e) => setquery(e.target.value)} value={query} />
+                                    {error && !query && <span className='error'>Please fill the Field</span>}
 
-                                    <button className="btn btn-primary cus-btn">
+                                    {/*<input type="submit" onClick={addblog} value="Add Blog"
+                                        className="btn pt-2 pb-2 px-5 bg-secondary bg-gradient text-dark bg-opacity-50" />*/}
+
+                                    <button type="submit" onClick={submitQuery} className="btn btn-primary cus-btn">
                                         Send Query
                                     </button>
                                 </form>
-                                </div>
-                            </div>                                 
-                        
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
