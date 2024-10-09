@@ -31,7 +31,7 @@ function App() {
               <Route path='/webdev' element={<Webdevelopment />} />    
               <Route path='/mobiledev' element={<Mobiledevelopment />} />    
               <Route path='/contactpage' element={<Contactpage />} />    
-              <Route path='/formpage/jid' element={<Formpage />} />                  
+              <Route path='/formpage' element={<Formpage />} />                  
               <Route path='/uiux' element={<Uiuxdevelopment />} />                                
               <Route path='/thankyou' element={<Thankyou />} />                                
 
