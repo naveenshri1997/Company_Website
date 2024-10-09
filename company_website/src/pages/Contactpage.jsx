@@ -116,11 +116,11 @@ const Contactpage = () => {
                             </div>
                             <div className="col-md-8">                               
                                 <form method='POST' >
-                                    <input type="text" className="form-control cus_form" placeholder="Full FirstName"
+                                    <input type="text" className="form-control cus_form" placeholder="FirstName"
                                         onChange={(e) => setfirstName(e.target.value)} value={firstName} />
                                     {error && !firstName && <span className='error'>Please fil this Field *</span>}
 
-                                    <input type="text" className="form-control cus_form" placeholder="Full LastName"
+                                    <input type="text" className="form-control cus_form" placeholder="LastName"
                                         onChange={(e) => setlastName(e.target.value)} value={lastName} />
                                     {error && !lastName && <span className='error'>Please fil this Field *</span>}
 
