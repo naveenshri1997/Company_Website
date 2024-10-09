@@ -4,11 +4,33 @@ import Footer from '../components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 const Formpage = () => {
-    const { id } = useParams();
-    const [job, setjob] = useState([]);
+    const history = useNavigate();
+
+    const { id } = useParams();     
+    const [jobId, setjobId] = useState('');
+    const [applicantName, setapplicantName] = useState('');
+    const [applicantDescription, setapplicantDescription] = useState('');
+    const [cv, setcv] = useState('');
+    //const [error, seterror] = React.useState(false);
+    const SubmitQuery = (e) => {
+
+        e.preventDefault();
+        const formData = new FormData();
+        formData.append('jobId',jobId);
+        formData.append('applicantName', applicantName);
+        formData.append('applicantDescription', applicantDescription);
+        formData.append('cv', cv);        
+
+        const res = await fetch('https://whitewebtech.onrender.com/api/Applicant', {
+            method: 'POST',
+            body: formData
+        });
+        await res.json();
+        history('/thankyou');
+    }
 
     useEffect(() => {
         const res = fetch(`https://whitewebtech.onrender.com/api/Jobs/GetById?Id=${id}`, {
@@ -41,27 +63,31 @@ const Formpage = () => {
                                 style={{ color: '#f84525' }}> CV.</span></h1>        
                         <div className="row justify-content-center">
                             <div className="col-lg-8">
-                                <form>
+                                <form method='POST' encType='multipart/form-data'>
                                     { id}
-                                    <input type="text" className="form-control cus_form" placeholder="Full Name" />
+                                    <input type="text" className="form-control cus_form" placeholder="Full Name"
+                                        value={applicantName} onChange={(e) => setapplicantName(e.target.value) } />
+                                    {/*{error && !applicantName && <span className='error'>Please fil this Field *</span>}*/}
 
-                                    <input type="email" className="form-control cus_form" placeholder="Email" />
+                                    {/*<input type="text" className="form-control cus_form" placeholder="Email" />*/}
+                                    {/*<input type="text" className="form-control cus_form" placeholder="Mobile Number" />*/}
+                                    {/*<div className="row">*/}
+                                    {/*    <div className="col-md-6">*/}
+                                    {/*        <input type="text" className="form-control cus_form" placeholder="State" />*/}
+                                    {/*    </div>*/}
+                                    {/*    <div className="col-md-6">*/}
+                                    {/*        <input type="text" className="form-control cus_form" placeholder="district" />*/}
+                                    {/*    </div>*/}
+                                    {/*</div>*/}
+                                    <input type="text" className="form-control cus_form" placeholder="Position" value={job.name}
+                                        onChange={(e)=> setjobId(e.target.value)} disabled />
 
-
-                                    <input type="text" className="form-control cus_form" placeholder="Mobile Number" />
-                                    <div className="row">
-                                        <div className="col-md-6">
-                                            <input type="text" className="form-control cus_form" placeholder="State" />
-                                        </div>
-                                        <div className="col-md-6">
-                                            <input type="text" className="form-control cus_form" placeholder="district" />
-                                        </div>
-                                    </div>
-                                    <input type="text" className="form-control cus_form" placeholder="Position" value={job.name} disabled/>
                                     <small style={{color:'red'} }>Upload Cv</small>
-                                    <input type="file" className="form-control cus_form" placeholder="Upload Cv" />
-
-                                    <button type="text" className="btn btn-primary cus-btn" >Apply</button>
+                                    <input type="file" className="form-control cus_form" placeholder="Upload Cv"
+                                        onChange={(e) => setcv(e.target.files[0])} />
+                                    <input type="text" className="form-control cus_form" placeholder="Description"
+                                        value={applicantDescription} onChange={(e) => setapplicantDescription(e.target.value) } />
+                                    <button onSubmit={SubmitQuery} type="text" className="btn btn-primary cus-btn" >Apply</button>
                                 </form>
                             </div>
 
