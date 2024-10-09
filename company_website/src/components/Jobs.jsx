@@ -33,7 +33,7 @@ const Jobs = () => {
                                                     <h4 className="desc">{item.description}</h4>
                                                 </div>
                                                 <span className="col-lg-4 float-right" style={{ marginTop: '15px' }}>
-                                                    <Link class="nav-link" to={`/career/${item.id}`} >{item.id}</Link>
+                                                    <Link class="nav-link" to={`/career/${item.id}`} >Apply Now</Link>
                                                 </span>
                                             </div>
                                         </div>
