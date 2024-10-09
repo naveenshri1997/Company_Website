@@ -4,6 +4,8 @@ import BreadCruums from '../components/BreadCruums';
 import Footer from '../components/Footer';
 
 import mobile from '../assets/single_service/mobile.png'
+import ScrollToTop from "../pages/ScrollToTop";
+
 const Mobiledevelopment = () => {
     const data = {
         pagetitle: "Services",
@@ -12,6 +14,7 @@ const Mobiledevelopment = () => {
    
     return (
         <>
+            <ScrollToTop />
             <BreadCruums data={data} />
             <Navbar />
             <div className="container-fluid about_us_page_sec" style={{ background: '#dfecff' }}>

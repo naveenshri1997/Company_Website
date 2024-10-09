@@ -9,6 +9,7 @@ import Contactbanner from '../assets/aboutusbanner.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
+import ScrollToTop from "../pages/ScrollToTop";
 
 const thankyou = () => {
 
@@ -23,7 +24,7 @@ const thankyou = () => {
     }
     return (
         <>
-
+            <ScrollToTop />
             <Navbar />
 
             <BreadCruums data={data} />

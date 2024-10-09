@@ -5,6 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
+import ScrollToTop from "../pages/ScrollToTop";
 
 const Formpage = () => {
     const history = useNavigate();
@@ -15,6 +16,7 @@ const Formpage = () => {
     const [applicantName, setapplicantName] = useState('');
     const [applicantDescription, setapplicantDescription] = useState('');
     const [cv, setcv] = useState('');
+
     //const [error, seterror] = React.useState(false);
     const SubmitQuery = async (e) => {
 
@@ -54,6 +56,7 @@ const Formpage = () => {
     }
     return (
         <>            
+            <ScrollToTop />
             <BreadCruums data={data} />
             <Navbar />  
             <div className="container-fluid job-form">             

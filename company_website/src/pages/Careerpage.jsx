@@ -6,6 +6,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
 import Careerbanner from '../assets/careerbanner.jpg'
+import ScrollToTop from "../pages/ScrollToTop";
 
 const Careerpage = () => {
 
@@ -22,6 +23,7 @@ const Careerpage = () => {
     }
     return (
         <>
+            <ScrollToTop />
             <BreadCruums data={data}/>
             <Navbar />
             <Jobs />

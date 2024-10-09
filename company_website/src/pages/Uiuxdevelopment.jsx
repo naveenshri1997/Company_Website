@@ -3,6 +3,7 @@ import BreadCruums from '../components/BreadCruums';
 
 import Footer from '../components/Footer';
 import web from '../assets/single_service/single_service1.png'
+import ScrollToTop from "../pages/ScrollToTop";
 
 const Uiuxdevelopment = () => {
     const data = {
@@ -11,6 +12,7 @@ const Uiuxdevelopment = () => {
     }
     return (
         <>
+            <ScrollToTop />
             <BreadCruums data={data} />
             <Navbar />
             <div className="container-fluid about_us_page_sec" style={{ background: '#dfecff' }}>

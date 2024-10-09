@@ -7,6 +7,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 
 import Careerbanner from '../assets/careerbanner.jpg'
+import ScrollToTop from "../pages/ScrollToTop";
 
 const Jobdetails = () => {
     const { id } = useParams();
@@ -33,6 +34,7 @@ const Jobdetails = () => {
     }
     return (
         <>
+            <ScrollToTop />
             <BreadCruums data={data} />
 
             <Navbar />

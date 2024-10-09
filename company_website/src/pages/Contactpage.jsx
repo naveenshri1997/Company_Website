@@ -8,6 +8,8 @@ import { useNavigate } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
+import ScrollToTop from "../pages/ScrollToTop";
+
 const Contactpage = () => {
     const history = useNavigate();
 
@@ -98,6 +100,7 @@ const Contactpage = () => {
 
     return (
         <>
+            <ScrollToTop />
             <BreadCruums data={data} />
             <Navbar />
             <div className="container-fluid contact_us_page">
