@@ -6,7 +6,7 @@ const Jobs = () => {
         const res = fetch('https://whitewebtech.onrender.com/api/Jobs/GetAll', {
             method: 'GET',
         }).then((res) => res.json()).then((data) => {
-            console.log('data', JSON.stringify(data.result));
+           
             setjobs(data.result);
         })
     }, [])
