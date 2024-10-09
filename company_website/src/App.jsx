@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import { useState } from 'react'
-import {Routes,Route } from 'react-router-dom'
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Home from './pages/Home'
@@ -22,7 +22,7 @@ function App() {
 
   return (
       <>
-          
+          <Router>
           <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/about' element={<Aboutpage />} />
@@ -33,10 +33,9 @@ function App() {
               <Route path='/contactpage' element={<Contactpage />} />    
               <Route path='/formpage' element={<Formpage />} />                  
               <Route path='/uiux' element={<Uiuxdevelopment />} />                                
-              <Route path='/thankyou' element={<Thankyou />} />                                
-
-              
-          </Routes>
+              <Route path='/thankyou' element={<Thankyou />} />                                              
+              </Routes>
+          </Router>
     </>
   )
 }
