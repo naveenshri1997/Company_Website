@@ -23,7 +23,7 @@ function App() {
 
   return (
       <>
-          
+          <ScrollToTop />
           <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/about' element={<Aboutpage />} />
@@ -34,9 +34,7 @@ function App() {
               <Route path='/mobiledev' element={<Mobiledevelopment />} />    
               <Route path='/contactpage' element={<Contactpage />} />    
               <Route path='/uiux' element={<Uiuxdevelopment />} />                                
-              <Route path='/thankyou' element={<Thankyou />} />                                
-              <ScrollToTop />
-              
+              <Route path='/thankyou' element={<Thankyou />} />                                                           
           </Routes>
     </>
   )
