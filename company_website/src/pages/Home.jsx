@@ -17,7 +17,7 @@ import '../assets/slider_css/slider.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "../pages/ScrollToTop";
 
 const Home = () => {   
 
