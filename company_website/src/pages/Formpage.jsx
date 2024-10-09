@@ -10,15 +10,15 @@ const Formpage = () => {
     const { id } = useParams();
     const [job, setjob] = useState([]);
 
-    //useEffect(() => {
-    //    const res = fetch(`https://whitewebtech.onrender.com/api/Jobs/GetById?Id=${jid}`, {
-    //        method: 'GET',
-    //    }).then((res) => res.json()).then((data) => {
-    //        setjob(data.result);
-    //        console.log(data.result)
-    //        console.log(id);
-    //    })
-    //}, [jid])
+    useEffect(() => {
+        const res = fetch(`https://whitewebtech.onrender.com/api/Jobs/GetById?Id=${id}`, {
+            method: 'GET',
+        }).then((res) => res.json()).then((data) => {
+            setjob(data.result);
+            console.log(data.result)
+            console.log(id);
+        })
+    }, [jid])
 
     useEffect(() => {
         AOS.init();
@@ -57,7 +57,7 @@ const Formpage = () => {
                                             <input type="text" className="form-control cus_form" placeholder="district" />
                                         </div>
                                     </div>
-                                    {/*<input type="text" className="form-control cus_form" placeholder="Position" value={job.name} disabled/>*/}
+                                    <input type="text" className="form-control cus_form" placeholder="Position" value={job.name} disabled/>
                                     <small style={{color:'red'} }>Upload Cv</small>
                                     <input type="file" className="form-control cus_form" placeholder="Upload Cv" />
 
