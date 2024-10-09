@@ -3,25 +3,27 @@ import BreadCruums from '../components/BreadCruums';
 
 import Footer from '../components/Footer'
 import contact from '../assets/contactbanner.jpg'
+import { useNavigate } from "react-router-dom";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
 const Contactpage = () => {
+    const history = useNavigate();
 
     const [firstName, setfirstName] = useState('');
     const [lastName, setlastName] = useState('');
     const [email, setemail] = useState('');
     const [mobile, setmobile] = useState('');
     const [query, setquery] = useState('');
-    const [error, setError] = useState(false);
+    const [error, setError] = React.useState(false);
 
     const submitQuery = async (e) => {
         e.preventDefault();
-        //if (!firstName || !lastName || !email || !mobile || !query) {
-        //    setError(true);
-        //    return false
-        //}
+        if (!firstName || !lastName || !email || !mobile || !query) {
+            setError(true);
+            return false
+        }
         const resposne = await fetch('https://whitewebtech.onrender.com/api/NewQuery', {
             method: 'POST',
             headers: {
@@ -32,6 +34,7 @@ const Contactpage = () => {
             })
         })
         await resposne.json();
+        history('/thankyou');
     }
 
     useEffect(() => {
@@ -129,10 +132,7 @@ const Contactpage = () => {
                                     <textarea type="text" className="form-control cus_form" placeholder="Query"
                                         onChange={(e) => setquery(e.target.value)} value={query} />
                                     {error && !query && <span className='error'>Please fill the Field</span>}
-
-                                    {/*<input type="submit" onClick={addblog} value="Add Blog"
-                                        className="btn pt-2 pb-2 px-5 bg-secondary bg-gradient text-dark bg-opacity-50" />*/}
-
+                                   
                                     <button type="submit" onClick={submitQuery} className="btn btn-primary cus-btn">
                                         Send Query
                                     </button>

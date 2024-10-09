@@ -17,7 +17,7 @@ import Uiuxdevelopment from './pages/Uiuxdevelopment';
 import Contactpage from './pages/Contactpage';
 import Formpage from './pages/Formpage';
 import Jobdetails from './pages/Jobdetails';
-
+import Thankyou from './pages/thankyou';
 function App() {
 
   return (
@@ -33,6 +33,7 @@ function App() {
               <Route path='/contactpage' element={<Contactpage />} />    
               <Route path='/formpage' element={<Formpage />} />                  
               <Route path='/uiux' element={<Uiuxdevelopment />} />                                
+              <Route path='/thankyou' element={<Thankyou />} />                                
 
               
           </Routes>

@@ -10,27 +10,33 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
 
-const Aboutpage = () => {
+const thankyou = () => {
 
     useEffect(() => {
         AOS.init();
         AOS.refresh();
     }, []);
-    //const data = {
-    //    pagetitle: "Home",
-    //    pagename: "About Us",
-    //    image: `${Contactbanner}`
-    //}
+    const data = {
+        pagetitle: "Home",
+        pagename: "Thank You",
+        image: `${Contactbanner}`
+    }
     return (
         <>
-            //<BreadCruums data={data} />
+
             <Navbar />
-            <Aboutus />
-            <Mission />
-            <Corevalues />
-            <Review />
+
+            <BreadCruums data={data} />
+            <div className="container-fluid jobs">
+
+                <div className="row justify-content-center">
+                    <div className="col-lg-10">
+                    <h1> THANKYOU </h1>
+                    </div>
+                </div>
+            </div>
             <Footer />
         </>
     )
 }
-export default Aboutpage;
+export default thankyou;
