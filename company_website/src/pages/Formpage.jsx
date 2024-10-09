@@ -42,6 +42,7 @@ const Formpage = () => {
                         <div className="row justify-content-center">
                             <div className="col-lg-8">
                                 <form>
+                                    { jid}
                                     <input type="text" className="form-control cus_form" placeholder="Full Name" />
 
                                     <input type="email" className="form-control cus_form" placeholder="Email" />
