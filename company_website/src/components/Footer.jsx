@@ -9,11 +9,36 @@ import linkedin from '../assets/linkedin.png'
 import insta from '../assets/instagram.png'
 import facebook from '../assets/facebook.png'
 import { Link } from 'react-router-dom'
+import React, { useState, useEffect } from "react";
 
 const Footer = () => {
     const styleone = {
         backgroundImage: `url('${map}')`,
     }
+
+  
+    const [visible, setVisible] = useState(false);
+
+    // Show Button After Scrolling Down More than 500px
+    const toggleVisible = () => {
+        if (
+            document.body.scrollTop > 500 ||
+            document.documentElement.scrollTop > 500
+        ) {
+            setVisible(true);
+        } else {
+            setVisible(false);
+        }
+    };
+
+    useEffect(() => {
+        // Listen for Scrolling Event
+        window.addEventListener("scroll", toggleVisible, false);
+        return () => {
+            window.removeEventListener("scroll", toggleVisible, false);
+        }
+    }, []);
+
      const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -96,7 +121,7 @@ const Footer = () => {
                                     <li><a><img src={facebook} className="img-fluid" width="" /></a></li>
 
                                 </ul>
-                                <div className="scroll_top_btn " onClick={scrollToTop}>
+                                <div onClick={scrollToTop} className={visible ? "back-to-top-visible scroll_top_btn" : "scroll_top_btn"}>
                                     <img src={scroll} className="img-fluid" width="50px" />
                                 </div>
                             </div>
