@@ -18,6 +18,7 @@ import Contactpage from './pages/Contactpage';
 import Formpage from './pages/Formpage';
 import Jobdetails from './pages/Jobdetails';
 import Thankyou from './pages/thankyou';
+import ScrollToTop from "./components/ScrollToTop";
 function App() {
 
   return (
@@ -34,7 +35,7 @@ function App() {
               <Route path='/contactpage' element={<Contactpage />} />    
               <Route path='/uiux' element={<Uiuxdevelopment />} />                                
               <Route path='/thankyou' element={<Thankyou />} />                                
-
+              <ScrollToTop />
               
           </Routes>
     </>
