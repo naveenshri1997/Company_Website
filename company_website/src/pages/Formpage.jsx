@@ -7,7 +7,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
 const Formpage = () => {
-    const { jid } = useParams();
+    const { id } = useParams();
     const [job, setjob] = useState([]);
 
     //useEffect(() => {
@@ -42,7 +42,7 @@ const Formpage = () => {
                         <div className="row justify-content-center">
                             <div className="col-lg-8">
                                 <form>
-                                    { jid}
+                                    { id}
                                     <input type="text" className="form-control cus_form" placeholder="Full Name" />
 
                                     <input type="email" className="form-control cus_form" placeholder="Email" />
