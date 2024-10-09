@@ -18,7 +18,7 @@ const Formpage = () => {
             console.log(data.result)
             console.log(id);
         })
-    }, [jid])
+    }, [id])
 
     useEffect(() => {
         AOS.init();
