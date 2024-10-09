@@ -81,7 +81,7 @@ const Formpage = () => {
                                     {/*    </div>*/}
                                     {/*</div>*/}
                                     <input type="text" className="form-control cus_form" placeholder="Position" value={job.name}
-                                        onChange={(e)=> setjobId(e.target.value)} disabled />
+                                        onChange={(e)=> setjobId(id)} disabled />
 
                                     <small style={{color:'red'} }>Upload Cv</small>
                                     <input type="file" className="form-control cus_form" placeholder="Upload Cv"
