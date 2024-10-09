@@ -4,8 +4,11 @@ import Footer from '../components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 const Formpage = () => {
+    const { jid } = useParams();
+
     useEffect(() => {
         AOS.init();
         AOS.refresh();
@@ -17,6 +20,7 @@ const Formpage = () => {
     }
     return (
         <>
+            {jid}
             <BreadCruums data={data} />
             <Navbar />  
             <div className="container-fluid job-form">             

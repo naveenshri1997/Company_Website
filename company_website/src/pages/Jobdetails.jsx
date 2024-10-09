@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 import Careerbanner from '../assets/careerbanner.jpg'
 
@@ -52,6 +52,7 @@ const Jobdetails = () => {
                                     <h4 className="title">{job.name}</h4>
                                     <h4 className="subtitle">{job.title}</h4>
                                     <h4 className="desc">{job.description}</h4>
+                                    <Link class="nav-link" to={`/formpage/${job.id}`} >Apply Now</Link>
                                 </div>
                             </div>
                         </div>
