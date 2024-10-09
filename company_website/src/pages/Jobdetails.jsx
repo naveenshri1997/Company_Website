@@ -53,7 +53,7 @@ const Jobdetails = () => {
                                     <h4 className="subtitle">{job.title}</h4>
                                     <h4 className="desc">{job.description}</h4>
                                 </div>
-                                <Link class="nav-link" to={`/Formpage/${job.id}`} >Apply Now</Link>
+                                <Link class="nav-link" to={`/formpage/${job.id}`} >Apply Now</Link>
                             </div>
                         </div>
                     </div>
