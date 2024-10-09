@@ -9,6 +9,7 @@ import { useParams, useNavigate } from "react-router-dom";
 const Formpage = () => {
     const history = useNavigate();
     const [job, setjob] = useState([]);
+
     const { id } = useParams();     
     const [jobId, setjobId] = useState('');
     const [applicantName, setapplicantName] = useState('');
@@ -87,7 +88,10 @@ const Formpage = () => {
                                         onChange={(e) => setcv(e.target.files[0])} />
                                     <input type="text" className="form-control cus_form" placeholder="Description"
                                         value={applicantDescription} onChange={(e) => setapplicantDescription(e.target.value) } />
-                                    <button onSubmit={SubmitQuery} type="text" className="btn btn-primary cus-btn" >Apply</button>
+                                    {/*<button onSubmit={SubmitQuery} type="text" className="btn btn-primary cus-btn" >Apply</button>*/}
+                                    <button type="submit" onClick={SubmitQuery} className="btn btn-primary cus-btn">
+                                        Apply
+                                    </button>
                                 </form>
                             </div>
 
