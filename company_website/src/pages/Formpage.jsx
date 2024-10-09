@@ -15,7 +15,7 @@ const Formpage = () => {
     const [applicantDescription, setapplicantDescription] = useState('');
     const [cv, setcv] = useState('');
     //const [error, seterror] = React.useState(false);
-    const SubmitQuery = (e) => {
+    const SubmitQuery = async (e) => {
 
         e.preventDefault();
         const formData = new FormData();
