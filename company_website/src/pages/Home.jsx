@@ -17,6 +17,7 @@ import '../assets/slider_css/slider.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
+import ScrollToTop from "./components/ScrollToTop";
 
 const Home = () => {   
 
@@ -29,6 +30,7 @@ const handleDone = () => {
     }, []);
     return (
         <>
+            <ScrollToTop />
             <div className="container-fluid homepage_header">
                 <div className="row">
                     <div className="col-lg-12" >

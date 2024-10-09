@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import { useState } from 'react'
-import { Routes, Route, ScrollRestoration } from 'react-router-dom'
+import {Routes,Route } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Home from './pages/Home'
@@ -18,12 +18,11 @@ import Contactpage from './pages/Contactpage';
 import Formpage from './pages/Formpage';
 import Jobdetails from './pages/Jobdetails';
 import Thankyou from './pages/thankyou';
-//import ScrollToTop from "./components/ScrollToTop";
 function App() {
 
   return (
       <>
-          <ScrollRestoration />
+          
           <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/about' element={<Aboutpage />} />
