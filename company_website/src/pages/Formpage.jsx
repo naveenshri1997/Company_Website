@@ -8,7 +8,7 @@ import { useParams, useNavigate } from "react-router-dom";
 
 const Formpage = () => {
     const history = useNavigate();
-
+    const [job, setjob] = useState([]);
     const { id } = useParams();     
     const [jobId, setjobId] = useState('');
     const [applicantName, setapplicantName] = useState('');
