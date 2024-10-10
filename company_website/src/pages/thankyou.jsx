@@ -11,6 +11,7 @@ import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
 import ScrollToTop from "../pages/ScrollToTop";
 import thankou from '../assets/thankyou.png'
+import { Link } from 'react-router-dom'
 
 const thankyou = () => {
 
@@ -32,9 +33,10 @@ const thankyou = () => {
             <div className="container-fluid jobs">
 
                 <div className="row justify-content-center">
-                    <div className="col-lg-10">
+                    <div className="col-lg-10 text-center">
                         <img src={thankou} />
-                    <h1> THANKYOU </h1>
+                        <h3>Our Team will contact you soon.</h3>
+                        <h1>  <Link class="nav-link active" aria-current="page" to='https://whitewebtech.com' style={{color:'red'}}>WhiteWeb Tech</Link> </h1>
                     </div>
                 </div>
             </div>
