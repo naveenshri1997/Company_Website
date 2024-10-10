@@ -10,6 +10,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
 import ScrollToTop from "../pages/ScrollToTop";
+import thankou from '../assets/thankyou.png'
 
 const thankyou = () => {
 
@@ -32,6 +33,7 @@ const thankyou = () => {
 
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
+                        <img src={thankou} />
                     <h1> THANKYOU </h1>
                     </div>
                 </div>
