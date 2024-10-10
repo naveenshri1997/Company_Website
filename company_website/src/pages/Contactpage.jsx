@@ -110,7 +110,7 @@ const Contactpage = () => {
                             style={{ fontWeight: 'bolder ', color: 'black', padding: '0px 10px' }}>Ask Your<span
                                 style={{ color: '#f84525' }}> Query.</span></h1>
 
-                        <div className="row">
+                        <div className="row justify-content-center">
 
                             <div className="col-md-8">                               
                                 <form method='POST' >
