@@ -5,13 +5,15 @@ import Footer from '../components/Footer';
 
 import mobile from '../assets/single_service/mobile.png'
 import ScrollToTop from "../pages/ScrollToTop";
+import Mobilebanner from '../assets/android_banner.png'
 
 const Mobiledevelopment = () => {
     const data = {
         pagetitle: "Services",
-        pagename: "Mobile Development"
+        pagename: "Mobile Development",
+        image: `${Mobilebanner}`
     }
-   
+
     return (
         <>
             <ScrollToTop />

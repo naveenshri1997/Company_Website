@@ -4,11 +4,13 @@ import BreadCruums from '../components/BreadCruums';
 import Footer from '../components/Footer';
 import web from '../assets/single_service/single_service1.png'
 import ScrollToTop from "../pages/ScrollToTop";
+import UIUXbanner from '../assets/uiux_banner.png'
 
 const Uiuxdevelopment = () => {
     const data = {
         pagetitle: "Services",
-        pagename: "UI/UX"
+        pagename: "UI/UX",
+        image: `${UIUXbanner}`
     }
     return (
         <>

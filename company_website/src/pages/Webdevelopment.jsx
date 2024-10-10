@@ -4,11 +4,14 @@ import BreadCruums from '../components/BreadCruums';
 import Footer from '../components/Footer';
 import web from '../assets/single_service/web.png'
 import ScrollToTop from "../pages/ScrollToTop";
+import Webbanner from '../assets/web_design_banner.png'
 
 const Webdevelopment = () => {
     const data = {
         pagetitle: "Services",
-        pagename: "Web Development"
+        pagename: "Web Development",
+        image: `${Webbanner}`
+        
     }
     return (
         <>
