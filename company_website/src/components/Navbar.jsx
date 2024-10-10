@@ -1,5 +1,5 @@
 import bgimage from '../assets/11.jpeg';
-import logo from '../assets/logo.png';
+import logo from '../assets/black_logo.png';
 import { Link } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
 const Navbar = () => {
