@@ -5,7 +5,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import { useState } from 'react'
 import {Routes,Route } from 'react-router-dom'
-import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Home from './pages/Home'
 import Aboutpage from './pages/Aboutpage'
