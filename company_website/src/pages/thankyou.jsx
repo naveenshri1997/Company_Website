@@ -34,7 +34,7 @@ const thankyou = () => {
 
                 <div className="row justify-content-center">
                     <div className="col-lg-10 text-center">
-                        <img src={thankou} />
+                        <img src={thankou} className="img-fluid"/>
                         <h3>Our Team will contact you soon.</h3>
                         <h1>  <Link class="nav-link active" aria-current="page" to='https://whitewebtech.com' style={{color:'red'}}>WhiteWeb Tech</Link> </h1>
                     </div>
