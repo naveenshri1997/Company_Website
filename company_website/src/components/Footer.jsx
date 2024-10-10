@@ -7,7 +7,7 @@ import whatsapp from '../assets/whatsapp.png'
 import linkedin from '../assets/linkedin.png'
 import insta from '../assets/instagram.png'
 import facebook from '../assets/facebook.png'
-import logo from '../assets/white_logo.svg'
+import logo from '../assets/white_logo.png'
 import { Link } from 'react-router-dom'
 import React, { useState, useEffect } from "react";
 
