@@ -111,9 +111,7 @@ const Contactpage = () => {
                                 style={{ color: '#f84525' }}> Query.</span></h1>
 
                         <div className="row">
-                            <div className="col-md-4" style={{ marginTop: '40px' }}>
-                                <img src={contact} className="img-fluid" />
-                            </div>
+
                             <div className="col-md-8">                               
                                 <form method='POST' >
                                     <input type="text" className="form-control cus_form" placeholder="FirstName"
