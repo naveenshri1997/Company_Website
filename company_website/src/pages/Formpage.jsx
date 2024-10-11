@@ -27,12 +27,7 @@ const Formpage = () => {
         setuploadPhoto(file);
         setcv(uploadphoto?.url);
 
-        //setData((prev) => {
-        //    return {
-        //        ...prev,
-        //        profile_pic: 
-        //    }
-        //})
+       
     }
     const handleClearUploadphoto = (e) => {
         e.stopPropagation();
@@ -43,18 +38,25 @@ const Formpage = () => {
     const SubmitQuery = async (e) => {
 
         e.preventDefault();
-        const formData = new FormData();
-        formData.append('jobId',jobId);
-        formData.append('applicantName', applicantName);
-        formData.append('applicantDescription', applicantDescription);
-        formData.append('cv', cv);        
+        //const formData = new FormData();
+        //formData.append('jobId',jobId);
+        //formData.append('applicantName', applicantName);
+        //formData.append('applicantDescription', applicantDescription);
+        //formData.append('cv', cv);        
+       
 
-        const res = await fetch('https://whitewebtech.onrender.com/api/Applicant', {
+        const resposne = await fetch('https://whitewebtech.onrender.com/api/Applicant', {
             method: 'POST',
-            body: formData
-        });
-        await res.json();
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                jobId, applicantName, applicantDescription, cv
+            })
+        })
+        await resposne.json();
         history('/thankyou');
+
     }
 
     useEffect(() => {
