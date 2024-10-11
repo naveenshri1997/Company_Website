@@ -67,7 +67,7 @@ const Formpage = () => {
         const resposne = await fetch('https://whitewebtech.onrender.com/api/Applicant', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json',
+                'Content-Type': 'multipart/form-data',
             },
             body: JSON.stringify({
                 jobId, applicantName, applicantDescription, applicantState, cv
