@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import ScrollToTop from "../pages/ScrollToTop";
+import uploadFile from '../helper/UploadFile';
 
 const Formpage = () => {
     const history = useNavigate();
