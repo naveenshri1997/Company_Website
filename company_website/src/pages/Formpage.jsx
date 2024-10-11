@@ -15,6 +15,9 @@ const Formpage = () => {
     const { id } = useParams();     
     const [jobId, setjobId] = useState('');
     const [applicantName, setapplicantName] = useState('');
+    const [applicantState, setapplicantState] = useState(1);
+
+    
     const [applicantDescription, setapplicantDescription] = useState('');
 
     const [cv, setcv] = useState('');
@@ -67,7 +70,7 @@ const Formpage = () => {
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-                jobId, applicantName, applicantDescription, cv
+                jobId, applicantName, applicantDescription, applicantState, cv
             })
         })
         await resposne.json();
