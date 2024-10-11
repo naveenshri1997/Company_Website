@@ -18,6 +18,27 @@ const Formpage = () => {
     const [cv, setcv] = useState('');
 
     //const [error, seterror] = React.useState(false);
+    const [uploadPhoto, setuploadPhoto] = useState('');
+
+    const handleupload = async (e) => {
+        const file = e.target.files[0]
+        const uploadphoto = await uploadFile(file);
+        setuploadPhoto(file);
+        setcv(uploadphoto?.url);
+
+        //setData((prev) => {
+        //    return {
+        //        ...prev,
+        //        profile_pic: 
+        //    }
+        //})
+    }
+    const handleClearUploadphoto = (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        setuploadPhoto(null);
+    }
+
     const SubmitQuery = async (e) => {
 
         e.preventDefault();
@@ -86,9 +107,35 @@ const Formpage = () => {
                                     <input type="text" className="form-control cus_form" placeholder="Position" value={job.name}
                                         onChange={(e)=> setjobId(id)} disabled />
 
-                                    <small style={{color:'red'} }>Upload Cv</small>
-                                    <input type="file" className="form-control cus_form" placeholder="Upload Cv"
-                                        onChange={(e) => setcv(e.target.files[0])} />
+                                    {/*<small style={{color:'red'} }>Upload Cv</small>*/}
+                                    {/*<input type="file" className="form-control cus_form" placeholder="Upload Cv"*/}
+                                    {/*    onChange={(e) => setcv(e.target.files[0])} />*/}
+
+                                    <div className='flex flex-col gap-1'>
+                                        <label htmlFor='profile_pic'>Profile Pic:
+                                            <div className='h-14 bg-slate-100 flex justify-center items-center border rounded cursor-pointer'>
+                                                <p className='text-sm max-w-[300px] text-ellipsis line-clamp-1'>
+                                                    {
+                                                        uploadPhoto?.name ? uploadPhoto?.name : 'upload profile photo'
+                                                    }
+                                                </p>
+                                                {
+                                                    uploadPhoto?.name && <button className='text-lg ml-2 hover:text-red-600' onClick={handleClearUploadphoto}>
+                                                        <IoClose />
+                                                    </button>
+                                                }
+                                            </div>
+                                        </label>
+                                        <input type='file'
+                                            id="profile_pic"
+                                            name='profile_pic'
+                                            className='bg-slate-100 px-2 py-1 hidden'
+                                            onChange={handleupload}
+                                        ></input>
+                                    </div>
+
+                                    {/*s*/}
+
                                     <input type="text" className="form-control cus_form" placeholder="Description"
                                         value={applicantDescription} onChange={(e) => setapplicantDescription(e.target.value) } />
                                     {/*<button onSubmit={SubmitQuery} type="text" className="btn btn-primary cus-btn" >Apply</button>*/}
