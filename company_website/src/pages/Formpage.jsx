@@ -25,10 +25,9 @@ const Formpage = () => {
         const file = e.target.files[0]
         const uploadphoto = await uploadFile(file);
         setuploadPhoto(file);
-        setcv(uploadphoto?.url);
-
-       
+        setcv(uploadphoto?.url);       
     }
+
     const handleClearUploadphoto = (e) => {
         e.stopPropagation();
         e.preventDefault();

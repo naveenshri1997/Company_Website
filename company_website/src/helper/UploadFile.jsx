@@ -4,7 +4,9 @@ const uploadFile = async (file) => {
     const formData = new FormData();
     formData.append('file', file);
     formData.append("upload_preset", "chat-app-file");
+    formData.append("cloud_name", "dfrb25nus");
 
+    
     const response = await fetch(url, {
         method: 'post',
         body: formData
