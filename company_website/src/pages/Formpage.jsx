@@ -90,7 +90,7 @@ const Formpage = () => {
                         <div className="row justify-content-center">
                             <div className="col-lg-8">
                                 <form method='POST' encType='multipart/form-data'>
-                                    {id}
+                                    
                                     <input type="text" className="form-control cus_form" placeholder="Full Name"
                                         value={applicantName} onChange={(e) => setapplicantName(e.target.value)} />
 
