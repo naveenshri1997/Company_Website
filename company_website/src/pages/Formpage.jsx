@@ -30,6 +30,13 @@ const Formpage = () => {
     const SubmitQuery = async (e) => {
 
         e.preventDefault();
+
+        // Check if the CV is selected
+        if (!cv) {
+            alert("Please upload your CV.");
+            return;
+        }
+        
         const formData = new FormData();
         formData.append('jobId',jobId);
         formData.append('applicantName', applicantName);
