@@ -114,18 +114,7 @@ const Formpage = () => {
                                     { id}
                                     <input type="text" className="form-control cus_form" placeholder="Full Name"
                                         value={applicantName} onChange={(e) => setapplicantName(e.target.value) } />
-                                    {/*{error && !applicantName && <span className='error'>Please fil this Field *</span>}*/}
-
-                                    {/*<input type="text" className="form-control cus_form" placeholder="Email" />*/}
-                                    {/*<input type="text" className="form-control cus_form" placeholder="Mobile Number" />*/}
-                                    {/*<div className="row">*/}
-                                    {/*    <div className="col-md-6">*/}
-                                    {/*        <input type="text" className="form-control cus_form" placeholder="State" />*/}
-                                    {/*    </div>*/}
-                                    {/*    <div className="col-md-6">*/}
-                                    {/*        <input type="text" className="form-control cus_form" placeholder="district" />*/}
-                                    {/*    </div>*/}
-                                    {/*</div>*/}
+                                                                     
                                     <input type="text" className="form-control cus_form" placeholder="Position" value={job.name}
                                         onChange={(e)=> setjobId(id)} disabled />
 
@@ -133,34 +122,9 @@ const Formpage = () => {
                                     <input type="file" className="form-control cus_form" placeholder="Upload Cv"
                                         onChange={handleFileChange} />
 
-                                    {/*<div className='flex flex-col gap-1'>*/}
-                                    {/*    <label htmlFor='profile_pic'>Profile Pic:*/}
-                                    {/*        <div className='h-14 bg-slate-100 flex justify-center items-center border rounded cursor-pointer'>*/}
-                                    {/*            <p className='text-sm max-w-[300px] text-ellipsis line-clamp-1'>*/}
-                                    {/*                {*/}
-                                    {/*                    uploadPhoto?.name ? uploadPhoto?.name : 'upload profile photo'*/}
-                                    {/*                }*/}
-                                    {/*            </p>*/}
-                                    {/*            {*/}
-                                    {/*                uploadPhoto?.name && <button className='text-lg ml-2 hover:text-red-600' onClick={handleClearUploadphoto}>*/}
-                                    {/*                    <IoClose />*/}
-                                    {/*                </button>*/}
-                                    {/*            }*/}
-                                    {/*        </div>*/}
-                                    {/*    </label>*/}
-                                    {/*    <input type='file'*/}
-                                    {/*        id="profile_pic"*/}
-                                    {/*        name='profile_pic'*/}
-                                    {/*        className='bg-slate-100 px-2 py-1 hidden'*/}
-                                    {/*        onChange={handleupload}*/}
-                                    {/*    ></input>*/}
-                                    {/*</div>*/}
-
-                                    {/*s*/}
-
                                     <input type="text" className="form-control cus_form" placeholder="Description"
                                         value={applicantDescription} onChange={(e) => setapplicantDescription(e.target.value) } />
-                                    {/*<button onSubmit={SubmitQuery} type="text" className="btn btn-primary cus-btn" >Apply</button>*/}
+                                 
                                     <button type="submit" onClick={SubmitQuery} className="btn btn-primary cus-btn">
                                         Apply
                                     </button>
