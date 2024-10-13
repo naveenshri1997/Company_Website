@@ -45,7 +45,9 @@ const Formpage = () => {
         console.log(cv);
         const resposne = await fetch('https://whitewebtech.onrender.com/api/Applicant/PostApplicant', {
             method: 'POST',
-           
+            headers: {
+                'Content-Type': 'multipart/form-data',
+            },
             body: formData
         })
         const data = await resposne.json();
@@ -91,7 +93,7 @@ const Formpage = () => {
                                     <input type="text" className="form-control cus_form" placeholder="Full Name"
                                         value={applicantName} onChange={(e) => setapplicantName(e.target.value) } />
                                 
-                                    <input type="text" className="form-control cus_form" placeholder="Position" value={job.name}
+                                    <input type="text" className="form-control cus_form" placeholder="Position" value={job.jobId}
                                         onChange={(e)=> setjobId(id)} disabled />
 
                                     <small style={{color:'red'} }>Upload Cv</small>
