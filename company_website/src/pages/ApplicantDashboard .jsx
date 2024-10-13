@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { AgGridReact } from 'ag-grid-react';
 import 'ag-grid-community/styles/ag-grid.css';
-import 'ag-grid-community/styles/ag-theme-alpine.css';
+import 'ag-grid-community/styles/ag-theme-quartz.css';
 
 const ApplicantDashboard = () => {
     const [applicants, setApplicants] = useState([]);
@@ -83,7 +83,7 @@ const ApplicantDashboard = () => {
                         <p>Loading applicants...</p>
                     </div>
                 ) : (
-                    <div className="ag-theme-alpine" style={{ height: 600, width: '100%' }}>
+                        <div className="ag-theme-quartz" style={{ height: 600, width: '100%' }}>
                         <AgGridReact
                             rowData={applicants}
                             columnDefs={columnDefs}
