@@ -90,6 +90,8 @@ const Footer = () => {
                                     businesses with technology, offering reliable and scalable solutions that foster growth and efficiency. Partner with White Web
                                     Tech today, and let us help you navigate the future of IT with confidence and success. Together,
                                     we'll shape the digital landscape for tomorrow.</p>
+                               
+                                    <Link class=" hidden_data nav-link" to="/dashobard"></Link>
                                 
                             </div>
                             <div class="col-lg-4 col-sm-6">
