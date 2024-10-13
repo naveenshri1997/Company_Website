@@ -20,22 +20,22 @@ const Formpage = () => {
     
     const [applicantDescription, setapplicantDescription] = useState('');
 
-    const [cv, setcv] = useState('');
+    const [cv, setcv] = useState('PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjIiIHdpZHRoPSIxMDYwIiBoZWlnaHQ9IjY2MiIgdmlld0JveD0iMCAwIDExMzMgNzA4Ij48Zz48ZyBpZD0id0FxNHg4UUwiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsMCwwKSI+PGRlZnM+PCEtLS0tPjwhLS0tLT48IS0tLS0+PC9kZWZzPjwhLS0tLT48IS0tLS0+PGc+PCEtLS0tPjxnIHRyYW5zZm9ybT0iIj48IS0tLS0+PGcgaWQ9IndBcTR4OFFMX29yaWdpbiIgdHJhbnNmb3JtPSJza2V3WCgwKSBza2V3WSgwKSI+PHBhdGggaWQ9InNoYXBlcGF0aF93QXE0eDhRTCIgZD0iTTAsMEwxMTMyLjYzODg4ODg4ODg4OSAwTDExMzIuNjM4ODg4ODg4ODg5IDcwNy44OTkzMDU1NTU1NTU3TDAgNzA3Ljg5OTMwNTU1NTU1NTd6IiBmaWx0ZXI9IiIgc3R5bGU9ImZpbGw6IHJnYigyNTUsIDI1NSwgMjU1KTsgc3Ryb2tlOiBub25lOyI+PC9wYXRoPjwvZz48IS0tLS0+PC9nPjwhLS0tLT48L2c+PC9nPjwvZz48Zz48ZyBpZD0iVUY4aEY4UEgiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsNDMxLjc2LDI0NS44NikiIHN0eWxlPSIiPjxkZWZzPjwhLS0tLT48IS0tLS0+PCEtLS0tPjwvZGVmcz48IS0tLS0+PCEtLS0tPjxnPjwhLS0tLT48ZyB0cmFuc2Zvcm09IiI+PCEtLS0tPjxnIGlkPSJVRjhoRjhQSF9vcmlnaW4iIHRyYW5zZm9ybT0ic2tld1goMCkgc2tld1koMCkiPjxwYXRoIGlkPSJzaGFwZXBhdGhfVUY4aEY4UEgiIGQ9Ik0wLDBDMCwyNDkuNDgsMSwyNzAuMjIsMSwyNzAuMjJMMTIwLjE1LDkyLjQ3TDIwOC4yNCwyMDkuMjNDMjA4LjI0LDIwOS4yMywyMDcuMjcsNzkuNCwyMDUuNjUsNDAuNzdDMjA0LjAzLDIuMTUsMTgzLjYxLDEuMzYsMTgzLjgzLDEuNDVDMTg0LjA1LDEuNTQsMTgzLjk1LDEzNC42MSwxODMuOTUsMTM0LjYxTDEyMC4yLDQ5LjQ3TDIwLjczLDE4OC4yOEMyMC43MywxODguMjgsMjUuNjUsNjYuMjYsMjQuNDYsMzcuMTRDMjMuMjcsOC4wMiwwLDAsMCwwWiIgZmlsdGVyPSIiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IHN0cm9rZTogcmdiKDMyLCAzMiwgMzIpOyBzdHJva2Utd2lkdGg6IDEuMjsiPjwvcGF0aD48L2c+PCEtLS0tPjwvZz48IS0tLS0+PC9nPjwvZz48ZyBpZD0iY1puTmNUeGwiIHRyYW5zZm9ybT0ibWF0cml4KDEsMCwwLDEsNDgxLjk0MzA3Njc5NzkwOTY3LDI0NS4wMzg2ODg1MjQ1OTAxNikiPjxkZWZzPjwhLS0tLT48IS0tLS0+PCEtLS0tPjwvZGVmcz48IS0tLS0+PCEtLS0tPjxnPjwhLS0tLT48ZyB0cmFuc2Zvcm09IiI+PCEtLS0tPjxnIGlkPSJjWm5OY1R4bF9vcmlnaW4iIHRyYW5zZm9ybT0ic2tld1goMCkgc2tld1koMCkiPjxwYXRoIGlkPSJzaGFwZXBhdGhfY1puTmNUeGwiIGQ9Ik0yMy40NywwQzIzLjQ3LDkyLjQzLDIzLjQ3LDk5LjQ0LDIzLjQ3LDk5LjQ0TDAuNzYsMTM3LjI1QzAuNzYsMTM3LjI1LC0wLjk1LDYxLjcyLDAuNzYsMzUuMDFDMi40Niw4LjMsMjMuNDcsMCwyMy40NywwWiIgZmlsdGVyPSIiIHN0eWxlPSJmaWxsOiByZ2IoMjU1LCAyNTUsIDI1NSk7IHN0cm9rZTogcmdiKDMyLCAzMiwgMzIpOyBzdHJva2Utd2lkdGg6IDEuMDQ7Ij48L3BhdGg+PC9nPjwhLS0tLT48L2c+PCEtLS0tPjwvZz48L2c+PGcgaWQ9Im5ZMnpMS1ZpIiB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDQ4NC40Njg3ODk3MjAyOTY5NywyNDUuNTg5OTk5OTk5OTk5OTcpIj48ZGVmcz48IS0tLS0+PCEtLS0tPjwhLS0tLT48L2RlZnM+PCEtLS0tPjwhLS0tLT48Zz48IS0tLS0+PGcgdHJhbnNmb3JtPSIiPjwhLS0tLT48ZyBpZD0iblkyekxLVmlfb3JpZ2luIiB0cmFuc2Zvcm09InNrZXdYKDApIHNrZXdZKDApIj48cGF0aCBpZD0ic2hhcGVwYXRoX25ZMnpMS1ZpIiBkPSJNMS43OCwyNzkuMUwwLDIwMi44OUwyMi4yOSwxNzEuNDhMMjIuMDcsMTk4LjA5TDY2Ljg1LDEzNS45NEwxODMuMDksMjc4Ljc5QzE4My4wOSwyNzguNzksMTgwLjc3LDcxLjQ4LDE3OS45NiwzNi43OUMxNzkuMTUsMi4wOSwyMDcuMjQsMCwyMDcuMjQsMEwyMDguMDEsMzU4LjE2TDY4LjY3LDE4MC43WiIgZmlsdGVyPSIiIHN0eWxlPSJmaWxsOiBub25lOyBzdHJva2U6IHJnYigwLCAwLCAwKTsgc3Ryb2tlLXdpZHRoOiAxLjMyOyI+PC9wYXRoPjwvZz48IS0tLS0+PC9nPjwhLS0tLT48L2c+PC9nPjwvZz48L3N2Zz4="');
 
 
-    const handleFileChange = (event) => {
-        const file = event.target.files[0];
+    //const handleFileChange = (event) => {
+    //    const file = event.target.files[0];
 
-        if (file) {
-            const reader = new FileReader();
+    //    if (file) {
+    //        const reader = new FileReader();
 
-            reader.onloadend = () => {
-                setcv(reader.result);
-            };
+    //        reader.onloadend = () => {
+    //            setcv(reader.result);
+    //        };
 
-            reader.readAsDataURL(file);
-        }
-    };
+    //        reader.readAsDataURL(file);
+    //    }
+    //};
 
 
     //const [error, seterror] = React.useState(false);
@@ -131,8 +131,8 @@ const Formpage = () => {
                                         onChange={(e)=> setjobId(id)} disabled />
 
                                     <small style={{color:'red'} }>Upload Cv</small>
-                                    <input type="file" className="form-control cus_form" placeholder="Upload Cv"
-                                        onChange={handleFileChange} />
+                                    {/*<input type="file" className="form-control cus_form" placeholder="Upload Cv"*/}
+                                    {/*    onChange={handleFileChange} />*/}
 
                                     {/*<div className='flex flex-col gap-1'>*/}
                                     {/*    <label htmlFor='profile_pic'>Profile Pic:*/}
