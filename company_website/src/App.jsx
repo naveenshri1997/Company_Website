@@ -17,7 +17,7 @@ import Contactpage from './pages/Contactpage';
 import Formpage from './pages/Formpage';
 import Jobdetails from './pages/Jobdetails';
 import Thankyou from './pages/thankyou';
-
+import ApplicantDashboard from './pages/ApplicantDashboard '
 function App() {
 
   return (
@@ -34,7 +34,10 @@ function App() {
               <Route path='/mobiledev' element={<Mobiledevelopment />} />    
               <Route path='/contactpage' element={<Contactpage />} />    
               <Route path='/uiux' element={<Uiuxdevelopment />} />                                
-              <Route path='/thankyou' element={<Thankyou />} />                                                           
+              <Route path='/thankyou' element={<Thankyou />} />       
+              <Route path='/dashobard' element={<ApplicantDashboard />} />       
+
+              
           </Routes>
     </>
   )
