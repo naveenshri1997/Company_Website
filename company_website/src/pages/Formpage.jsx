@@ -75,9 +75,10 @@ const Formpage = () => {
             body: formData
         })
         const data = await resposne.json();
-        history('/thankyou');
-
         console.log(data);
+
+        //history('/thankyou');
+
 
     }
 
