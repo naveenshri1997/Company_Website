@@ -20,7 +20,6 @@ const Formpage = () => {
 
     const [cv, setcv] = useState('');
 
-
     const handleFileChange = (event) => {
         const file = event.target.files[0];
 
@@ -43,7 +42,7 @@ const Formpage = () => {
         formData.append('applicantState', applicantState);        
         formData.append('cv', cv);        
        
-
+        console.log(cv);
         const resposne = await fetch('https://whitewebtech.onrender.com/api/Applicant/PostApplicant', {
             method: 'POST',
             headers: {
@@ -51,8 +50,9 @@ const Formpage = () => {
             },
             body: formData
         })
-        await resposne.json();
-        history('/thankyou');
+        const data = await resposne.json();
+        console.log(data);
+        //history('/thankyou');
 
     }
 
