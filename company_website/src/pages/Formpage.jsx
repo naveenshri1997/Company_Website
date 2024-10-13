@@ -93,7 +93,7 @@ const Formpage = () => {
                                     <input type="text" className="form-control cus_form" placeholder="Full Name"
                                         value={applicantName} onChange={(e) => setapplicantName(e.target.value) } />
                                 
-                                    <input type="text" className="form-control cus_form" placeholder="Position" value={job.jobId}
+                                    <input type="text" className="form-control cus_form" placeholder="Position" value={job.name}
                                         onChange={(e)=> setjobId(id)} disabled />
 
                                     <small style={{color:'red'} }>Upload Cv</small>
