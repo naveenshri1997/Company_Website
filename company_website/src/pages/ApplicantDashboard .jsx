@@ -3,14 +3,17 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useNavigate } from "react-router-dom";
+import { AgGridReact } from 'ag-grid-react';
+import 'ag-grid-community/styles/ag-grid.css';
+import 'ag-grid-community/styles/ag-theme-alpine.css';
 
 const ApplicantDashboard = () => {
-    const history = useNavigate();
     const [applicants, setApplicants] = useState([]);
+    const [loading, setLoading] = useState(true);
 
-    // Fetch the list of applicants
+    // Fetch applicants from the API
     const fetchApplicants = async () => {
+        setLoading(true);
         try {
             const response = await fetch('https://whitewebtech.onrender.com/api/Applicant/GetAll');
             if (!response.ok) throw new Error('Failed to fetch applicants');
@@ -18,6 +21,8 @@ const ApplicantDashboard = () => {
             setApplicants(data.result);
         } catch (error) {
             console.error("Error fetching applicants:", error);
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -45,39 +50,48 @@ const ApplicantDashboard = () => {
         AOS.refresh();
     }, []);
 
+    const columnDefs = [
+        { headerName: "ID", field: "id", sortable: true, filter: true },
+        { headerName: "Name", field: "applicantName", sortable: true, filter: true },
+        { headerName: "Description", field: "applicantDescription", sortable: true, filter: true },
+        { headerName: "State", field: "applicantState", sortable: true, filter: true },
+        { headerName: "Create Date", field: "createDate", sortable: true, filter: true,
+            valueFormatter: params => new Date(params.value).toLocaleString() },
+        {
+            headerName: "Actions",
+            field: "id",
+            cellRendererFramework: params => (
+                <button className="btn btn-primary" onClick={() => downloadCv(params.value)}>
+                    Download CV
+                </button>
+            )
+        }
+    ];
+
     return (
         <>
             <Navbar />
             <div className="container">
                 <h1 className="my-4" data-aos="fade-up">Applicant Dashboard</h1>
-                <table className="table table-bordered" data-aos="fade-up" data-aos-duration="1600">
-                    <thead>
-                        <tr>
-                            <th>ID</th>
-                            <th>Name</th>
-                            <th>Description</th>
-                            <th>State</th>
-                            <th>Create Date</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {applicants.map(applicant => (
-                            <tr key={applicant.id}>
-                                <td>{applicant.id}</td>
-                                <td>{applicant.applicantName}</td>
-                                <td>{applicant.applicantDescription}</td>
-                                <td>{applicant.applicantState}</td>
-                                <td>{new Date(applicant.createDate).toLocaleString()}</td>
-                                <td>
-                                    <button className="btn btn-primary" onClick={() => downloadCv(applicant.id)}>
-                                        Download CV
-                                    </button>
-                                </td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
+                {loading ? (
+                    <div className="text-center">
+                        <p>Loading applicants...</p>
+                    </div>
+                ) : (
+                    <div className="ag-theme-alpine" style={{ height: 600, width: '100%' }}>
+                        <AgGridReact
+                            rowData={applicants}
+                            columnDefs={columnDefs}
+                            pagination={true}
+                            paginationPageSize={10}
+                            defaultColDef={{
+                                resizable: true,
+                                flex: 1,
+                                minWidth: 100,
+                            }}
+                        />
+                    </div>
+                )}
             </div>
             <Footer />
         </>
