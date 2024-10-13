@@ -58,11 +58,11 @@ const Formpage = () => {
         formData.append('applicantState', applicantState);
         formData.append('cv', cv);        
 
-        console.log("add", jobId);
-        console.log("add", applicantName);
-        console.log("add", applicantDescription);
-        console.log("add", applicantState);
-        console.log("add", cv);
+        //console.log("add", jobId);
+        //console.log("add", applicantName);
+        //console.log("add", applicantDescription);
+        //console.log("add", applicantState);
+        //console.log("add", cv);
 
 
         console.log("add", formData);
@@ -74,8 +74,10 @@ const Formpage = () => {
             },
             body: formData
         })
-        await resposne.json();
+        const data = await resposne.json();
         history('/thankyou');
+
+        console.log(data);
 
     }
 
