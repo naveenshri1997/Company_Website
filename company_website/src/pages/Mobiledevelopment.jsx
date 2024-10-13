@@ -31,13 +31,7 @@ const Mobiledevelopment = () => {
                                 <div className="row">
                                     <div className="col-lg-12">
                                         <p className="subtitle">
-                                            Qualzee Consultancy Private Limited serves the technology sector with the name Qualwebs,
-                                            positioning itself as a leading software development company, that manages the entire
-                                            lifecycle of full-app development, specializing in web apps. We cover all aspects
-                                            of a successful product launch and maintenance, including ideation, prototyping
-                                            and design, project management, development, QA testing, and support. Our approach
-                                            is based on Agile principles, and we are dedicated to providing every customer's
-                                            product with the same level of care and attention that we give our own products.
+                                            Mobile development services specialize in creating applications for smartphones and tablets across various platforms, including iOS and Android. These services encompass the entire app lifecycle, from ideation and design to development, testing, and deployment. Developers use programming languages like Swift, Java, and Kotlin, along with frameworks like React Native and Flutter, to build high-performance, user-friendly apps. Ongoing support and updates are provided to ensure compatibility, security, and an optimal user experience in the ever-evolving mobile landscape.
                                         </p>
                                     </div>
 

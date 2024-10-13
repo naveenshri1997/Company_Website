@@ -30,13 +30,15 @@ const Webdevelopment = () => {
                                 <div className="row">
                                     <div className="col-lg-12">
                                         <p className="subtitle">
-                                            Qualzee Consultancy Private Limited serves the technology sector with the name Qualwebs,
-                                            positioning itself as a leading software development company, that manages the entire
-                                            lifecycle of full-app development, specializing in web apps. We cover all aspects
-                                            of a successful product launch and maintenance, including ideation, prototyping
-                                            and design, project management, development, QA testing, and support. Our approach
-                                            is based on Agile principles, and we are dedicated to providing every customer's
-                                            product with the same level of care and attention that we give our own products.
+                                            Web development services provide comprehensive solutions for creating and
+                                            maintaining websites tailored to business needs. These services include
+                                            front-end and back-end development, responsive design, content management
+                                            system (CMS) integration, e-commerce solutions, and website optimization
+                                            for speed and search engine ranking. Skilled developers use languages
+                                            like HTML, CSS, JavaScript, and frameworks to deliver user-friendly
+                                            interfaces. Continuous support and updates ensure the website remains
+                                            functional and secure, enhancing user experience and driving business
+                                            growth in the digital landscape.
                                         </p>
                                     </div>
 
