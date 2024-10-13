@@ -73,8 +73,9 @@ const Formpage = () => {
                 jobId, applicantName, applicantDescription, applicantState, cv
             })
         })
-        await resposne.json();
-        history('/thankyou');
+        const data = await resposne.json();
+        console.log(data);
+        //history('/thankyou');
 
     }
 
