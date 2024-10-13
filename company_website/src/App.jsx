@@ -17,6 +17,7 @@ import Contactpage from './pages/Contactpage';
 import Formpage from './pages/Formpage';
 import Jobdetails from './pages/Jobdetails';
 import Thankyou from './pages/thankyou';
+import Thankyou from './pages/ApplicantDashboard';
 function App() {
 
   return (
