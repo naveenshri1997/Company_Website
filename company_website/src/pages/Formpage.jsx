@@ -11,28 +11,22 @@ import ScrollToTop from "../pages/ScrollToTop";
 const Formpage = () => {
     const history = useNavigate();
     const [job, setjob] = useState([]);
-
     const { id } = useParams();     
+
     const [jobId, setjobId] = useState('');
     const [applicantName, setapplicantName] = useState('');
-    const [applicantState, setapplicantState] = useState(1);
-
-    
+    const [applicantState, setapplicantState] = useState(1);    
     const [applicantDescription, setapplicantDescription] = useState('');
-
     const [cv, setcv] = useState('');
 
 
     const handleFileChange = (event) => {
         const file = event.target.files[0];
-
         if (file) {
             const reader = new FileReader();
-
             reader.onloadend = () => {
                 setcv(reader.result);
             };
-
             reader.readAsDataURL(file);
         }
     };
@@ -57,21 +51,21 @@ const Formpage = () => {
     const SubmitQuery = async (e) => {
 
         e.preventDefault();
-        //const formData = new FormData();
-        //formData.append('jobId',jobId);
-        //formData.append('applicantName', applicantName);
-        //formData.append('applicantDescription', applicantDescription);
-        //formData.append('cv', cv);        
+        const formData = new FormData();
+        formData.append('jobId',jobId);
+        formData.append('applicantName', applicantName);
+        formData.append('applicantDescription', applicantDescription);
+        formData.append('applicantState', applicantState);
+        formData.append('cv', cv);        
        
+        console.log("add", formData);
 
         const resposne = await fetch('https://whitewebtech.onrender.com/api/Applicant/PostApplicant', {
             method: 'POST',
             headers: {
                 'Content-Type': 'multipart/form-data',
             },
-            body: JSON.stringify({
-                jobId, applicantName, applicantDescription, applicantState, cv
-            })
+            body: formData
         })
         await resposne.json();
         history('/thankyou');
