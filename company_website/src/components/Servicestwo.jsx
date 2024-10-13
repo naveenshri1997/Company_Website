@@ -25,8 +25,8 @@ const Servicestwo = () => {
                                                 <div className="card_content">
                                                     <img className="img-fluid cus-img" src={Webdevelopment} width="250px" />
                                                     <h4 className="service_title">WEB DEVELOPMENT</h4>
-                                                    <p className="service_subtitle">With expertise in using blockchain, AI, IoT, and other web3 tools, frameworks, APIs, and
-                                                        programming languages</p>
+                                                <p className="service_subtitle">Web development involves creating, designing, and maintaining
+                                                    websites using coding languages, databases, and server management.</p>
                                                 </div>
                                             </div>
                                         
@@ -38,8 +38,8 @@ const Servicestwo = () => {
                                                 <div className="card_content">
                                                     <img className="img-fluid cus-img" src={uiuxdesign} width="250px" />
                                                     <h4 className="service_title">UI UX DESIGN</h4>
-                                                    <p className="service_subtitle">With expertise in using blockchain, AI, IoT, and other web3 tools, frameworks, APIs, and
-                                                        programming languages</p>
+                                                <p className="service_subtitle">UI/UX design focuses on crafting user-friendly
+                                                    interfaces and enhancing user experience through intuitive interactions.</p>
                                                 </div>
                                             </div>
                                        
@@ -51,8 +51,8 @@ const Servicestwo = () => {
                                                 <div className="card_content">
                                                     <img className="img-fluid cus-img" src={mobileappdevelopment} width="250px" />
                                                     <h4 className="service_title">MOBILE DEVELOPMENT</h4>
-                                                    <p className="service_subtitle">With expertise in using blockchain, AI, IoT, and other web3 tools, frameworks, APIs, and
-                                                        programming languages</p>
+                                                <p className="service_subtitle">Mobile development involves building applications for smartphones
+                                                    and tablets, focusing on performance, design, and usability.</p>
                                                 </div>
                                             </div>
                                       
@@ -63,8 +63,8 @@ const Servicestwo = () => {
                                             <div className="card_content">
                                                 <img className="img-fluid cus-img" src={softwaredevelopment} width="250px" />
                                                 <h4 className="service_title">SOFTWARE DEVELOPMENT</h4>
-                                                <p className="service_subtitle">With expertise in using blockchain, AI, IoT, and other web3 tools, frameworks, APIs, and
-                                                    programming languages</p>
+                                                <p className="service_subtitle">Software development involves designing, coding, testing, and maintaining
+                                                    applications or systems to solve specific problems efficiently.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -74,8 +74,8 @@ const Servicestwo = () => {
                                             <div className="card_content">
                                                 <img className="img-fluid cus-img" src={digitaltransformation} width="250px" />
                                                 <h4 className="service_title">DIGITAL TRANSFORMATION</h4>
-                                                <p className="service_subtitle">With expertise in using blockchain, AI, IoT, and other web3 tools, frameworks, APIs, and
-                                                    programming languages</p>
+                                                <p className="service_subtitle">Digital transformation integrates technology into all business areas, improving
+                                                    operations, efficiency, and customer experiences.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -85,8 +85,9 @@ const Servicestwo = () => {
                                             <div className="card_content">
                                                 <img className="img-fluid cus-img" src={devOps} width="250px" />
                                                 <h4 className="service_title">DEVOPS ENGG.</h4>
-                                                <p className="service_subtitle">With expertise in using blockchain, AI, IoT, and other web3 tools, frameworks, APIs, and
-                                                    programming languages</p>
+                                                <p className="service_subtitle">DevOps engineering unifies development and operations,
+                                                    automating workflows to enhance software delivery, collaboration, and scalability.
+</p>
                                             </div>
                                         </div>
                                     </div>
@@ -98,8 +99,8 @@ const Servicestwo = () => {
                                             <div className="card_content">
                                                 <img className="img-fluid cus-img" src={softwaretesting} width="250px" />
                                                 <h4 className="service_title">SOFTWARE TESTING</h4>
-                                                <p className="service_subtitle">With expertise in using blockchain, AI, IoT, and other web3 tools, frameworks, APIs, and
-                                                    programming languages</p>
+                                                <p className="service_subtitle">Software testing involves evaluating applications to identify bugs, ensure
+                                                    functionality, and verify performance meets specified requirements.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -109,8 +110,8 @@ const Servicestwo = () => {
                                             <div className="card_content">
                                                 <img className="img-fluid cus-img" src={dataengineering} width="250px" />
                                                 <h4 className="service_title">DATA ENGINEERING</h4>
-                                                <p className="service_subtitle">With expertise in using blockchain, AI, IoT, and other web3 tools, frameworks, APIs, and
-                                                    programming languages</p>
+                                                <p className="service_subtitle">Data engineering focuses on designing, building, and managing systems
+                                                    to collect, store, and process large datasets.</p>
                                             </div>
                                         </div>
                                     </div>
@@ -118,9 +119,9 @@ const Servicestwo = () => {
                                         <div className="card card_back">
                                             <div className="card_content">
                                                 <img className="img-fluid cus-img" src={softwaredevelopment} width="250px" />
-                                                <h4 className="service_title">SOFTWARE DEVELOPMENT</h4>
-                                                <p className="service_subtitle">With expertise in using blockchain, AI, IoT, and other web3 tools, frameworks, APIs, and
-                                                    programming languages</p>
+                                                <h4 className="service_title">ARTIFICIAL INTELLIGENCE</h4>
+                                                <p className="service_subtitle">Artificial intelligence (AI) involves creating machines that simulate human intelligence,
+                                                    enabling tasks like learning, reasoning, and problem-solving.</p>
                                             </div>
                                         </div>
                                     </div>
