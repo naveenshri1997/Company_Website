@@ -17,6 +17,7 @@ import Contactpage from './pages/Contactpage';
 import Formpage from './pages/Formpage';
 import Jobdetails from './pages/Jobdetails';
 import Thankyou from './pages/thankyou';
+
 function App() {
 
   return (
@@ -27,7 +28,8 @@ function App() {
               <Route path='/about' element={<Aboutpage />} />
               <Route exact path='/career' element={<Careerpage />} />    
               <Route path='/career/:id' element={<Jobdetails />} />
-              <Route path='/formpage/:id' element={<Formpage />} />                  
+              <Route path='/formpage/:id' element={<Formpage />} />   
+              
               <Route path='/webdev' element={<Webdevelopment />} />    
               <Route path='/mobiledev' element={<Mobiledevelopment />} />    
               <Route path='/contactpage' element={<Contactpage />} />    
