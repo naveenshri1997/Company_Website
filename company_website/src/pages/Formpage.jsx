@@ -45,9 +45,7 @@ const Formpage = () => {
         console.log(cv);
         const resposne = await fetch('https://whitewebtech.onrender.com/api/Applicant/PostApplicant', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'multipart/form-data',
-            },
+           
             body: formData
         })
         const data = await resposne.json();
