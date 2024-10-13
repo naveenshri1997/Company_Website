@@ -12,47 +12,47 @@ const Formpage = () => {
     const history = useNavigate();
     const [job, setjob] = useState([]);
 
-    const { id } = useParams();     
+    const { id } = useParams();
     const [jobId, setjobId] = useState('');
     const [applicantName, setapplicantName] = useState('');
-    const [applicantState, setapplicantState] = useState(1);    
+    const [applicantState, setapplicantState] = useState(1);
     const [applicantDescription, setapplicantDescription] = useState('');
 
     const [cv, setcv] = useState('');
 
     const handleFileChange = (event) => {
         const file = event.target.files[0];
-
         if (file) {
-            const reader = new FileReader();
-            reader.onloadend = () => {
-                setcv(reader.result);
-            };
-            reader.readAsDataURL(file);
+            setcv(file); // Store the file directly
         }
     };
 
     const SubmitQuery = async (e) => {
 
         e.preventDefault();
+
+        // Check if the CV is selected
+        if (!cv) {
+            alert("Please upload your CV.");
+            return;
+        }
+
         const formData = new FormData();
-        formData.append('jobId',jobId);
+        formData.append('jobId', jobId);
         formData.append('applicantName', applicantName);
         formData.append('applicantDescription', applicantDescription);
-        formData.append('applicantState', applicantState);        
-        formData.append('cv', cv);        
-       
+        formData.append('applicantState', applicantState);
+        formData.append('cv', cv);
+
         console.log(cv);
         const resposne = await fetch('https://whitewebtech.onrender.com/api/Applicant/PostApplicant', {
             method: 'POST',
-            headers: {
-                'Content-Type': 'multipart/form-data',
-            },
+
             body: formData
         })
         const data = await resposne.json();
-        console.log(data);
-        //history('/thankyou');
+        
+        history('/thankyou');
 
     }
 
@@ -63,6 +63,7 @@ const Formpage = () => {
             setjob(data.result);
             console.log(data.result)
             console.log(id);
+            setjobId(data.result.id);
         })
     }, [id])
 
@@ -76,30 +77,30 @@ const Formpage = () => {
         pagename: "Form"
     }
     return (
-        <>            
+        <>
             <ScrollToTop />
             <BreadCruums data={data} />
-            <Navbar />  
-            <div className="container-fluid job-form">             
+            <Navbar />
+            <div className="container-fluid job-form">
                 <div className="row justify-content-center">
                     <div className="col-lg-10">
                         <h1 data-aos="fade-up" data-aos-duration="1600" className="mobile_heading londrina heading theme_color_two"
                             style={{ fontWeight: 'bolder ', color: 'black', padding: '0px 10px' }}>Share Your<span
-                                style={{ color: '#f84525' }}> CV.</span></h1>        
+                                style={{ color: '#f84525' }}> CV.</span></h1>
                         <div className="row justify-content-center">
                             <div className="col-lg-8">
                                 <form method='POST' encType='multipart/form-data'>
-                                    { id}
+                                    {id}
                                     <input type="text" className="form-control cus_form" placeholder="Full Name"
-                                        value={applicantName} onChange={(e) => setapplicantName(e.target.value) } />
-                                
-                                    <input type="text" className="form-control cus_form" placeholder="Position" value={job.name}
-                                        onChange={(e)=> setjobId(id)} disabled />
+                                        value={applicantName} onChange={(e) => setapplicantName(e.target.value)} />
 
-                                    <small style={{color:'red'} }>Upload Cv</small>
+                                    <input type="text" className="form-control cus_form" placeholder="Position" value={job.id}
+                                        onChange={(e) => setjobId(id)} disabled />
+
+                                    <small style={{ color: 'red' }}>Upload Cv</small>
                                     <input type="file" className="form-control cus_form" placeholder="Upload Cv"
                                         onChange={handleFileChange} />
-                                 
+
                                     <input type="text" className="form-control cus_form" placeholder="Description"
                                         value={applicantDescription} onChange={(e) => setapplicantDescription(e.target.value)} />
 
