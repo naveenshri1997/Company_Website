@@ -22,13 +22,8 @@ const Formpage = () => {
 
     const handleFileChange = (event) => {
         const file = event.target.files[0];
-
         if (file) {
-            const reader = new FileReader();
-            reader.onloadend = () => {
-                setcv(reader.result);
-            };
-            reader.readAsDataURL(file);
+            setcv(file); // Store the file directly
         }
     };
 
