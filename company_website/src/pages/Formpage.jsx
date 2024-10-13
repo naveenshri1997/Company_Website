@@ -61,6 +61,7 @@ const Formpage = () => {
             setjob(data.result);
             console.log(data.result)
             console.log(id);
+            setjobId(data.result.id);
         })
     }, [id])
 
@@ -91,7 +92,7 @@ const Formpage = () => {
                                     <input type="text" className="form-control cus_form" placeholder="Full Name"
                                         value={applicantName} onChange={(e) => setapplicantName(e.target.value) } />
                                 
-                                    <input type="text" className="form-control cus_form" placeholder="Position" value={job.name}
+                                    <input type="text" className="form-control cus_form" placeholder="Position" value={job.id}
                                         onChange={(e)=> setjobId(id)} disabled />
 
                                     <small style={{color:'red'} }>Upload Cv</small>
