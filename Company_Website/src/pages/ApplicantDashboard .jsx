@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import BreadCruums from '../components/BreadCruums';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { AgGridReact } from 'ag-grid-react';
@@ -72,9 +73,13 @@ const ApplicantDashboard = () => {
             cellRenderer: MyComponent
         }
     ];
-
+    const data = {
+        pagetitle: "Home",
+        pagename: "Dashboard",        
+    }
     return (
         <>
+            <BreadCruums data={data} />
             <Navbar />
             <div className="container">
                 <h1 className="my-4" data-aos="fade-up">Applicant Dashboard</h1>
