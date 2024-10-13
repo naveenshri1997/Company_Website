@@ -81,14 +81,14 @@ const ApplicantDashboard = () => {
         <>
             <BreadCruums data={data} />
             <Navbar />
-            <div className="container">
+            <div className="container contact_us_page">
                 <h1 className="my-4" data-aos="fade-up">Applicant Dashboard</h1>
                 {loading ? (
                     <div className="text-center">
                         <p>Loading applicants...</p>
                     </div>
                 ) : (
-                        <div className="ag-theme-quartz" style={{ height: 600, width: '100%' }}>
+                        <div className="ag-theme-quartz" style={{ height: 400, width: '100%' }}>
                         <AgGridReact
                             rowData={applicants}
                             columnDefs={columnDefs}
