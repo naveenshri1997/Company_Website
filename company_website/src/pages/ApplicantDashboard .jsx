@@ -60,13 +60,11 @@ const ApplicantDashboard = () => {
         {
             headerName: "Actions",
             field: "id",
-            cellRendererFramework: params => {
-                return (
-                    <button className="btn btn-primary" onClick={() => downloadCv(params.value)}>
-                        Download CV
-                    </button>
-                )
-            }
+            cellRendererFramework: params => (
+                <button className="btn btn-primary" onClick={() => downloadCv(params.value)}>
+                    Download CV
+                </button>
+            )
         }
     ];
 
