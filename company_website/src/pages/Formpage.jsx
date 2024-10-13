@@ -11,22 +11,28 @@ import ScrollToTop from "../pages/ScrollToTop";
 const Formpage = () => {
     const history = useNavigate();
     const [job, setjob] = useState([]);
-    const { id } = useParams();     
 
+    const { id } = useParams();     
     const [jobId, setjobId] = useState('');
     const [applicantName, setapplicantName] = useState('');
-    const [applicantState, setapplicantState] = useState(1);    
+    const [applicantState, setapplicantState] = useState(1);
+
+    
     const [applicantDescription, setapplicantDescription] = useState('');
+
     const [cv, setcv] = useState('');
 
 
     const handleFileChange = (event) => {
         const file = event.target.files[0];
+
         if (file) {
             const reader = new FileReader();
+
             reader.onloadend = () => {
                 setcv(reader.result);
             };
+
             reader.readAsDataURL(file);
         }
     };
@@ -51,30 +57,24 @@ const Formpage = () => {
     const SubmitQuery = async (e) => {
 
         e.preventDefault();
-        const formData = new FormData();
-        formData.append('jobId',jobId);
-        formData.append('applicantName', applicantName);
-        formData.append('applicantDescription', applicantDescription);
-        formData.append('applicantState', applicantState);
-        formData.append('cv', cv);        
-
-        //console.log("add", jobId);
-        //console.log("add", applicantName);
-        //console.log("add", applicantDescription);
-        //console.log("add", applicantState);
-        //console.log("add", cv);
-
-
-        console.log("add", formData);
+        //const formData = new FormData();
+        //formData.append('jobId',jobId);
+        //formData.append('applicantName', applicantName);
+        //formData.append('applicantDescription', applicantDescription);
+        //formData.append('cv', cv);        
+       
 
         const resposne = await fetch('https://whitewebtech.onrender.com/api/Applicant/PostApplicant', {
             method: 'POST',
-           
-            body: formData
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                jobId, applicantName, applicantDescription, applicantState, cv
+            })
         })
-        const data = await resposne.json();
-        console.log(data);
-        //history('/thankyou');
+        await resposne.json();
+        history('/thankyou');
 
     }
 
@@ -114,7 +114,18 @@ const Formpage = () => {
                                     { id}
                                     <input type="text" className="form-control cus_form" placeholder="Full Name"
                                         value={applicantName} onChange={(e) => setapplicantName(e.target.value) } />
-                                                                     
+                                    {/*{error && !applicantName && <span className='error'>Please fil this Field *</span>}*/}
+
+                                    {/*<input type="text" className="form-control cus_form" placeholder="Email" />*/}
+                                    {/*<input type="text" className="form-control cus_form" placeholder="Mobile Number" />*/}
+                                    {/*<div className="row">*/}
+                                    {/*    <div className="col-md-6">*/}
+                                    {/*        <input type="text" className="form-control cus_form" placeholder="State" />*/}
+                                    {/*    </div>*/}
+                                    {/*    <div className="col-md-6">*/}
+                                    {/*        <input type="text" className="form-control cus_form" placeholder="district" />*/}
+                                    {/*    </div>*/}
+                                    {/*</div>*/}
                                     <input type="text" className="form-control cus_form" placeholder="Position" value={job.name}
                                         onChange={(e)=> setjobId(id)} disabled />
 
@@ -122,9 +133,34 @@ const Formpage = () => {
                                     <input type="file" className="form-control cus_form" placeholder="Upload Cv"
                                         onChange={handleFileChange} />
 
+                                    {/*<div className='flex flex-col gap-1'>*/}
+                                    {/*    <label htmlFor='profile_pic'>Profile Pic:*/}
+                                    {/*        <div className='h-14 bg-slate-100 flex justify-center items-center border rounded cursor-pointer'>*/}
+                                    {/*            <p className='text-sm max-w-[300px] text-ellipsis line-clamp-1'>*/}
+                                    {/*                {*/}
+                                    {/*                    uploadPhoto?.name ? uploadPhoto?.name : 'upload profile photo'*/}
+                                    {/*                }*/}
+                                    {/*            </p>*/}
+                                    {/*            {*/}
+                                    {/*                uploadPhoto?.name && <button className='text-lg ml-2 hover:text-red-600' onClick={handleClearUploadphoto}>*/}
+                                    {/*                    <IoClose />*/}
+                                    {/*                </button>*/}
+                                    {/*            }*/}
+                                    {/*        </div>*/}
+                                    {/*    </label>*/}
+                                    {/*    <input type='file'*/}
+                                    {/*        id="profile_pic"*/}
+                                    {/*        name='profile_pic'*/}
+                                    {/*        className='bg-slate-100 px-2 py-1 hidden'*/}
+                                    {/*        onChange={handleupload}*/}
+                                    {/*    ></input>*/}
+                                    {/*</div>*/}
+
+                                    {/*s*/}
+
                                     <input type="text" className="form-control cus_form" placeholder="Description"
                                         value={applicantDescription} onChange={(e) => setapplicantDescription(e.target.value) } />
-                                 
+                                    {/*<button onSubmit={SubmitQuery} type="text" className="btn btn-primary cus-btn" >Apply</button>*/}
                                     <button type="submit" onClick={SubmitQuery} className="btn btn-primary cus-btn">
                                         Apply
                                     </button>
