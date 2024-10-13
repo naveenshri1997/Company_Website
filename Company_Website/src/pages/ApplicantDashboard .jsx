@@ -50,6 +50,15 @@ const ApplicantDashboard = () => {
         AOS.refresh();
     }, []);
 
+    const MyComponent = p => {
+        return (
+            <>
+                <button className="btn btn-primary" onClick={() => downloadCv(p.value)}>
+                    Download CV
+                </button>
+            </>
+        )
+    };
     const columnDefs = [
         { headerName: "ID", field: "id", sortable: true, filter: true },
         { headerName: "Name", field: "applicantName", sortable: true, filter: true },
@@ -60,16 +69,7 @@ const ApplicantDashboard = () => {
         {
             headerName: "Actions",
             field: "id",
-            cellRenderer: params => (
-                <>
-                <button className="btn btn-primary" onClick={() => downloadCv(params.value)}>
-                    Download CV
-                    </button>
-                    <button>
-                    asss
-                    </button>
-                </>
-            )
+            cellRenderer: MyComponent
         }
     ];
 
