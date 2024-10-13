@@ -64,7 +64,7 @@ const Formpage = () => {
         //formData.append('cv', cv);        
        
 
-        const resposne = await fetch('https://whitewebtech.onrender.com/api/Applicant', {
+        const resposne = await fetch('https://whitewebtech.onrender.com/api/Applicant/PostApplicant', {
             method: 'POST',
             headers: {
                 'Content-Type': 'multipart/form-data',
